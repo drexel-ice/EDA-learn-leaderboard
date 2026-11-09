@@ -1,5 +1,7 @@
 # EDA-learn leaderboard
 
+### 🔗 Live leaderboard: **[drexel-ice.github.io/EDA-learn-leaderboard](https://drexel-ice.github.io/EDA-learn-leaderboard/)**
+
 Released models, evaluation results and the public leaderboard for
 **EDA-OpenML: An Open-Weight Framework for Data-Efficient Neural Prediction in
 Digital IC Design Automation**. Framework code lives in
