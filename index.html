@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Leaderboard of open-weight neural predictors for digital IC physical design, scored against OpenROAD estimates on EDA-Schema-V2 with leave-one-circuit-out evaluation. Drexel ICE Lab.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="EDA-OpenML Leaderboard — Drexel ICE Lab">
+<meta property="og:description" content="12 prediction tasks, 4 PDKs, 5 design stages. Neural predictors vs. OpenROAD under leave-one-circuit-out cross-validation.">
+<meta property="og:site_name" content="Drexel ICE Lab">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%2307294D'/><text x='16' y='23' font-family='Georgia,serif' font-size='18' fill='%23FFC600' text-anchor='middle'>E</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<link rel="stylesheet" href="assets/css/theme.css">
+<link rel="stylesheet" href="assets/css/leaderboard.css">
+<script src="assets/js/core/theme.js"></script>
+<title>EDA-OpenML Leaderboard | Drexel ICE Lab</title>
+</head>
+<body>
+
+<header class="icelab-navbar">
+  <div class="navbar-inner">
+    <div class="navbar-brand"><img class="icelab-logo-img" src="assets/img/icelab_logo.png" alt="Drexel ICE Lab"><span class="brand-title">EDA-Learn Leaderboard</span></div>
+    <nav>
+      <a href="index.html" aria-current="page">leaderboard</a>
+      <a href="https://github.com/drexel-ice/EDA-ML" target="_blank" rel="noopener noreferrer">code</a>
+      <button class="themebtn" id="themebtn" title="Change theme" aria-label="Change theme"><svg class="i-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.4M12 19.6V22M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2 12h2.4M19.6 12H22M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg><svg class="i-dark" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 13.3A9 9 0 1 1 10.7 3a7.2 7.2 0 0 0 10.3 10.3z"/></svg></button>
+    </nav>
+  </div>
+</header>
+
+<main class="container container--wide" id="app">
+  <div class="page-header">
+    <h1 class="page-title">Leaderboard</h1>
+    <p class="lead">Open-weight neural predictors for digital physical design, scored against the OpenROAD
+      estimate at each source stage. Every model is evaluated with leave-one-circuit-out cross-validation
+      over the 18 EDA-Schema-V2 benchmark circuits.</p>
+  </div>
+
+  <div class="legend">
+    <span><i class="sq" style="background:var(--lb-win-solid)"></i> model beats OpenROAD</span>
+    <span><i class="sq" style="background:var(--lb-lose-solid)"></i> OpenROAD still leads</span>
+    <span><i class="sq" style="background:var(--lb-none-fg)"></i> no entry</span>
+    <span><i class="sq" style="background:var(--lb-sat-fg)"></i> ◆ saturated (OpenROAD exact)</span>
+    <span><i class="sq" style="background:var(--lb-undef-fg)"></i> baseline undefined</span>
+    <span class="legend-r">* not reported in the paper · click a cell for its ranking</span>
+  </div>
+
+  <section class="filters" aria-label="Filters">
+    <div class="frow"><span class="flabel">PDKs</span><div class="fchips" id="f-pdks"></div></div>
+    <div class="frow"><span class="flabel">Stages</span><div class="fchips" id="f-stages"></div></div>
+    <div class="frow"><span class="flabel">Tasks</span><div class="fchips" id="f-tasks"></div></div>
+    </div>
+    <div class="frow">
+      <span class="flabel">Averaging</span>
+      <div class="fchips">
+        <button class="chip" data-seg="agg" data-val="fold" title="Mean of the 18 per-circuit scores: each held-out circuit weighs equally (primary metric in the paper)">fold</button>
+        <button class="chip" data-seg="agg" data-val="sample" title="Pooled over all out-of-fold predictions: each sample weighs equally">sample</button>
+      </div>
+    </div>
+  </section>
+
+  <p class="mx-summary" id="mx-summary" aria-live="polite"></p>
+  <div id="matrix"></div>
+
+</main>
+
+<div id="tip" role="tooltip" hidden></div>
+
+<footer class="footer">Drexel Integrated Circuits and Electronics (ICE) Lab</footer>
+
+<!-- Plain scripts, not modules: the page also works when opened straight from disk. -->
+<script src="data/leaderboard.js"></script>
+<script src="assets/js/core/metrics.js"></script>
+<script src="assets/js/core/data.js"></script>
+<script src="assets/js/core/url.js"></script>
+<script src="assets/js/components/matrix.js"></script>
+<script src="assets/js/views/leaderboard.js"></script>
+</body>
+</html>
