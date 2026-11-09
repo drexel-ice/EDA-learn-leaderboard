@@ -30,6 +30,8 @@ Each condition in `model-data/` holds `edaml_config.yaml` (the executable config
 problem formulation, features, layers, hyperparameters, data budget, LOCO circuits),
 `eval.yaml` / `eval.log` (per-circuit and fold/sample-averaged metrics) and `flow.log`.
 `baseline/` holds the OpenROAD reference results.
+`model-data/.experiment_version_registry.json` lists every experiment with its version and a
+one-line `description`, which the site shows on model pages and as ranking tooltips.
 
 ## Updating the data
 

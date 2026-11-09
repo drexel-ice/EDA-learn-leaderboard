@@ -3,52 +3,62 @@
     "fixed_mlp|acq_maximin002": {
       "descriptor": "acq_maximin002",
       "experiment_name": "fixed_mlp",
-      "version": "v1.0.0"
+      "version": "v1.0.0",
+      "description": "Fixed MLP trained on 2 of the 108 physical-design configurations per circuit: the timing-violating and timing-satisfying reference points near timing closure."
     },
     "fixed_mlp|acq_maximin008": {
       "descriptor": "acq_maximin008",
       "experiment_name": "fixed_mlp",
-      "version": "v1.0.0"
+      "version": "v1.0.0",
+      "description": "Fixed MLP trained on 8 of the 108 physical-design configurations per circuit, chosen by nested maximin selection starting from the two near-timing-closure reference points."
     },
     "fixed_mlp|acq_maximin032": {
       "descriptor": "acq_maximin032",
       "experiment_name": "fixed_mlp",
-      "version": "v1.0.0"
+      "version": "v1.0.0",
+      "description": "Fixed MLP trained on 32 of the 108 physical-design configurations per circuit, chosen by nested maximin selection starting from the two near-timing-closure reference points."
     },
     "fixed_mlp|acq_maximin064": {
       "descriptor": "acq_maximin064",
       "experiment_name": "fixed_mlp",
-      "version": "v1.0.0"
+      "version": "v1.0.0",
+      "description": "Fixed MLP trained on 64 of the 108 physical-design configurations per circuit, chosen by nested maximin selection starting from the two near-timing-closure reference points."
     },
     "fixed_mlp|acq_maximin096": {
       "descriptor": "acq_maximin096",
       "experiment_name": "fixed_mlp",
-      "version": "v1.0.0"
+      "version": "v1.0.0",
+      "description": "Fixed MLP trained on 96 of the 108 physical-design configurations per circuit, chosen by nested maximin selection starting from the two near-timing-closure reference points."
     },
     "fixed_mlp|standard": {
       "descriptor": "standard",
       "experiment_name": "fixed_mlp",
-      "version": "v1.0.0"
+      "version": "v1.0.0",
+      "description": "Fixed MLP reference trained on all available samples from all 108 physical-design configurations per circuit."
     },
     "fixed_mlp|util_strat005": {
       "descriptor": "util_strat005",
       "experiment_name": "fixed_mlp",
-      "version": "v1.0.0"
+      "version": "v1.0.0",
+      "description": "Fixed MLP trained on a target-stratified 5% of the available samples, drawn from every physical-design configuration."
     },
     "fixed_mlp|util_strat010": {
       "descriptor": "util_strat010",
       "experiment_name": "fixed_mlp",
-      "version": "v1.0.0"
+      "version": "v1.0.0",
+      "description": "Fixed MLP trained on a target-stratified 10% of the available samples, drawn from every physical-design configuration."
     },
     "fixed_mlp|util_strat020": {
       "descriptor": "util_strat020",
       "experiment_name": "fixed_mlp",
-      "version": "v1.0.0"
+      "version": "v1.0.0",
+      "description": "Fixed MLP trained on a target-stratified 20% of the available samples, drawn from every physical-design configuration."
     },
     "fixed_mlp|util_strat050": {
       "descriptor": "util_strat050",
       "experiment_name": "fixed_mlp",
-      "version": "v1.0.0"
+      "version": "v1.0.0",
+      "description": "Fixed MLP trained on a target-stratified 50% of the available samples, drawn from every physical-design configuration."
     }
   },
   "schema_version": 1

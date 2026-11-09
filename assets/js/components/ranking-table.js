@@ -119,7 +119,7 @@
       return `<tr class="rk-row${r === 1 && beatsSort ? " rk-first" : ""}">
           <td class="rk-rank">${r && r <= 3 ? `<span class="rk-medal" title="rank ${r}">${MEDAL[r - 1]}</span>` : r || "–"}</td>
           <th class="rk-model" scope="row">
-            <a class="rk-link mono" href="${esc(modelHref(d, C, x.id))}" title="open model page">${esc(x.id)}</a>${e.in_paper ? "" : `<span class="rk-np" title="Released in model-data but not reported in the paper">not in paper</span>`}
+            <a class="rk-link mono" href="${esc(modelHref(d, C, x.id))}" title="${esc(x.description ? x.description + " Click to open the model page." : "Open the model page.")}">${esc(x.id)}</a>${e.in_paper ? "" : `<span class="rk-np" title="Released in model-data but not reported in the paper">not in paper</span>`}
           </th>
           ${cells}
         </tr>`;

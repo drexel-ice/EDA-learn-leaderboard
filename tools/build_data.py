@@ -291,6 +291,16 @@ def main():
     if os.path.exists(reg_path):
         registry = json.load(open(reg_path))
 
+    # One-line description per experiment, from the release's registry (keyed
+    # "<experiment_name>|<descriptor>"); the site shows it verbatim and never
+    # derives it from the descriptor itself.
+    for e in exp_list:
+        reg = (registry.get("experiments") or {}).get(f"{e['name']}|{e['descriptor']}") or {}
+        if reg.get("description") and reg.get("version") in (None, e["version"]):
+            e["description"] = reg["description"]
+        elif e["descriptor"]:
+            notes.append(f"no registry description for {e['id']}")
+
     payload = {
         "generated_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "registry_schema_version": registry.get("schema_version"),
