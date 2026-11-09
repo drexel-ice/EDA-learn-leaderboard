@@ -1,0 +1,54 @@
+Flow run: 2026-10-11T18:08:53.049043 UTC
+Finished: 2026-10-12T05:13:49.544162 UTC
+Status: success
+Total runtime: 39896.5s
+
+Configuration:
+  project: cell_arc_delay_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/cell_arc_delay_prediction/fixed_mlp/sky130hd-cts
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/sky130hd
+  initial_stage: cts
+  config_yaml: projects/cell_arc_delay_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/cell_arc_delay_prediction/fixed_mlp/sky130hd-cts
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/cell_arc_delay_prediction/fixed_mlp/sky130hd-cts
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/cell_arc_delay_prediction/fixed_mlp/sky130hd-cts
+
+Step timings:
+  create_cache: 5141.0s (cache_dir=/data/eda-automl/eda-automl-models/cell_arc_delay_prediction/fixed_mlp/sky130hd-cts)
+  train ac97_ctrl: 32451.5s
+  train aes_core: 33186.5s
+  train des3_area: 32476.3s
+  train i2c: 32822.2s
+  train mem_ctrl: 32784.0s
+  train pci: 32517.3s
+  train sasc: 32361.7s
+  train simple_spi: 32577.1s
+  train spi: 32457.2s
+  train ss_pcm: 32734.4s
+  train systemcaes: 32485.0s
+  train systemcdes: 32311.7s
+  train tv80: 32616.4s
+  train usb_funct: 32618.8s
+  train usb_phy: 32170.9s
+  train wb_dma: 32134.4s
+  train ethernet: 32715.6s
+  train jpeg: 32675.9s
+  evaluate: 1568.9s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 586097.0s
+  max train time: 33186.5s
+  train wall time (parallel): 33186.5s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/cell_arc_delay_prediction/fixed_mlp/sky130hd-cts/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/cell_arc_delay_prediction/fixed_mlp/sky130hd-cts/eval.yaml

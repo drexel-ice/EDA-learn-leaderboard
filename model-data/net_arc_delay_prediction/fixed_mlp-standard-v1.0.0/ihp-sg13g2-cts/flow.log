@@ -1,0 +1,55 @@
+Flow run: 2026-10-29T02:13:47.354624 UTC
+Finished: 2026-10-29T23:03:32.468875 UTC
+Status: success
+Total runtime: 74985.1s
+
+Configuration:
+  project: net_arc_delay_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/ihp-sg13g2-cts
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/ihp-sg13g2
+  initial_stage: cts
+  config_yaml: projects/net_arc_delay_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  parameter_config_ids: default
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/ihp-sg13g2-cts
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/ihp-sg13g2-cts
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/ihp-sg13g2-cts
+
+Step timings:
+  create_cache: 2592.5s (cache_dir=/data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/ihp-sg13g2-cts)
+  train ac97_ctrl: 68862.8s
+  train aes_core: 68399.0s
+  train des3_area: 67837.3s
+  train i2c: 68450.4s
+  train mem_ctrl: 68524.1s
+  train pci: 69006.2s
+  train sasc: 68714.3s
+  train simple_spi: 68474.7s
+  train spi: 68154.0s
+  train ss_pcm: 69088.9s
+  train systemcaes: 68752.8s
+  train systemcdes: 68061.5s
+  train tv80: 68703.3s
+  train usb_funct: 69115.8s
+  train usb_phy: 68495.0s
+  train wb_dma: 68908.4s
+  train ethernet: 68959.4s
+  train jpeg: 68807.9s
+  evaluate: 3276.8s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 1235316.0s
+  max train time: 69115.8s
+  train wall time (parallel): 69115.8s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/ihp-sg13g2-cts/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/ihp-sg13g2-cts/eval.yaml

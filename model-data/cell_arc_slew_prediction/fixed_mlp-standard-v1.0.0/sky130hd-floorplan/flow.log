@@ -1,0 +1,55 @@
+Flow run: 2026-10-26T16:45:05.847852 UTC
+Finished: 2026-10-26T21:59:49.499397 UTC
+Status: success
+Total runtime: 18883.7s
+
+Configuration:
+  project: cell_arc_slew_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/cell_arc_slew_prediction/fixed_mlp/sky130hd-floorplan
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/sky130hd
+  initial_stage: floorplan
+  config_yaml: projects/cell_arc_slew_prediction/experiments/fixed_mlp_floorplan.yaml
+  sampling_frac: 1.0
+  parameter_config_ids: default
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/cell_arc_slew_prediction/fixed_mlp/sky130hd-floorplan
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/cell_arc_slew_prediction/fixed_mlp/sky130hd-floorplan
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/cell_arc_slew_prediction/fixed_mlp/sky130hd-floorplan
+
+Step timings:
+  create_cache: 2991.1s (cache_dir=/data/eda-automl/eda-automl-models/cell_arc_slew_prediction/fixed_mlp/sky130hd-floorplan)
+  train ac97_ctrl: 15199.4s
+  train aes_core: 15140.0s
+  train des3_area: 15054.8s
+  train i2c: 15103.2s
+  train mem_ctrl: 15166.7s
+  train pci: 15150.2s
+  train sasc: 15065.1s
+  train simple_spi: 15171.4s
+  train spi: 15092.9s
+  train ss_pcm: 15084.5s
+  train systemcaes: 15141.0s
+  train systemcdes: 15160.5s
+  train tv80: 15189.6s
+  train usb_funct: 15100.7s
+  train usb_phy: 15110.6s
+  train wb_dma: 15193.4s
+  train ethernet: 15045.0s
+  train jpeg: 15198.3s
+  evaluate: 693.1s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 272367.3s
+  max train time: 15199.4s
+  train wall time (parallel): 15199.4s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/cell_arc_slew_prediction/fixed_mlp/sky130hd-floorplan/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/cell_arc_slew_prediction/fixed_mlp/sky130hd-floorplan/eval.yaml

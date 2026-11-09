@@ -1,0 +1,54 @@
+Flow run: 2026-10-23T20:45:17.554892 UTC
+Finished: 2026-10-23T21:12:43.408299 UTC
+Status: success
+Total runtime: 1645.9s
+
+Configuration:
+  project: timing_path_slack_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp_subset3/sky130hd-global_place
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/sky130hd
+  initial_stage: global_place
+  config_yaml: projects/timing_path_slack_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  parameter_config_ids: 23,14,100,105,61,48,37,81,65,30,31,35,107,36,19,92,94,59,60,99,82,47,49,86,53,54,3,75,41,7,79,9
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp_subset3/sky130hd-global_place
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/sky130hd-global_place
+
+Step timings:
+  train ac97_ctrl: 1525.8s
+  train aes_core: 1574.4s
+  train des3_area: 1525.5s
+  train i2c: 1520.4s
+  train mem_ctrl: 1546.0s
+  train pci: 1512.3s
+  train sasc: 1545.0s
+  train simple_spi: 1524.3s
+  train spi: 1558.6s
+  train ss_pcm: 1530.9s
+  train systemcaes: 1531.2s
+  train systemcdes: 1497.0s
+  train tv80: 1529.9s
+  train usb_funct: 1489.9s
+  train usb_phy: 1519.9s
+  train wb_dma: 1561.3s
+  train ethernet: 1530.1s
+  train jpeg: 1531.5s
+  evaluate: 71.4s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 27553.9s
+  max train time: 1574.4s
+  train wall time (parallel): 1574.4s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp_subset3/sky130hd-global_place/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp_subset3/sky130hd-global_place/eval.yaml

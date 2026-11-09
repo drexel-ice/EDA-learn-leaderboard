@@ -1,0 +1,54 @@
+Flow run: 2026-10-10T14:44:25.270409 UTC
+Finished: 2026-10-10T17:22:05.888195 UTC
+Status: success
+Total runtime: 9460.6s
+
+Configuration:
+  project: interconnect_length_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp/sky130hd-cts
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/sky130hd
+  initial_stage: cts
+  config_yaml: projects/interconnect_length_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp/sky130hd-cts
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp/sky130hd-cts
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp/sky130hd-cts
+
+Step timings:
+  create_cache: 814.2s (cache_dir=/data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp/sky130hd-cts)
+  train ac97_ctrl: 8275.0s
+  train aes_core: 8216.0s
+  train des3_area: 7962.4s
+  train i2c: 7981.2s
+  train mem_ctrl: 8058.5s
+  train pci: 8085.5s
+  train sasc: 7690.0s
+  train simple_spi: 7984.4s
+  train spi: 8238.4s
+  train ss_pcm: 8054.8s
+  train systemcaes: 7974.3s
+  train systemcdes: 8199.6s
+  train tv80: 7978.5s
+  train usb_funct: 8187.9s
+  train usb_phy: 7994.2s
+  train wb_dma: 8159.6s
+  train ethernet: 8193.5s
+  train jpeg: 8020.9s
+  evaluate: 371.4s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 145254.8s
+  max train time: 8275.0s
+  train wall time (parallel): 8275.0s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp/sky130hd-cts/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp/sky130hd-cts/eval.yaml

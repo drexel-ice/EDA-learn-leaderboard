@@ -1,0 +1,68 @@
+Evaluation run: 2026-10-10T00:04:33.403895 UTC
+log_dir: /data/eda-automl/eda-automl-models/total_power_prediction/fixed_mlp/asap7-cts
+
+Per-circuit results:
+
+ac97_ctrl:
+    - Baseline MAE=10.1852, MAPE=0.0006, R2=0.9998
+    - Sample-averaged MAE=53.8948, MAPE=0.0042, R2=0.9995
+aes_core:
+    - Baseline MAE=165.7407, MAPE=0.0019, R2=0.9994
+    - Sample-averaged MAE=174.7653, MAPE=0.0021, R2=0.9995
+des3_area:
+    - Baseline MAE=9.4444, MAPE=0.0035, R2=0.9977
+    - Sample-averaged MAE=45.3058, MAPE=0.0226, R2=0.9855
+i2c:
+    - Baseline MAE=1.1019, MAPE=0.0012, R2=0.9998
+    - Sample-averaged MAE=54.5687, MAPE=0.0639, R2=0.8726
+mem_ctrl:
+    - Baseline MAE=88.8889, MAPE=0.0060, R2=0.9954
+    - Sample-averaged MAE=92.1239, MAPE=0.0067, R2=0.9967
+pci:
+    - Baseline MAE=0.2778, MAPE=0.0000, R2=1.0000
+    - Sample-averaged MAE=56.3926, MAPE=0.0070, R2=0.9980
+sasc:
+    - Baseline MAE=2.5000, MAPE=0.0011, R2=0.9998
+    - Sample-averaged MAE=52.0736, MAPE=0.0261, R2=0.9799
+simple_spi:
+    - Baseline MAE=9.3519, MAPE=0.0037, R2=0.9987
+    - Sample-averaged MAE=45.2359, MAPE=0.0219, R2=0.9877
+spi:
+    - Baseline MAE=38.8889, MAPE=0.0073, R2=0.9959
+    - Sample-averaged MAE=40.7031, MAPE=0.0092, R2=0.9975
+ss_pcm:
+    - Baseline MAE=1.1481, MAPE=0.0011, R2=0.9998
+    - Sample-averaged MAE=52.4759, MAPE=0.0590, R2=0.9140
+systemcaes:
+    - Baseline MAE=242.5926, MAPE=0.0080, R2=0.9907
+    - Sample-averaged MAE=257.0565, MAPE=0.0090, R2=0.9914
+systemcdes:
+    - Baseline MAE=47.4074, MAPE=0.0055, R2=0.9970
+    - Sample-averaged MAE=44.2209, MAPE=0.0060, R2=0.9983
+tv80:
+    - Baseline MAE=15.0000, MAPE=0.0022, R2=0.9996
+    - Sample-averaged MAE=37.8575, MAPE=0.0064, R2=0.9985
+usb_funct:
+    - Baseline MAE=0.2778, MAPE=0.0000, R2=1.0000
+    - Sample-averaged MAE=56.3479, MAPE=0.0061, R2=0.9988
+usb_phy:
+    - Baseline MAE=12.3519, MAPE=0.0071, R2=0.9918
+    - Sample-averaged MAE=43.8152, MAPE=0.0374, R2=0.9719
+wb_dma:
+    - Baseline MAE=2.0370, MAPE=0.0004, R2=1.0000
+    - Sample-averaged MAE=53.9786, MAPE=0.0130, R2=0.9938
+ethernet:
+    - Baseline MAE=227.3585, MAPE=0.0021, R2=0.9985
+    - Sample-averaged MAE=260.2404, MAPE=0.0026, R2=0.9986
+jpeg:
+    - Baseline MAE=121.2963, MAPE=0.0012, R2=0.9993
+    - Sample-averaged MAE=172.7823, MAPE=0.0018, R2=0.9994
+
+Overall results:
+Sample-averaged
+    - Baseline MAE: 55.1478, MAPE: 0.0029, R2: 0.9999
+    - Model MAE: 88.3698, MAPE: 0.0170, R2: 0.9999
+Fold-averaged
+    - Baseline MAE: 55.3250, MAPE: 0.0029, R2: 0.9980
+    - Model MAE: 88.5466, MAPE: 0.0169, R2: 0.9823
+

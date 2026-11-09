@@ -1,0 +1,54 @@
+Flow run: 2026-10-13T02:15:57.584071 UTC
+Finished: 2026-10-13T04:13:41.260821 UTC
+Status: success
+Total runtime: 7063.7s
+
+Configuration:
+  project: timing_path_slack_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/ihp-sg13g2-floorplan
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/ihp-sg13g2
+  initial_stage: floorplan
+  config_yaml: projects/timing_path_slack_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/ihp-sg13g2-floorplan
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/ihp-sg13g2-floorplan
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/ihp-sg13g2-floorplan
+
+Step timings:
+  create_cache: 4076.9s (cache_dir=/data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/ihp-sg13g2-floorplan)
+  train ac97_ctrl: 2811.1s
+  train aes_core: 2810.4s
+  train des3_area: 2788.0s
+  train i2c: 2828.5s
+  train mem_ctrl: 2792.9s
+  train pci: 2800.2s
+  train sasc: 2812.0s
+  train simple_spi: 2772.1s
+  train spi: 2829.7s
+  train ss_pcm: 2787.0s
+  train systemcaes: 2776.9s
+  train systemcdes: 2807.3s
+  train tv80: 2788.4s
+  train usb_funct: 2822.2s
+  train usb_phy: 2823.3s
+  train wb_dma: 2793.2s
+  train ethernet: 2818.3s
+  train jpeg: 2872.4s
+  evaluate: 114.3s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 50533.9s
+  max train time: 2872.4s
+  train wall time (parallel): 2872.4s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/ihp-sg13g2-floorplan/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/ihp-sg13g2-floorplan/eval.yaml

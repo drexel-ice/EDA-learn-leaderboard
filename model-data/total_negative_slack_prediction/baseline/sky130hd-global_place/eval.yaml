@@ -1,0 +1,103 @@
+source_eval: total_negative_slack_prediction/fixed_mlp-standard-v1.0.0/sky130hd-global_place/eval.yaml
+per_circuit:
+- circuit: ac97_ctrl
+  baseline:
+    mae: 360.53405043306054
+    mpe: 1.791006070561707e-06
+    mne: 378.03570327976223
+- circuit: aes_core
+  baseline:
+    mae: 301.9380760662078
+    mpe: .nan
+    mne: 301.9380760662078
+- circuit: des3_area
+  baseline:
+    mae: 36.94855176646852
+    mpe: .nan
+    mne: 36.94855176646852
+- circuit: i2c
+  baseline:
+    mae: 25.548233301363627
+    mpe: .nan
+    mne: 25.548233301363627
+- circuit: mem_ctrl
+  baseline:
+    mae: 2714.887576077794
+    mpe: .nan
+    mne: 2714.887576077794
+- circuit: pci
+  baseline:
+    mae: 1485.615497577231
+    mpe: .nan
+    mne: 1485.615497577231
+- circuit: sasc
+  baseline:
+    mae: 2.4277462654645205
+    mpe: 2.4277462654645205
+    mne: .nan
+- circuit: simple_spi
+  baseline:
+    mae: 14.798884127415038
+    mpe: 0.08824102054357943
+    mne: 22.464993915502983
+- circuit: spi
+  baseline:
+    mae: 236.18862688477512
+    mpe: .nan
+    mne: 236.18862688477512
+- circuit: ss_pcm
+  baseline:
+    mae: 53.55633681556315
+    mpe: .nan
+    mne: 53.55633681556315
+- circuit: systemcaes
+  baseline:
+    mae: 505.2212770063904
+    mpe: 26.333001033985056
+    mne: 523.640056851483
+- circuit: systemcdes
+  baseline:
+    mae: 105.01319125758575
+    mpe: .nan
+    mne: 105.01319125758575
+- circuit: tv80
+  baseline:
+    mae: 333.5162860663863
+    mpe: .nan
+    mne: 333.5162860663863
+- circuit: usb_funct
+  baseline:
+    mae: 30.84094378380703
+    mpe: 3.355361497431824e-05
+    mne: 34.33836659341644
+- circuit: usb_phy
+  baseline:
+    mae: 16.90359150938457
+    mpe: 3.4581637009978294e-05
+    mne: 19.216709825813183
+- circuit: wb_dma
+  baseline:
+    mae: 84.85597762692667
+    mpe: 0.09350695828470634
+    mne: 85.6481502499981
+- circuit: ethernet
+  baseline:
+    mae: 5428.81999927072
+    mpe: .nan
+    mne: 5428.81999927072
+- circuit: jpeg
+  baseline:
+    mae: 1265.883394117898
+    mpe: .nan
+    mne: 1265.883394117898
+overall:
+  sample_averaged:
+    baseline:
+      mae: 727.0433369418055
+      mpe: 2.071999179500457
+      mne: 801.2823926966413
+  fold_averaged:
+    baseline:
+      mae: 722.4165688863578
+      mpe: .nan
+      mne: .nan

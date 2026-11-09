@@ -1,0 +1,54 @@
+Flow run: 2026-10-14T07:48:02.886931 UTC
+Finished: 2026-10-14T08:26:38.652717 UTC
+Status: success
+Total runtime: 2315.8s
+
+Configuration:
+  project: timing_path_arrival_time_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/asap7-floorplan-sample5
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/asap7
+  initial_stage: floorplan
+  config_yaml: projects/timing_path_arrival_time_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 0.05
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/asap7-floorplan-sample5
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/asap7-floorplan-sample5
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp/asap7-floorplan
+
+Step timings:
+  create_cache: 2233.5s (cache_dir=/data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/asap7-floorplan-sample5)
+  train ac97_ctrl: 49.2s
+  train aes_core: 48.6s
+  train des3_area: 47.5s
+  train i2c: 49.6s
+  train mem_ctrl: 49.0s
+  train pci: 48.8s
+  train sasc: 48.8s
+  train simple_spi: 46.1s
+  train spi: 46.4s
+  train ss_pcm: 48.5s
+  train systemcaes: 48.5s
+  train systemcdes: 47.4s
+  train tv80: 47.3s
+  train usb_funct: 47.2s
+  train usb_phy: 48.9s
+  train wb_dma: 47.6s
+  train ethernet: 50.7s
+  train jpeg: 48.4s
+  evaluate: 31.5s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 868.6s
+  max train time: 50.7s
+  train wall time (parallel): 50.7s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/asap7-floorplan-sample5/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/asap7-floorplan-sample5/eval.yaml

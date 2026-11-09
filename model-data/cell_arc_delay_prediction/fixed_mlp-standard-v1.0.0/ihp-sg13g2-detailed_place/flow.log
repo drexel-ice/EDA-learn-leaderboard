@@ -1,0 +1,54 @@
+Flow run: 2026-10-12T18:36:29.055986 UTC
+Finished: 2026-10-13T05:16:13.204865 UTC
+Status: success
+Total runtime: 38384.1s
+
+Configuration:
+  project: cell_arc_delay_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/cell_arc_delay_prediction/fixed_mlp/ihp-sg13g2-detailed_place
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/ihp-sg13g2
+  initial_stage: detailed_place
+  config_yaml: projects/cell_arc_delay_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/cell_arc_delay_prediction/fixed_mlp/ihp-sg13g2-detailed_place
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/cell_arc_delay_prediction/fixed_mlp/ihp-sg13g2-detailed_place
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/cell_arc_delay_prediction/fixed_mlp/ihp-sg13g2-detailed_place
+
+Step timings:
+  create_cache: 6845.8s (cache_dir=/data/eda-automl/eda-automl-models/cell_arc_delay_prediction/fixed_mlp/ihp-sg13g2-detailed_place)
+  train ac97_ctrl: 28469.9s
+  train aes_core: 28731.7s
+  train des3_area: 28188.8s
+  train i2c: 28913.0s
+  train mem_ctrl: 28324.0s
+  train pci: 28653.6s
+  train sasc: 28197.9s
+  train simple_spi: 28433.5s
+  train spi: 29795.5s
+  train ss_pcm: 28093.9s
+  train systemcaes: 29185.1s
+  train systemcdes: 28642.8s
+  train tv80: 29921.7s
+  train usb_funct: 28414.7s
+  train usb_phy: 29442.8s
+  train wb_dma: 28695.3s
+  train ethernet: 28525.5s
+  train jpeg: 28221.4s
+  evaluate: 1616.5s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 516851.2s
+  max train time: 29921.7s
+  train wall time (parallel): 29921.7s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/cell_arc_delay_prediction/fixed_mlp/ihp-sg13g2-detailed_place/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/cell_arc_delay_prediction/fixed_mlp/ihp-sg13g2-detailed_place/eval.yaml

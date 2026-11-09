@@ -1,0 +1,68 @@
+Evaluation run: 2026-10-09T23:50:42.507015 UTC
+log_dir: /data/eda-automl/eda-automl-models/worst_arrival_time_prediction/fixed_mlp/sky130hd-global_place
+
+Per-circuit results:
+
+ac97_ctrl:
+    - Baseline MAE=1.0238, MAPE=0.5262
+    - Sample-averaged MAE=0.7851, MAPE=0.3469
+aes_core:
+    - Baseline MAE=0.9402, MAPE=0.1953
+    - Sample-averaged MAE=0.5663, MAPE=0.1134
+des3_area:
+    - Baseline MAE=0.5212, MAPE=0.0862
+    - Sample-averaged MAE=0.4089, MAPE=0.0633
+i2c:
+    - Baseline MAE=0.1900, MAPE=0.0620
+    - Sample-averaged MAE=0.8378, MAPE=0.2806
+mem_ctrl:
+    - Baseline MAE=1.7994, MAPE=0.2726
+    - Sample-averaged MAE=1.2208, MAPE=0.1861
+pci:
+    - Baseline MAE=0.5116, MAPE=0.1277
+    - Sample-averaged MAE=0.4332, MAPE=0.1023
+sasc:
+    - Baseline MAE=0.3469, MAPE=0.2015
+    - Sample-averaged MAE=1.0046, MAPE=0.5877
+simple_spi:
+    - Baseline MAE=0.2656, MAPE=0.1105
+    - Sample-averaged MAE=0.9178, MAPE=0.3861
+spi:
+    - Baseline MAE=0.5352, MAPE=0.1092
+    - Sample-averaged MAE=0.2825, MAPE=0.0525
+ss_pcm:
+    - Baseline MAE=0.9794, MAPE=0.8250
+    - Sample-averaged MAE=0.4254, MAPE=0.3754
+systemcaes:
+    - Baseline MAE=1.3175, MAPE=0.2180
+    - Sample-averaged MAE=0.8822, MAPE=0.1443
+systemcdes:
+    - Baseline MAE=0.8939, MAPE=0.1760
+    - Sample-averaged MAE=0.5171, MAPE=0.0978
+tv80:
+    - Baseline MAE=1.7485, MAPE=0.2063
+    - Sample-averaged MAE=1.1272, MAPE=0.1340
+usb_funct:
+    - Baseline MAE=0.4684, MAPE=0.2226
+    - Sample-averaged MAE=0.3219, MAPE=0.1437
+usb_phy:
+    - Baseline MAE=0.2425, MAPE=0.1292
+    - Sample-averaged MAE=0.4656, MAPE=0.2410
+wb_dma:
+    - Baseline MAE=0.3588, MAPE=0.1101
+    - Sample-averaged MAE=0.5160, MAPE=0.1522
+ethernet:
+    - Baseline MAE=1.2708, MAPE=0.1999
+    - Sample-averaged MAE=0.6840, MAPE=0.1070
+jpeg:
+    - Baseline MAE=0.5697, MAPE=0.0782
+    - Sample-averaged MAE=0.5712, MAPE=0.0771
+
+Overall results:
+Sample-averaged
+    - Baseline MAE: 0.7732, MAPE: 0.2148
+    - Model MAE: 0.6637, MAPE: 0.2004
+Fold-averaged
+    - Baseline MAE: 0.7769, MAPE: 0.2143
+    - Model MAE: 0.6649, MAPE: 0.1995
+

@@ -1,0 +1,54 @@
+Flow run: 2026-10-20T17:58:20.090240 UTC
+Finished: 2026-10-20T19:35:32.803946 UTC
+Status: success
+Total runtime: 5832.7s
+
+Configuration:
+  project: timing_path_slack_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/nangate45-floorplan-sample50
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/nangate45
+  initial_stage: floorplan
+  config_yaml: projects/timing_path_slack_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 0.5
+  parameter_config_ids: default
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/nangate45-floorplan-sample50
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/nangate45-floorplan
+
+Step timings:
+  train ac97_ctrl: 5623.8s
+  train aes_core: 5577.9s
+  train des3_area: 5168.3s
+  train i2c: 5111.2s
+  train mem_ctrl: 5752.2s
+  train pci: 5623.9s
+  train sasc: 5639.2s
+  train simple_spi: 5579.4s
+  train spi: 5804.9s
+  train ss_pcm: 5597.4s
+  train systemcaes: 5586.2s
+  train systemcdes: 5775.4s
+  train tv80: 5626.1s
+  train usb_funct: 5622.5s
+  train usb_phy: 5598.5s
+  train wb_dma: 5586.1s
+  train ethernet: 5753.8s
+  train jpeg: 5560.5s
+  evaluate: 27.7s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 100587.2s
+  max train time: 5804.9s
+  train wall time (parallel): 5804.9s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/nangate45-floorplan-sample50/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/nangate45-floorplan-sample50/eval.yaml

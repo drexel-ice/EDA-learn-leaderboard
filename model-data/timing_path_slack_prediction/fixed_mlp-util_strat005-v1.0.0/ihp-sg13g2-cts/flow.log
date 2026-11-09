@@ -1,0 +1,54 @@
+Flow run: 2026-10-22T12:48:25.399498 UTC
+Finished: 2026-10-22T13:43:32.425140 UTC
+Status: success
+Total runtime: 3307.0s
+
+Configuration:
+  project: timing_path_slack_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-cts-sample5
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/ihp-sg13g2
+  initial_stage: cts
+  config_yaml: projects/timing_path_slack_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 0.05
+  parameter_config_ids: default
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-cts-sample5
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/ihp-sg13g2-cts
+
+Step timings:
+  train ac97_ctrl: 3102.2s
+  train aes_core: 3130.3s
+  train des3_area: 3119.7s
+  train i2c: 3051.3s
+  train mem_ctrl: 3063.1s
+  train pci: 3083.5s
+  train sasc: 3041.7s
+  train simple_spi: 3085.8s
+  train spi: 3115.8s
+  train ss_pcm: 3152.7s
+  train systemcaes: 3167.5s
+  train systemcdes: 3112.6s
+  train tv80: 3040.6s
+  train usb_funct: 3053.2s
+  train usb_phy: 3085.7s
+  train wb_dma: 3103.4s
+  train ethernet: 3084.7s
+  train jpeg: 3040.2s
+  evaluate: 139.5s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 55634.0s
+  max train time: 3167.5s
+  train wall time (parallel): 3167.5s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-cts-sample5/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-cts-sample5/eval.yaml

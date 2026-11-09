@@ -1,0 +1,54 @@
+Flow run: 2026-10-20T22:49:50.658172 UTC
+Finished: 2026-10-21T00:12:03.072101 UTC
+Status: success
+Total runtime: 4932.4s
+
+Configuration:
+  project: timing_path_slack_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/nangate45-global_place-sample5
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/nangate45
+  initial_stage: global_place
+  config_yaml: projects/timing_path_slack_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 0.05
+  parameter_config_ids: default
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/nangate45-global_place-sample5
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/nangate45-global_place
+
+Step timings:
+  train ac97_ctrl: 4849.8s
+  train aes_core: 4840.1s
+  train des3_area: 4676.0s
+  train i2c: 4654.1s
+  train mem_ctrl: 4887.9s
+  train pci: 4670.0s
+  train sasc: 4879.8s
+  train simple_spi: 4632.8s
+  train spi: 4674.9s
+  train ss_pcm: 4677.1s
+  train systemcaes: 4672.2s
+  train systemcdes: 4682.8s
+  train tv80: 4660.5s
+  train usb_funct: 4633.6s
+  train usb_phy: 4697.1s
+  train wb_dma: 4664.0s
+  train ethernet: 4681.2s
+  train jpeg: 4628.9s
+  evaluate: 44.5s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 84762.8s
+  max train time: 4887.9s
+  train wall time (parallel): 4887.9s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/nangate45-global_place-sample5/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/nangate45-global_place-sample5/eval.yaml

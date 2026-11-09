@@ -1,0 +1,54 @@
+Flow run: 2026-10-24T08:50:47.102439 UTC
+Finished: 2026-10-24T10:00:21.746357 UTC
+Status: success
+Total runtime: 4174.6s
+
+Configuration:
+  project: timing_path_slack_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp_subset5/nangate45-detailed_place
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/nangate45
+  initial_stage: detailed_place
+  config_yaml: projects/timing_path_slack_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  parameter_config_ids: 23,14,100,105,61,48,37,81,65,30,31,35,107,36,19,92,94,59,60,99,82,47,49,86,53,54,3,75,41,7,79,9,29,66,67,104,33,106,71,72,55,91,21,93,58,25,26,62,10,50,15,87,88,17,89,90,73,2,74,4,76,6,42,43,101,102,103,32,68,69,34,70,20,56,22,95,24,96,97,63,46,11,12,84,13,16,52,18,1,38,39,77,78,44,80,45
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp_subset5/nangate45-detailed_place
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/nangate45-detailed_place
+
+Step timings:
+  train ac97_ctrl: 4109.4s
+  train aes_core: 4095.1s
+  train des3_area: 4125.8s
+  train i2c: 4090.2s
+  train mem_ctrl: 4109.8s
+  train pci: 3932.3s
+  train sasc: 4128.8s
+  train simple_spi: 4104.1s
+  train spi: 4093.6s
+  train ss_pcm: 4099.3s
+  train systemcaes: 4109.5s
+  train systemcdes: 3975.8s
+  train tv80: 4108.4s
+  train usb_funct: 3942.2s
+  train usb_phy: 3900.7s
+  train wb_dma: 4111.7s
+  train ethernet: 4084.4s
+  train jpeg: 4094.0s
+  evaluate: 45.8s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 73215.2s
+  max train time: 4128.8s
+  train wall time (parallel): 4128.8s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp_subset5/nangate45-detailed_place/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp_subset5/nangate45-detailed_place/eval.yaml

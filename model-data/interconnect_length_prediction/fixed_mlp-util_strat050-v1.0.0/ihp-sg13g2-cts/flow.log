@@ -1,0 +1,54 @@
+Flow run: 2026-10-14T11:18:20.088505 UTC
+Finished: 2026-10-14T13:09:51.328293 UTC
+Status: success
+Total runtime: 6691.2s
+
+Configuration:
+  project: interconnect_length_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-cts-sample50
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/ihp-sg13g2
+  initial_stage: cts
+  config_yaml: projects/interconnect_length_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 0.5
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-cts-sample50
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-cts-sample50
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp/ihp-sg13g2-cts
+
+Step timings:
+  create_cache: 799.7s (cache_dir=/data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-cts-sample50)
+  train ac97_ctrl: 5684.1s
+  train aes_core: 5777.7s
+  train des3_area: 5769.1s
+  train i2c: 5660.8s
+  train mem_ctrl: 5792.9s
+  train pci: 5704.5s
+  train sasc: 5759.0s
+  train simple_spi: 5690.6s
+  train spi: 5780.5s
+  train ss_pcm: 5700.2s
+  train systemcaes: 5756.5s
+  train systemcdes: 5773.8s
+  train tv80: 5768.9s
+  train usb_funct: 5746.5s
+  train usb_phy: 5796.4s
+  train wb_dma: 5759.6s
+  train ethernet: 5724.0s
+  train jpeg: 5738.2s
+  evaluate: 95.0s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 103383.2s
+  max train time: 5796.4s
+  train wall time (parallel): 5796.4s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-cts-sample50/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-cts-sample50/eval.yaml

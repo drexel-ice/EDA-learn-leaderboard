@@ -1,0 +1,54 @@
+Flow run: 2026-10-23T04:22:38.921863 UTC
+Finished: 2026-10-23T05:31:53.015507 UTC
+Status: success
+Total runtime: 4154.1s
+
+Configuration:
+  project: interconnect_length_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp_subset3/nangate45-detailed_place
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/nangate45
+  initial_stage: detailed_place
+  config_yaml: projects/interconnect_length_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  parameter_config_ids: 23,14,100,105,61,48,37,81,65,30,31,35,107,36,19,92,94,59,60,99,82,47,49,86,53,54,3,75,41,7,79,9
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp_subset3/nangate45-detailed_place
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp/nangate45-detailed_place
+
+Step timings:
+  train ac97_ctrl: 3602.1s
+  train aes_core: 3614.8s
+  train des3_area: 3688.7s
+  train i2c: 3640.7s
+  train mem_ctrl: 3579.9s
+  train pci: 3601.5s
+  train sasc: 3569.7s
+  train simple_spi: 3552.5s
+  train spi: 3626.0s
+  train ss_pcm: 3571.5s
+  train systemcaes: 3646.1s
+  train systemcdes: 3562.8s
+  train tv80: 3640.6s
+  train usb_funct: 3608.9s
+  train usb_phy: 3649.6s
+  train wb_dma: 3645.2s
+  train ethernet: 3674.1s
+  train jpeg: 3632.0s
+  evaluate: 465.3s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 65106.7s
+  max train time: 3688.7s
+  train wall time (parallel): 3688.7s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp_subset3/nangate45-detailed_place/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp_subset3/nangate45-detailed_place/eval.yaml

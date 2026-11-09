@@ -1,0 +1,54 @@
+Flow run: 2026-10-14T14:52:25.125788 UTC
+Finished: 2026-10-14T15:46:02.636741 UTC
+Status: success
+Total runtime: 3217.5s
+
+Configuration:
+  project: timing_path_arrival_time_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-detailed_place-sample5
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/ihp-sg13g2
+  initial_stage: detailed_place
+  config_yaml: projects/timing_path_arrival_time_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 0.05
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-detailed_place-sample5
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-detailed_place-sample5
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp/ihp-sg13g2-detailed_place
+
+Step timings:
+  create_cache: 2989.7s (cache_dir=/data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-detailed_place-sample5)
+  train ac97_ctrl: 115.3s
+  train aes_core: 122.3s
+  train des3_area: 114.7s
+  train i2c: 116.2s
+  train mem_ctrl: 113.0s
+  train pci: 113.9s
+  train sasc: 110.0s
+  train simple_spi: 116.2s
+  train spi: 116.2s
+  train ss_pcm: 120.9s
+  train systemcaes: 118.9s
+  train systemcdes: 117.3s
+  train tv80: 119.4s
+  train usb_funct: 121.1s
+  train usb_phy: 118.9s
+  train wb_dma: 114.7s
+  train ethernet: 119.3s
+  train jpeg: 118.0s
+  evaluate: 105.5s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 2106.3s
+  max train time: 122.3s
+  train wall time (parallel): 122.3s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-detailed_place-sample5/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-detailed_place-sample5/eval.yaml

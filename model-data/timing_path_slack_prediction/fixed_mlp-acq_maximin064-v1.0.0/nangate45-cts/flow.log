@@ -1,0 +1,54 @@
+Flow run: 2026-10-24T00:50:15.961812 UTC
+Finished: 2026-10-24T01:39:22.432941 UTC
+Status: success
+Total runtime: 2946.5s
+
+Configuration:
+  project: timing_path_slack_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp_subset4/nangate45-cts
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/nangate45
+  initial_stage: cts
+  config_yaml: projects/timing_path_slack_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  parameter_config_ids: 23,14,100,105,61,48,37,81,65,30,31,35,107,36,19,92,94,59,60,99,82,47,49,86,53,54,3,75,41,7,79,9,29,66,67,104,33,106,71,72,55,91,21,93,58,25,26,62,10,50,15,87,88,17,89,90,73,2,74,4,76,6,42,43
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp_subset4/nangate45-cts
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/nangate45-cts
+
+Step timings:
+  train ac97_ctrl: 2768.5s
+  train aes_core: 2807.8s
+  train des3_area: 2842.5s
+  train i2c: 2774.8s
+  train mem_ctrl: 2751.8s
+  train pci: 2803.7s
+  train sasc: 2859.8s
+  train simple_spi: 2879.0s
+  train spi: 2890.5s
+  train ss_pcm: 2807.4s
+  train systemcaes: 2783.0s
+  train systemcdes: 2784.9s
+  train tv80: 2784.4s
+  train usb_funct: 2767.1s
+  train usb_phy: 2781.4s
+  train wb_dma: 2792.5s
+  train ethernet: 2765.6s
+  train jpeg: 2807.0s
+  evaluate: 55.9s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 50451.5s
+  max train time: 2890.5s
+  train wall time (parallel): 2890.5s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp_subset4/nangate45-cts/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp_subset4/nangate45-cts/eval.yaml

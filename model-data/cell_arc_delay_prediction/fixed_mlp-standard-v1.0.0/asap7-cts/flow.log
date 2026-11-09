@@ -1,0 +1,54 @@
+Flow run: 2026-10-15T13:50:59.004286 UTC
+Finished: 2026-10-15T19:57:22.953496 UTC
+Status: success
+Total runtime: 21983.9s
+
+Configuration:
+  project: cell_arc_delay_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/cell_arc_delay_prediction/fixed_mlp/asap7-cts
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/asap7
+  initial_stage: cts
+  config_yaml: projects/cell_arc_delay_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/cell_arc_delay_prediction/fixed_mlp/asap7-cts
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/cell_arc_delay_prediction/fixed_mlp/asap7-cts
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/cell_arc_delay_prediction/fixed_mlp/asap7-cts
+
+Step timings:
+  create_cache: 3465.7s (cache_dir=/data/eda-automl/eda-automl-models/cell_arc_delay_prediction/fixed_mlp/asap7-cts)
+  train ac97_ctrl: 17310.2s
+  train aes_core: 17382.2s
+  train des3_area: 17247.9s
+  train i2c: 17132.6s
+  train mem_ctrl: 17416.4s
+  train pci: 17476.9s
+  train sasc: 17380.6s
+  train simple_spi: 17357.6s
+  train spi: 17320.7s
+  train ss_pcm: 17269.3s
+  train systemcaes: 17279.6s
+  train systemcdes: 17473.9s
+  train tv80: 17162.0s
+  train usb_funct: 17181.6s
+  train usb_phy: 17282.1s
+  train wb_dma: 17301.4s
+  train ethernet: 17223.4s
+  train jpeg: 17415.4s
+  evaluate: 1041.2s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 311613.6s
+  max train time: 17476.9s
+  train wall time (parallel): 17476.9s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/cell_arc_delay_prediction/fixed_mlp/asap7-cts/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/cell_arc_delay_prediction/fixed_mlp/asap7-cts/eval.yaml

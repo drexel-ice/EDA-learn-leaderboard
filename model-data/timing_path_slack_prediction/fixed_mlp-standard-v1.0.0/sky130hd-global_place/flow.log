@@ -1,0 +1,54 @@
+Flow run: 2026-10-13T11:21:10.264540 UTC
+Finished: 2026-10-13T12:25:11.907218 UTC
+Status: success
+Total runtime: 3841.6s
+
+Configuration:
+  project: timing_path_slack_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/sky130hd-global_place
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/sky130hd
+  initial_stage: global_place
+  config_yaml: projects/timing_path_slack_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/sky130hd-global_place
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/sky130hd-global_place
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/sky130hd-global_place
+
+Step timings:
+  create_cache: 2371.2s (cache_dir=/data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/sky130hd-global_place)
+  train ac97_ctrl: 1330.8s
+  train aes_core: 1328.4s
+  train des3_area: 1309.7s
+  train i2c: 1316.4s
+  train mem_ctrl: 1315.3s
+  train pci: 1321.4s
+  train sasc: 1321.1s
+  train simple_spi: 1321.6s
+  train spi: 1325.6s
+  train ss_pcm: 1366.2s
+  train systemcaes: 1326.5s
+  train systemcdes: 1319.5s
+  train tv80: 1315.6s
+  train usb_funct: 1333.7s
+  train usb_phy: 1333.5s
+  train wb_dma: 1318.1s
+  train ethernet: 1393.0s
+  train jpeg: 1317.8s
+  evaluate: 77.3s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 23914.4s
+  max train time: 1393.0s
+  train wall time (parallel): 1393.0s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/sky130hd-global_place/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/sky130hd-global_place/eval.yaml

@@ -1,0 +1,54 @@
+Flow run: 2026-10-12T05:06:57.928924 UTC
+Finished: 2026-10-12T06:26:26.814109 UTC
+Status: success
+Total runtime: 4768.9s
+
+Configuration:
+  project: timing_path_arrival_time_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp/asap7-detailed_place
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/asap7
+  initial_stage: detailed_place
+  config_yaml: projects/timing_path_arrival_time_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp/asap7-detailed_place
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp/asap7-detailed_place
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp/asap7-detailed_place
+
+Step timings:
+  create_cache: 3514.2s (cache_dir=/data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp/asap7-detailed_place)
+  train ac97_ctrl: 1171.1s
+  train aes_core: 1174.1s
+  train des3_area: 1119.9s
+  train i2c: 1121.3s
+  train mem_ctrl: 1139.1s
+  train pci: 1188.5s
+  train sasc: 1159.9s
+  train simple_spi: 1173.1s
+  train spi: 1167.9s
+  train ss_pcm: 1114.8s
+  train systemcaes: 1162.0s
+  train systemcdes: 1104.6s
+  train tv80: 1165.9s
+  train usb_funct: 1155.2s
+  train usb_phy: 1178.6s
+  train wb_dma: 1178.4s
+  train ethernet: 1170.7s
+  train jpeg: 1168.4s
+  evaluate: 66.0s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 20813.4s
+  max train time: 1188.5s
+  train wall time (parallel): 1188.5s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp/asap7-detailed_place/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp/asap7-detailed_place/eval.yaml

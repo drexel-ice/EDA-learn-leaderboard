@@ -1,0 +1,54 @@
+Flow run: 2026-10-10T19:07:39.043401 UTC
+Finished: 2026-10-11T01:18:27.715316 UTC
+Status: success
+Total runtime: 22248.7s
+
+Configuration:
+  project: net_arc_delay_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/nangate45-global_place
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/nangate45
+  initial_stage: global_place
+  config_yaml: projects/net_arc_delay_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/nangate45-global_place
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/nangate45-global_place
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/nangate45-global_place
+
+Step timings:
+  create_cache: 3641.4s (cache_dir=/data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/nangate45-global_place)
+  train ac97_ctrl: 17573.3s
+  train aes_core: 17590.9s
+  train des3_area: 17285.5s
+  train i2c: 17453.2s
+  train mem_ctrl: 17615.5s
+  train pci: 17638.1s
+  train sasc: 17073.0s
+  train simple_spi: 17527.3s
+  train spi: 17590.6s
+  train ss_pcm: 17517.3s
+  train systemcaes: 17528.5s
+  train systemcdes: 17572.8s
+  train tv80: 17568.1s
+  train usb_funct: 17569.4s
+  train usb_phy: 17493.5s
+  train wb_dma: 17604.8s
+  train ethernet: 16837.6s
+  train jpeg: 17674.8s
+  evaluate: 932.4s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 314714.1s
+  max train time: 17674.8s
+  train wall time (parallel): 17674.8s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/nangate45-global_place/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/nangate45-global_place/eval.yaml

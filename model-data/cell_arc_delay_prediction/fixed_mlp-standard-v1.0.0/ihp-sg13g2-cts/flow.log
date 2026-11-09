@@ -1,0 +1,54 @@
+Flow run: 2026-10-14T15:00:40.672655 UTC
+Finished: 2026-10-15T07:02:12.973624 UTC
+Status: success
+Total runtime: 57692.3s
+
+Configuration:
+  project: cell_arc_delay_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/cell_arc_delay_prediction/fixed_mlp/ihp-sg13g2-cts
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/ihp-sg13g2
+  initial_stage: cts
+  config_yaml: projects/cell_arc_delay_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/cell_arc_delay_prediction/fixed_mlp/ihp-sg13g2-cts
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/cell_arc_delay_prediction/fixed_mlp/ihp-sg13g2-cts
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/cell_arc_delay_prediction/fixed_mlp/ihp-sg13g2-cts
+
+Step timings:
+  create_cache: 4292.2s (cache_dir=/data/eda-automl/eda-automl-models/cell_arc_delay_prediction/fixed_mlp/ihp-sg13g2-cts)
+  train ac97_ctrl: 50290.4s
+  train aes_core: 50190.6s
+  train des3_area: 49743.8s
+  train i2c: 50271.5s
+  train mem_ctrl: 49677.4s
+  train pci: 49947.8s
+  train sasc: 49667.0s
+  train simple_spi: 49874.0s
+  train spi: 49619.0s
+  train ss_pcm: 49564.7s
+  train systemcaes: 49408.9s
+  train systemcdes: 49974.3s
+  train tv80: 50437.0s
+  train usb_funct: 50623.0s
+  train usb_phy: 49657.2s
+  train wb_dma: 49903.2s
+  train ethernet: 49521.9s
+  train jpeg: 50162.4s
+  evaluate: 2777.0s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 898534.0s
+  max train time: 50623.0s
+  train wall time (parallel): 50623.0s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/cell_arc_delay_prediction/fixed_mlp/ihp-sg13g2-cts/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/cell_arc_delay_prediction/fixed_mlp/ihp-sg13g2-cts/eval.yaml

@@ -1,0 +1,48 @@
+Baseline-only evaluation
+Source evaluation: total_negative_slack_prediction/fixed_mlp-standard-v1.0.0/asap7-global_route/eval.yaml
+Metric values retain their original units and scale.
+
+Per-circuit results:
+
+ac97_ctrl:
+    - Baseline MAE=0.0000, MPE=nan, MNE=nan
+aes_core:
+    - Baseline MAE=0.0000, MPE=nan, MNE=nan
+des3_area:
+    - Baseline MAE=0.0000, MPE=nan, MNE=nan
+i2c:
+    - Baseline MAE=0.0000, MPE=nan, MNE=nan
+mem_ctrl:
+    - Baseline MAE=0.0000, MPE=nan, MNE=nan
+pci:
+    - Baseline MAE=0.0000, MPE=nan, MNE=nan
+sasc:
+    - Baseline MAE=0.0000, MPE=nan, MNE=nan
+simple_spi:
+    - Baseline MAE=0.0000, MPE=nan, MNE=nan
+spi:
+    - Baseline MAE=0.0000, MPE=nan, MNE=nan
+ss_pcm:
+    - Baseline MAE=0.0000, MPE=nan, MNE=nan
+systemcaes:
+    - Baseline MAE=0.0000, MPE=nan, MNE=nan
+systemcdes:
+    - Baseline MAE=0.0000, MPE=nan, MNE=nan
+tv80:
+    - Baseline MAE=0.0000, MPE=nan, MNE=nan
+usb_funct:
+    - Baseline MAE=0.0000, MPE=nan, MNE=nan
+usb_phy:
+    - Baseline MAE=0.0000, MPE=nan, MNE=nan
+wb_dma:
+    - Baseline MAE=0.0000, MPE=nan, MNE=nan
+ethernet:
+    - Baseline MAE=0.0000, MPE=nan, MNE=nan
+jpeg:
+    - Baseline MAE=0.0000, MPE=nan, MNE=nan
+
+Overall results:
+Sample-averaged
+    - Baseline MAE=0.0000, MPE=nan, MNE=nan
+Fold-averaged
+    - Baseline MAE=0.0000, MPE=nan, MNE=nan

@@ -1,0 +1,55 @@
+Flow run: 2026-10-21T08:45:58.495520 UTC
+Finished: 2026-10-21T21:33:16.063262 UTC
+Status: success
+Total runtime: 46037.6s
+
+Configuration:
+  project: cell_arc_slew_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/cell_arc_slew_prediction/fixed_mlp/asap7-cts
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/asap7
+  initial_stage: cts
+  config_yaml: projects/cell_arc_slew_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  parameter_config_ids: default
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/cell_arc_slew_prediction/fixed_mlp/asap7-cts
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/cell_arc_slew_prediction/fixed_mlp/asap7-cts
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/cell_arc_slew_prediction/fixed_mlp/asap7-cts
+
+Step timings:
+  create_cache: 3102.4s (cache_dir=/data/eda-automl/eda-automl-models/cell_arc_slew_prediction/fixed_mlp/asap7-cts)
+  train ac97_ctrl: 38990.4s
+  train aes_core: 39085.3s
+  train des3_area: 39071.9s
+  train i2c: 39118.4s
+  train mem_ctrl: 39761.2s
+  train pci: 40143.7s
+  train sasc: 40319.9s
+  train simple_spi: 40922.4s
+  train spi: 41019.5s
+  train ss_pcm: 40952.7s
+  train systemcaes: 39570.1s
+  train systemcdes: 38780.1s
+  train tv80: 39920.4s
+  train usb_funct: 38900.8s
+  train usb_phy: 40814.6s
+  train wb_dma: 40275.4s
+  train ethernet: 40449.0s
+  train jpeg: 38785.3s
+  evaluate: 1915.6s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 716880.9s
+  max train time: 41019.5s
+  train wall time (parallel): 41019.5s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/cell_arc_slew_prediction/fixed_mlp/asap7-cts/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/cell_arc_slew_prediction/fixed_mlp/asap7-cts/eval.yaml

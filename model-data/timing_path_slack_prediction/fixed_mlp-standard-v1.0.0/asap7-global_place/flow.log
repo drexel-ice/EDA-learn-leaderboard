@@ -1,0 +1,54 @@
+Flow run: 2026-10-13T04:28:33.944605 UTC
+Finished: 2026-10-13T05:45:40.794690 UTC
+Status: success
+Total runtime: 4626.9s
+
+Configuration:
+  project: timing_path_slack_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/asap7-global_place
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/asap7
+  initial_stage: global_place
+  config_yaml: projects/timing_path_slack_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/asap7-global_place
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/asap7-global_place
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/asap7-global_place
+
+Step timings:
+  create_cache: 3617.8s (cache_dir=/data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/asap7-global_place)
+  train ac97_ctrl: 946.4s
+  train aes_core: 925.2s
+  train des3_area: 912.8s
+  train i2c: 917.4s
+  train mem_ctrl: 928.7s
+  train pci: 912.8s
+  train sasc: 935.8s
+  train simple_spi: 905.9s
+  train spi: 922.7s
+  train ss_pcm: 929.1s
+  train systemcaes: 930.5s
+  train systemcdes: 902.6s
+  train tv80: 915.7s
+  train usb_funct: 927.5s
+  train usb_phy: 927.6s
+  train wb_dma: 907.8s
+  train ethernet: 949.7s
+  train jpeg: 927.4s
+  evaluate: 59.3s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 16625.6s
+  max train time: 949.7s
+  train wall time (parallel): 949.7s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/asap7-global_place/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/asap7-global_place/eval.yaml

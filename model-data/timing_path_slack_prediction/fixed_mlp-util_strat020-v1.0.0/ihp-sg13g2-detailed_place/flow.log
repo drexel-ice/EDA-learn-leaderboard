@@ -1,0 +1,54 @@
+Flow run: 2026-10-22T05:07:19.092945 UTC
+Finished: 2026-10-22T06:27:19.129609 UTC
+Status: success
+Total runtime: 4800.0s
+
+Configuration:
+  project: timing_path_slack_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-detailed_place-sample20
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/ihp-sg13g2
+  initial_stage: detailed_place
+  config_yaml: projects/timing_path_slack_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 0.2
+  parameter_config_ids: default
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-detailed_place-sample20
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/ihp-sg13g2-detailed_place
+
+Step timings:
+  train ac97_ctrl: 4285.7s
+  train aes_core: 4329.2s
+  train des3_area: 4574.0s
+  train i2c: 4572.1s
+  train mem_ctrl: 4375.2s
+  train pci: 4575.1s
+  train sasc: 4660.9s
+  train simple_spi: 4305.7s
+  train spi: 4324.3s
+  train ss_pcm: 4422.6s
+  train systemcaes: 4676.1s
+  train systemcdes: 4338.6s
+  train tv80: 4624.9s
+  train usb_funct: 4347.4s
+  train usb_phy: 4365.4s
+  train wb_dma: 4504.0s
+  train ethernet: 4520.6s
+  train jpeg: 4634.5s
+  evaluate: 123.9s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 80436.3s
+  max train time: 4676.1s
+  train wall time (parallel): 4676.1s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-detailed_place-sample20/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-detailed_place-sample20/eval.yaml

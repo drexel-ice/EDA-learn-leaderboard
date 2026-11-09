@@ -1,0 +1,103 @@
+source_eval: total_negative_slack_prediction/fixed_mlp-standard-v1.0.0/ihp-sg13g2-cts/eval.yaml
+per_circuit:
+- circuit: ac97_ctrl
+  baseline:
+    mae: 0.0019568526881620467
+    mpe: 0.0019568526881620467
+    mne: .nan
+- circuit: aes_core
+  baseline:
+    mae: 1.0426703944688143e-10
+    mpe: .nan
+    mne: 1.0426703944688143e-10
+- circuit: des3_area
+  baseline:
+    mae: 1.0426703944688143e-10
+    mpe: .nan
+    mne: 1.0426703944688143e-10
+- circuit: i2c
+  baseline:
+    mae: 0.022481551468759055
+    mpe: 0.01158099907489163
+    mne: 0.02258438686870121
+- circuit: mem_ctrl
+  baseline:
+    mae: 1.0426703944688143e-10
+    mpe: .nan
+    mne: 1.0426703944688143e-10
+- circuit: pci
+  baseline:
+    mae: 5.069631381360296e-10
+    mpe: .nan
+    mne: 5.069631381360296e-10
+- circuit: sasc
+  baseline:
+    mae: 0.02077313910738142
+    mpe: 0.01412932971867862
+    mne: 0.04172669179482872
+- circuit: simple_spi
+  baseline:
+    mae: 0.5780931854839025
+    mpe: 1.548879015292318
+    mne: 0.5597764717139324
+- circuit: spi
+  baseline:
+    mae: 9.415843660320888e-10
+    mpe: .nan
+    mne: 9.415843660320888e-10
+- circuit: ss_pcm
+  baseline:
+    mae: 0.04097117626169786
+    mpe: 0.14623443941856068
+    mne: 0.009265374106016295
+- circuit: systemcaes
+  baseline:
+    mae: 1.0189848964614612e-09
+    mpe: .nan
+    mne: 1.0189848964614612e-09
+- circuit: systemcdes
+  baseline:
+    mae: 4.083968718759934e-10
+    mpe: 4.083968718759934e-10
+    mne: .nan
+- circuit: tv80
+  baseline:
+    mae: 4.083968718759934e-10
+    mpe: 4.083968718759934e-10
+    mne: .nan
+- circuit: usb_funct
+  baseline:
+    mae: 4.083968718759934e-10
+    mpe: 4.083968718759934e-10
+    mne: .nan
+- circuit: usb_phy
+  baseline:
+    mae: 0.03785390824410745
+    mpe: 0.10303676842681381
+    mne: 0.028934148429631847
+- circuit: wb_dma
+  baseline:
+    mae: 1.0426703944688143e-10
+    mpe: .nan
+    mne: 1.0426703944688143e-10
+- circuit: ethernet
+  baseline:
+    mae: 1.0189848964614612e-09
+    mpe: .nan
+    mne: 1.0189848964614612e-09
+- circuit: jpeg
+  baseline:
+    mae: 1.0189848964614612e-09
+    mpe: .nan
+    mne: 1.0189848964614612e-09
+overall:
+  sample_averaged:
+    baseline:
+      mae: 0.03909620368249543
+      mpe: 0.017071393268911453
+      mne: 0.047928407280428305
+  fold_averaged:
+    baseline:
+      mae: 0.0390072121889873
+      mpe: .nan
+      mne: .nan

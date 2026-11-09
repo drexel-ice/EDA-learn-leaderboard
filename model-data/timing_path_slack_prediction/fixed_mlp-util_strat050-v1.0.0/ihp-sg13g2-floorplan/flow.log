@@ -1,0 +1,54 @@
+Flow run: 2026-10-21T21:41:00.017668 UTC
+Finished: 2026-10-21T23:09:33.720771 UTC
+Status: success
+Total runtime: 5313.7s
+
+Configuration:
+  project: timing_path_slack_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-floorplan-sample50
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/ihp-sg13g2
+  initial_stage: floorplan
+  config_yaml: projects/timing_path_slack_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 0.5
+  parameter_config_ids: default
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-floorplan-sample50
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/ihp-sg13g2-floorplan
+
+Step timings:
+  train ac97_ctrl: 5144.5s
+  train aes_core: 5161.7s
+  train des3_area: 5123.6s
+  train i2c: 5154.8s
+  train mem_ctrl: 5007.4s
+  train pci: 5147.8s
+  train sasc: 5205.4s
+  train simple_spi: 5179.6s
+  train spi: 4995.7s
+  train ss_pcm: 5138.4s
+  train systemcaes: 5154.8s
+  train systemcdes: 5155.8s
+  train tv80: 5119.6s
+  train usb_funct: 5179.1s
+  train usb_phy: 5148.3s
+  train wb_dma: 5146.4s
+  train ethernet: 5171.9s
+  train jpeg: 5171.6s
+  evaluate: 108.2s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 92506.4s
+  max train time: 5205.4s
+  train wall time (parallel): 5205.4s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-floorplan-sample50/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-floorplan-sample50/eval.yaml

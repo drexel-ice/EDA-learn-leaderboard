@@ -1,0 +1,54 @@
+Flow run: 2026-10-12T03:06:34.743499 UTC
+Finished: 2026-10-12T13:03:42.529072 UTC
+Status: success
+Total runtime: 35827.8s
+
+Configuration:
+  project: cell_arc_slew_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/cell_arc_slew_prediction/fixed_mlp/sky130hd-detailed_place
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/sky130hd
+  initial_stage: detailed_place
+  config_yaml: projects/cell_arc_slew_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/cell_arc_slew_prediction/fixed_mlp/sky130hd-detailed_place
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/cell_arc_slew_prediction/fixed_mlp/sky130hd-detailed_place
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/cell_arc_slew_prediction/fixed_mlp/sky130hd-detailed_place
+
+Step timings:
+  create_cache: 4206.8s (cache_dir=/data/eda-automl/eda-automl-models/cell_arc_slew_prediction/fixed_mlp/sky130hd-detailed_place)
+  train ac97_ctrl: 29668.8s
+  train aes_core: 29059.8s
+  train des3_area: 29597.7s
+  train i2c: 29769.5s
+  train mem_ctrl: 29297.5s
+  train pci: 29658.4s
+  train sasc: 29578.2s
+  train simple_spi: 29315.4s
+  train spi: 29179.2s
+  train ss_pcm: 29917.8s
+  train systemcaes: 29816.7s
+  train systemcdes: 29780.3s
+  train tv80: 29567.1s
+  train usb_funct: 29426.5s
+  train usb_phy: 29971.3s
+  train wb_dma: 29523.6s
+  train ethernet: 29499.8s
+  train jpeg: 30027.7s
+  evaluate: 1593.2s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 532655.2s
+  max train time: 30027.7s
+  train wall time (parallel): 30027.7s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/cell_arc_slew_prediction/fixed_mlp/sky130hd-detailed_place/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/cell_arc_slew_prediction/fixed_mlp/sky130hd-detailed_place/eval.yaml

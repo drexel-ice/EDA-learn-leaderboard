@@ -1,0 +1,55 @@
+Flow run: 2026-10-26T16:45:18.528042 UTC
+Finished: 2026-10-27T01:27:31.791681 UTC
+Status: success
+Total runtime: 31333.3s
+
+Configuration:
+  project: cell_arc_slew_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/cell_arc_slew_prediction/fixed_mlp/ihp-sg13g2-floorplan
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/ihp-sg13g2
+  initial_stage: floorplan
+  config_yaml: projects/cell_arc_slew_prediction/experiments/fixed_mlp_floorplan.yaml
+  sampling_frac: 1.0
+  parameter_config_ids: default
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/cell_arc_slew_prediction/fixed_mlp/ihp-sg13g2-floorplan
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/cell_arc_slew_prediction/fixed_mlp/ihp-sg13g2-floorplan
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/cell_arc_slew_prediction/fixed_mlp/ihp-sg13g2-floorplan
+
+Step timings:
+  create_cache: 3256.6s (cache_dir=/data/eda-automl/eda-automl-models/cell_arc_slew_prediction/fixed_mlp/ihp-sg13g2-floorplan)
+  train ac97_ctrl: 26838.0s
+  train aes_core: 26338.9s
+  train des3_area: 26453.6s
+  train i2c: 25941.2s
+  train mem_ctrl: 26432.1s
+  train pci: 26580.2s
+  train sasc: 26294.7s
+  train simple_spi: 26521.4s
+  train spi: 26219.1s
+  train ss_pcm: 26665.1s
+  train systemcaes: 26503.3s
+  train systemcdes: 26367.7s
+  train tv80: 26441.4s
+  train usb_funct: 26375.6s
+  train usb_phy: 26254.0s
+  train wb_dma: 26408.6s
+  train ethernet: 26099.1s
+  train jpeg: 25916.6s
+  evaluate: 1238.5s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 474650.8s
+  max train time: 26838.0s
+  train wall time (parallel): 26838.0s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/cell_arc_slew_prediction/fixed_mlp/ihp-sg13g2-floorplan/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/cell_arc_slew_prediction/fixed_mlp/ihp-sg13g2-floorplan/eval.yaml

@@ -1,0 +1,54 @@
+Flow run: 2026-10-23T20:21:23.389868 UTC
+Finished: 2026-10-23T20:44:53.033686 UTC
+Status: success
+Total runtime: 1409.6s
+
+Configuration:
+  project: timing_path_slack_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp_subset3/sky130hd-floorplan
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/sky130hd
+  initial_stage: floorplan
+  config_yaml: projects/timing_path_slack_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  parameter_config_ids: 23,14,100,105,61,48,37,81,65,30,31,35,107,36,19,92,94,59,60,99,82,47,49,86,53,54,3,75,41,7,79,9
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp_subset3/sky130hd-floorplan
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/sky130hd-floorplan
+
+Step timings:
+  train ac97_ctrl: 1293.6s
+  train aes_core: 1352.4s
+  train des3_area: 1325.7s
+  train i2c: 1325.3s
+  train mem_ctrl: 1259.6s
+  train pci: 1337.9s
+  train sasc: 1336.5s
+  train simple_spi: 1337.7s
+  train spi: 1338.1s
+  train ss_pcm: 1261.1s
+  train systemcaes: 1263.9s
+  train systemcdes: 1315.8s
+  train tv80: 1260.8s
+  train usb_funct: 1293.5s
+  train usb_phy: 1276.3s
+  train wb_dma: 1321.2s
+  train ethernet: 1347.9s
+  train jpeg: 1304.3s
+  evaluate: 57.2s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 23551.6s
+  max train time: 1352.4s
+  train wall time (parallel): 1352.4s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp_subset3/sky130hd-floorplan/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp_subset3/sky130hd-floorplan/eval.yaml

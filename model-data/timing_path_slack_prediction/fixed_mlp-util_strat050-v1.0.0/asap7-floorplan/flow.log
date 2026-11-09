@@ -1,0 +1,54 @@
+Flow run: 2026-10-22T03:34:23.886103 UTC
+Finished: 2026-10-22T04:52:05.447577 UTC
+Status: success
+Total runtime: 4661.6s
+
+Configuration:
+  project: timing_path_slack_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/asap7-floorplan-sample50
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/asap7
+  initial_stage: floorplan
+  config_yaml: projects/timing_path_slack_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 0.5
+  parameter_config_ids: default
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/asap7-floorplan-sample50
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/asap7-floorplan
+
+Step timings:
+  train ac97_ctrl: 4566.8s
+  train aes_core: 4611.2s
+  train des3_area: 4414.6s
+  train i2c: 4539.0s
+  train mem_ctrl: 4532.6s
+  train pci: 4416.3s
+  train sasc: 4413.6s
+  train simple_spi: 4441.6s
+  train spi: 4422.9s
+  train ss_pcm: 4437.3s
+  train systemcaes: 4436.4s
+  train systemcdes: 4419.5s
+  train tv80: 4418.5s
+  train usb_funct: 4454.1s
+  train usb_phy: 4418.4s
+  train wb_dma: 4599.0s
+  train ethernet: 4553.4s
+  train jpeg: 4424.3s
+  evaluate: 50.3s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 80519.4s
+  max train time: 4611.2s
+  train wall time (parallel): 4611.2s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/asap7-floorplan-sample50/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/asap7-floorplan-sample50/eval.yaml

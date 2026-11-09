@@ -1,0 +1,54 @@
+Flow run: 2026-10-23T17:20:50.750697 UTC
+Finished: 2026-10-23T17:26:53.934019 UTC
+Status: success
+Total runtime: 363.2s
+
+Configuration:
+  project: timing_path_arrival_time_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset2/nangate45-floorplan
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/nangate45
+  initial_stage: floorplan
+  config_yaml: projects/timing_path_arrival_time_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  parameter_config_ids: 23,14,100,105,61,48,37,81
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset2/nangate45-floorplan
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp/nangate45-floorplan
+
+Step timings:
+  train ac97_ctrl: 333.1s
+  train aes_core: 302.4s
+  train des3_area: 275.0s
+  train i2c: 274.0s
+  train mem_ctrl: 288.2s
+  train pci: 285.9s
+  train sasc: 279.8s
+  train simple_spi: 302.2s
+  train spi: 285.8s
+  train ss_pcm: 273.4s
+  train systemcaes: 322.9s
+  train systemcdes: 301.5s
+  train tv80: 317.9s
+  train usb_funct: 286.7s
+  train usb_phy: 308.3s
+  train wb_dma: 308.9s
+  train ethernet: 285.7s
+  train jpeg: 280.4s
+  evaluate: 30.1s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 5312.0s
+  max train time: 333.1s
+  train wall time (parallel): 333.1s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset2/nangate45-floorplan/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset2/nangate45-floorplan/eval.yaml

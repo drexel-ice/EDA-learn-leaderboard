@@ -1,0 +1,103 @@
+source_eval: cell_arc_delay_prediction/fixed_mlp-standard-v1.0.0/nangate45-floorplan/eval.yaml
+per_circuit:
+- circuit: ac97_ctrl
+  baseline:
+    mae: 0.0014968931420720913
+    mape: 1.0
+    r2: -0.17328332833315985
+- circuit: aes_core
+  baseline:
+    mae: 0.002813586774853167
+    mape: 1.0
+    r2: -0.10172203924508327
+- circuit: des3_area
+  baseline:
+    mae: 0.003756311049635144
+    mape: 1.0
+    r2: -0.15982085204160223
+- circuit: i2c
+  baseline:
+    mae: 0.00021798408317749867
+    mape: 1.0
+    r2: -0.5367894490820815
+- circuit: mem_ctrl
+  baseline:
+    mae: 0.004444921916726182
+    mape: 1.0
+    r2: -0.1508213191030574
+- circuit: pci
+  baseline:
+    mae: 0.001063167963610427
+    mape: 1.0
+    r2: -0.08587998331299307
+- circuit: sasc
+  baseline:
+    mae: 0.0019408390452893087
+    mape: 1727267.223952896
+    r2: -567.0736567918937
+- circuit: simple_spi
+  baseline:
+    mae: 0.00029054101887540206
+    mape: 1.0
+    r2: -0.2209544805496957
+- circuit: spi
+  baseline:
+    mae: 0.004978706725496085
+    mape: 1.0
+    r2: -0.23037646691222924
+- circuit: ss_pcm
+  baseline:
+    mae: 0.0002585235988392744
+    mape: 1.0
+    r2: -0.23656225641975537
+- circuit: systemcaes
+  baseline:
+    mae: 0.0006378433212533932
+    mape: 1.0
+    r2: -0.1620586750634121
+- circuit: systemcdes
+  baseline:
+    mae: 0.00035387039855871543
+    mape: 1.0
+    r2: -0.07433285335806294
+- circuit: tv80
+  baseline:
+    mae: 0.0003840934798692574
+    mape: 1.0
+    r2: -0.056418077049684046
+- circuit: usb_funct
+  baseline:
+    mae: 0.0029773155869579834
+    mape: 69955.73197293567
+    r2: -2.4004768119724127
+- circuit: usb_phy
+  baseline:
+    mae: 0.00023523529912897106
+    mape: 18541.739073398854
+    r2: -28.195585355541244
+- circuit: wb_dma
+  baseline:
+    mae: 0.013490833346428656
+    mape: 1.0
+    r2: -1.8130140472125493
+- circuit: ethernet
+  baseline:
+    mae: 0.01655458107361473
+    mape: 1.0
+    r2: -0.7742217883009952
+- circuit: jpeg
+  baseline:
+    mae: 0.003117109484285148
+    mape: 1.0
+    r2: -0.09155699544993223
+overall:
+  sample_averaged:
+    baseline:
+      mae: 0.002602296323438982
+      mape: 41347.2273834197
+      r2: -0.15854388337630754
+  fold_averaged:
+    baseline:
+      mae: 0.0032784642949261907
+      mape: 100876.64972217946
+      r2: -33.474307309491195

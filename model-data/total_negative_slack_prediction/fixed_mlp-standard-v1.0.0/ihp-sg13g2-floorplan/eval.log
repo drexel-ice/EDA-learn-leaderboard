@@ -1,0 +1,68 @@
+Evaluation run: 2026-10-09T23:55:42.078743 UTC
+log_dir: /data/eda-automl/eda-automl-models/total_negative_slack_prediction/fixed_mlp/ihp-sg13g2-floorplan
+
+Per-circuit results:
+
+ac97_ctrl:
+    - Baseline MAE=540.1572, MPE=nan, MNE=540.1572
+    - Sample-averaged MAE=3270.0456, MPE=3270.0456, MNE=nan
+aes_core:
+    - Baseline MAE=476.3912, MPE=nan, MNE=476.3912
+    - Sample-averaged MAE=6563.8073, MPE=6563.8073, MNE=nan
+des3_area:
+    - Baseline MAE=18.6324, MPE=nan, MNE=18.6324
+    - Sample-averaged MAE=3680.0342, MPE=3680.0342, MNE=nan
+i2c:
+    - Baseline MAE=29.9103, MPE=nan, MNE=29.9103
+    - Sample-averaged MAE=3631.8029, MPE=3631.8029, MNE=nan
+mem_ctrl:
+    - Baseline MAE=2753.5785, MPE=nan, MNE=2753.5785
+    - Sample-averaged MAE=1581.7377, MPE=1828.4630, MNE=841.5617
+pci:
+    - Baseline MAE=3815.9539, MPE=nan, MNE=3815.9539
+    - Sample-averaged MAE=477.7976, MPE=565.6921, MNE=43.2082
+sasc:
+    - Baseline MAE=0.8092, MPE=0.8092, MNE=nan
+    - Sample-averaged MAE=3657.5348, MPE=3657.5348, MNE=nan
+simple_spi:
+    - Baseline MAE=7.2919, MPE=nan, MNE=7.2919
+    - Sample-averaged MAE=3658.6039, MPE=3658.6039, MNE=nan
+spi:
+    - Baseline MAE=890.8039, MPE=nan, MNE=890.8039
+    - Sample-averaged MAE=2754.9092, MPE=2754.9092, MNE=nan
+ss_pcm:
+    - Baseline MAE=15.9583, MPE=nan, MNE=15.9583
+    - Sample-averaged MAE=3656.4310, MPE=3656.4310, MNE=nan
+systemcaes:
+    - Baseline MAE=3480.5260, MPE=nan, MNE=3480.5260
+    - Sample-averaged MAE=772.2303, MPE=712.6179, MNE=894.8617
+systemcdes:
+    - Baseline MAE=213.4413, MPE=nan, MNE=213.4413
+    - Sample-averaged MAE=3523.9775, MPE=3523.9775, MNE=nan
+tv80:
+    - Baseline MAE=31.5778, MPE=nan, MNE=31.5778
+    - Sample-averaged MAE=3698.1856, MPE=3698.1856, MNE=nan
+usb_funct:
+    - Baseline MAE=31.1824, MPE=0.0001, MNE=41.5765
+    - Sample-averaged MAE=4376.0239, MPE=4376.0239, MNE=nan
+usb_phy:
+    - Baseline MAE=2.7711, MPE=nan, MNE=2.7711
+    - Sample-averaged MAE=3680.7869, MPE=3680.7869, MNE=nan
+wb_dma:
+    - Baseline MAE=119.1591, MPE=nan, MNE=119.1591
+    - Sample-averaged MAE=3542.4349, MPE=3542.4349, MNE=nan
+ethernet:
+    - Baseline MAE=27792.0276, MPE=nan, MNE=27792.0276
+    - Sample-averaged MAE=20300.8941, MPE=nan, MNE=20300.8941
+jpeg:
+    - Baseline MAE=27792.0276, MPE=nan, MNE=27792.0276
+    - Sample-averaged MAE=20300.8941, MPE=nan, MNE=20300.8941
+
+Overall results:
+Sample-averaged
+    - Baseline MAE: 3755.7541, MPE: 0.6474, MNE: 4036.7626
+    - Model MAE: 5163.6692, MPE: 3412.2451, MNE: 14963.3041
+Fold-averaged
+    - Baseline MAE: 3778.4555, MPE: nan, MNE: nan
+    - Model MAE: 5173.7851, MPE: nan, MNE: nan
+

@@ -1,0 +1,55 @@
+Flow run: 2026-10-20T16:47:17.859191 UTC
+Finished: 2026-10-21T05:39:27.888416 UTC
+Status: success
+Total runtime: 46330.0s
+
+Configuration:
+  project: net_arc_delay_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/asap7-cts
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/asap7
+  initial_stage: cts
+  config_yaml: projects/net_arc_delay_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  parameter_config_ids: default
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/asap7-cts
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/asap7-cts
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/asap7-cts
+
+Step timings:
+  create_cache: 2280.3s (cache_dir=/data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/asap7-cts)
+  train ac97_ctrl: 40414.4s
+  train aes_core: 41905.6s
+  train des3_area: 42025.9s
+  train i2c: 42171.3s
+  train mem_ctrl: 42151.0s
+  train pci: 42111.4s
+  train sasc: 41462.5s
+  train simple_spi: 41684.2s
+  train spi: 41966.3s
+  train ss_pcm: 40963.2s
+  train systemcaes: 42050.3s
+  train systemcdes: 41932.6s
+  train tv80: 41252.6s
+  train usb_funct: 39837.2s
+  train usb_phy: 40289.6s
+  train wb_dma: 40178.8s
+  train ethernet: 41786.2s
+  train jpeg: 41754.8s
+  evaluate: 1878.3s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 745937.7s
+  max train time: 42171.3s
+  train wall time (parallel): 42171.3s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/asap7-cts/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/asap7-cts/eval.yaml

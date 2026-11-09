@@ -1,0 +1,103 @@
+source_eval: total_negative_slack_prediction/fixed_mlp-standard-v1.0.0/sky130hd-global_route/eval.yaml
+per_circuit:
+- circuit: ac97_ctrl
+  baseline:
+    mae: 0.0
+    mpe: .nan
+    mne: .nan
+- circuit: aes_core
+  baseline:
+    mae: 0.0
+    mpe: .nan
+    mne: .nan
+- circuit: des3_area
+  baseline:
+    mae: 0.0
+    mpe: .nan
+    mne: .nan
+- circuit: i2c
+  baseline:
+    mae: 0.0
+    mpe: .nan
+    mne: .nan
+- circuit: mem_ctrl
+  baseline:
+    mae: 0.0
+    mpe: .nan
+    mne: .nan
+- circuit: pci
+  baseline:
+    mae: 0.0
+    mpe: .nan
+    mne: .nan
+- circuit: sasc
+  baseline:
+    mae: 0.0
+    mpe: .nan
+    mne: .nan
+- circuit: simple_spi
+  baseline:
+    mae: 0.0
+    mpe: .nan
+    mne: .nan
+- circuit: spi
+  baseline:
+    mae: 0.0
+    mpe: .nan
+    mne: .nan
+- circuit: ss_pcm
+  baseline:
+    mae: 0.0
+    mpe: .nan
+    mne: .nan
+- circuit: systemcaes
+  baseline:
+    mae: 0.0
+    mpe: .nan
+    mne: .nan
+- circuit: systemcdes
+  baseline:
+    mae: 0.0
+    mpe: .nan
+    mne: .nan
+- circuit: tv80
+  baseline:
+    mae: 0.0
+    mpe: .nan
+    mne: .nan
+- circuit: usb_funct
+  baseline:
+    mae: 0.0
+    mpe: .nan
+    mne: .nan
+- circuit: usb_phy
+  baseline:
+    mae: 0.0
+    mpe: .nan
+    mne: .nan
+- circuit: wb_dma
+  baseline:
+    mae: 0.0
+    mpe: .nan
+    mne: .nan
+- circuit: ethernet
+  baseline:
+    mae: 0.0
+    mpe: .nan
+    mne: .nan
+- circuit: jpeg
+  baseline:
+    mae: 0.0
+    mpe: .nan
+    mne: .nan
+overall:
+  sample_averaged:
+    baseline:
+      mae: 0.0
+      mpe: .nan
+      mne: .nan
+  fold_averaged:
+    baseline:
+      mae: 0.0
+      mpe: .nan
+      mne: .nan

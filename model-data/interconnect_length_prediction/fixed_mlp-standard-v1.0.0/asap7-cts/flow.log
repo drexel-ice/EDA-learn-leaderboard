@@ -1,0 +1,54 @@
+Flow run: 2026-10-10T22:15:17.025343 UTC
+Finished: 2026-10-11T02:43:13.294469 UTC
+Status: success
+Total runtime: 16076.3s
+
+Configuration:
+  project: interconnect_length_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp/asap7-cts
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/asap7
+  initial_stage: cts
+  config_yaml: projects/interconnect_length_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp/asap7-cts
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp/asap7-cts
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp/asap7-cts
+
+Step timings:
+  create_cache: 1617.6s (cache_dir=/data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp/asap7-cts)
+  train ac97_ctrl: 13552.2s
+  train aes_core: 13563.8s
+  train des3_area: 13710.5s
+  train i2c: 13542.0s
+  train mem_ctrl: 13514.9s
+  train pci: 13744.4s
+  train sasc: 13496.8s
+  train simple_spi: 13651.9s
+  train spi: 13783.2s
+  train ss_pcm: 13675.4s
+  train systemcaes: 13692.4s
+  train systemcdes: 13426.0s
+  train tv80: 13830.0s
+  train usb_funct: 13612.9s
+  train usb_phy: 13518.4s
+  train wb_dma: 13462.2s
+  train ethernet: 13843.1s
+  train jpeg: 13828.7s
+  evaluate: 615.5s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 245448.8s
+  max train time: 13843.1s
+  train wall time (parallel): 13843.1s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp/asap7-cts/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp/asap7-cts/eval.yaml

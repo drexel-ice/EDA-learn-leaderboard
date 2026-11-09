@@ -1,0 +1,185 @@
+timestamp_utc: '2026-10-26T17:38:11.115218'
+log_dir: /data/eda-automl/eda-automl-models/cell_arc_delay_prediction/fixed_mlp/ihp-sg13g2-floorplan
+prefix: null
+per_circuit:
+- circuit: ac97_ctrl
+  baseline:
+    mae: 4.7522406109687074e-05
+    mape: 1.0
+    r2: -0.053310885317375156
+  sample_averaged:
+    mae: 0.00026960346495889554
+    mape: 537786115.0756893
+    r2: -1.2027119532347745
+- circuit: aes_core
+  baseline:
+    mae: 3.4898307062107414e-05
+    mape: 1.0
+    r2: -0.03590232663822901
+  sample_averaged:
+    mae: 0.00014665755990794844
+    mape: 190856527.38060763
+    r2: -0.5034945176856904
+- circuit: des3_area
+  baseline:
+    mae: 1.6988417150987287e-05
+    mape: 1.0
+    r2: -0.017282011346235082
+  sample_averaged:
+    mae: 0.00016073784469222566
+    mape: 853484936.1134071
+    r2: -1.3984742161598915
+- circuit: i2c
+  baseline:
+    mae: 2.2613580641092602e-05
+    mape: 1.0
+    r2: -0.02915428816266541
+  sample_averaged:
+    mae: 0.00019783488959665798
+    mape: 386218568.99386454
+    r2: -2.723775541725587
+- circuit: mem_ctrl
+  baseline:
+    mae: 6.740961734834633e-05
+    mape: 1.0
+    r2: -0.07420922733650404
+  sample_averaged:
+    mae: 0.00033471122225513006
+    mape: 612918638.0266037
+    r2: -1.7960168368722358
+- circuit: pci
+  baseline:
+    mae: 4.562270915195284e-05
+    mape: 1.0
+    r2: -0.05175618608213539
+  sample_averaged:
+    mae: 0.0001942805168445905
+    mape: 435145843.4609507
+    r2: -0.5226750680828298
+- circuit: sasc
+  baseline:
+    mae: 0.004642389892132667
+    mape: 1114095.0754433526
+    r2: -25825.333087452153
+  sample_averaged:
+    mae: 0.00046680992945509746
+    mape: 1109924366.709972
+    r2: -119.55727730017684
+- circuit: simple_spi
+  baseline:
+    mae: 3.193398002806062e-05
+    mape: 1.0
+    r2: -0.036671090651278604
+  sample_averaged:
+    mae: 0.00016320346812075535
+    mape: 1912967619.9077265
+    r2: -0.8609640516828203
+- circuit: spi
+  baseline:
+    mae: 0.00010156994446849076
+    mape: 1.0
+    r2: -0.11392947143012333
+  sample_averaged:
+    mae: 0.0001898766162466473
+    mape: 1271710652.2860012
+    r2: -0.18652705521550916
+- circuit: ss_pcm
+  baseline:
+    mae: 1.8999086080856414e-05
+    mape: 1.0
+    r2: -0.02521817628802059
+  sample_averaged:
+    mae: 0.0001749765403875842
+    mape: 302839547.97409946
+    r2: -2.766404916148404
+- circuit: systemcaes
+  baseline:
+    mae: 5.0778186491955824e-05
+    mape: 1.0
+    r2: -0.05360118978547446
+  sample_averaged:
+    mae: 0.000213957824415982
+    mape: 295219947.70702803
+    r2: -0.8054471765379914
+- circuit: systemcdes
+  baseline:
+    mae: 2.596357164856506e-05
+    mape: 1.0
+    r2: -0.027076231314735688
+  sample_averaged:
+    mae: 0.00017889951176510685
+    mape: 254376449.30905867
+    r2: -1.2203683786106416
+- circuit: tv80
+  baseline:
+    mae: 6.134498245686916e-05
+    mape: 1.0
+    r2: -0.06535412177054378
+  sample_averaged:
+    mae: 0.00024984518435772993
+    mape: 763504519.6376182
+    r2: -0.667207296521374
+- circuit: usb_funct
+  baseline:
+    mae: 0.01986602410292392
+    mape: 2399556.56428301
+    r2: -194895.8387291628
+  sample_averaged:
+    mae: 0.00021793834125903415
+    mape: 29522052.373591404
+    r2: -1.6928615795689166
+- circuit: usb_phy
+  baseline:
+    mae: 2.0937524051528307e-05
+    mape: 1.0
+    r2: -0.03413841802441553
+  sample_averaged:
+    mae: 0.0001600697309791376
+    mape: 289873176.7101437
+    r2: -3.1625659941686664
+- circuit: wb_dma
+  baseline:
+    mae: 0.0242728021906274
+    mape: 2657562.4254373396
+    r2: -65578.15567262494
+  sample_averaged:
+    mae: 0.0003984513333534723
+    mape: 221630919.84538963
+    r2: -4.071533874434817
+- circuit: ethernet
+  baseline:
+    mae: 0.00021552840315865274
+    mape: 1.0
+    r2: -0.1615750511173799
+  sample_averaged:
+    mae: 0.00026111239615816327
+    mape: 11527994.725727718
+    r2: -0.12322596162569388
+- circuit: jpeg
+  baseline:
+    mae: 0.00021552840315865274
+    mape: 1.0
+    r2: -0.1615750511173799
+  sample_averaged:
+    mae: 5.767732430266135
+    mape: 966309264950.5032
+    r2: -115711265.46345523
+overall:
+  sample_averaged:
+    baseline:
+      mae: 0.00041639422849521396
+      mape: 28122.94643870091
+      r2: -484.0663926137356
+    model:
+      mae: 2.5951470661018936
+      mape: 434817918064.2379
+      r2: -56326735.76341243
+  fold_averaged:
+    baseline:
+      mae: 0.002764380850260655
+      mape: 342846.0591757612
+      r2: -15905.570457942573
+    model:
+      mae: 0.3206506331467161
+      mape: 54210487379.26337
+      r2: -6428411.595832609

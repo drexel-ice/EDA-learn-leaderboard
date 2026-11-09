@@ -1,0 +1,54 @@
+Flow run: 2026-10-14T10:52:25.761523 UTC
+Finished: 2026-10-14T11:52:55.246170 UTC
+Status: success
+Total runtime: 3629.5s
+
+Configuration:
+  project: timing_path_arrival_time_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/nangate45-detailed_place-sample50
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/nangate45
+  initial_stage: detailed_place
+  config_yaml: projects/timing_path_arrival_time_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 0.5
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/nangate45-detailed_place-sample50
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/nangate45-detailed_place-sample50
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp/nangate45-detailed_place
+
+Step timings:
+  create_cache: 3044.3s (cache_dir=/data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/nangate45-detailed_place-sample50)
+  train ac97_ctrl: 493.4s
+  train aes_core: 494.8s
+  train des3_area: 505.0s
+  train i2c: 501.7s
+  train mem_ctrl: 513.7s
+  train pci: 488.1s
+  train sasc: 479.1s
+  train simple_spi: 496.0s
+  train spi: 491.0s
+  train ss_pcm: 485.8s
+  train systemcaes: 488.2s
+  train systemcdes: 484.1s
+  train tv80: 495.9s
+  train usb_funct: 516.1s
+  train usb_phy: 497.2s
+  train wb_dma: 511.0s
+  train ethernet: 493.7s
+  train jpeg: 501.7s
+  evaluate: 69.0s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 8936.5s
+  max train time: 516.1s
+  train wall time (parallel): 516.1s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/nangate45-detailed_place-sample50/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/nangate45-detailed_place-sample50/eval.yaml

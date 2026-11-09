@@ -1,0 +1,68 @@
+Evaluation run: 2026-10-23T17:48:51.968046 UTC
+log_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp_subset2/nangate45-cts
+
+Per-circuit results:
+
+ac97_ctrl:
+    - Baseline MAE=0.0067, MPE=0.0037, MNE=0.0199, TPR=0.9064, TNR=0.9657
+    - Sample-averaged MAE=0.0091, MPE=0.0070, MNE=0.0228, TPR=0.8585, TNR=0.9741
+aes_core:
+    - Baseline MAE=0.0096, MPE=0.0219, MNE=0.0081, TPR=0.3636, TNR=0.9979
+    - Sample-averaged MAE=0.0110, MPE=0.0063, MNE=0.0259, TPR=0.1364, TNR=0.9992
+des3_area:
+    - Baseline MAE=0.0099, MPE=0.0027, MNE=0.0249, TPR=0.8000, TNR=0.9802
+    - Sample-averaged MAE=0.0114, MPE=0.0063, MNE=0.0248, TPR=0.6917, TNR=0.9915
+i2c:
+    - Baseline MAE=0.0026, MPE=0.0012, MNE=0.0098, TPR=0.9809, TNR=0.9916
+    - Sample-averaged MAE=0.0044, MPE=0.0034, MNE=0.0158, TPR=0.9500, TNR=0.9960
+mem_ctrl:
+    - Baseline MAE=0.0054, MPE=0.0009, MNE=0.0250, TPR=0.9866, TNR=0.9938
+    - Sample-averaged MAE=0.0069, MPE=0.0033, MNE=0.0275, TPR=0.9744, TNR=0.9953
+pci:
+    - Baseline MAE=0.0142, MPE=0.0147, MNE=0.0140, TPR=0.9129, TNR=0.9537
+    - Sample-averaged MAE=0.0152, MPE=0.0091, MNE=0.0299, TPR=0.9057, TNR=0.9628
+sasc:
+    - Baseline MAE=0.0019, MPE=0.0015, MNE=0.0051, TPR=0.9550, TNR=0.9918
+    - Sample-averaged MAE=0.0038, MPE=0.0036, MNE=0.0092, TPR=0.9510, TNR=0.9920
+simple_spi:
+    - Baseline MAE=0.0039, MPE=0.0031, MNE=0.0086, TPR=0.9607, TNR=0.9940
+    - Sample-averaged MAE=0.0057, MPE=0.0052, MNE=0.0105, TPR=0.9470, TNR=0.9966
+spi:
+    - Baseline MAE=0.0058, MPE=0.0019, MNE=0.0209, TPR=0.9792, TNR=0.9871
+    - Sample-averaged MAE=0.0074, MPE=0.0045, MNE=0.0234, TPR=0.9632, TNR=0.9890
+ss_pcm:
+    - Baseline MAE=0.0024, MPE=0.0054, MNE=0.0014, TPR=0.9591, TNR=0.9816
+    - Sample-averaged MAE=0.0041, MPE=0.0037, MNE=0.0087, TPR=0.9294, TNR=0.9906
+systemcaes:
+    - Baseline MAE=0.0058, MPE=0.0030, MNE=0.0223, TPR=0.9658, TNR=0.9983
+    - Sample-averaged MAE=0.0077, MPE=0.0054, MNE=0.0288, TPR=0.9041, TNR=0.9987
+systemcdes:
+    - Baseline MAE=0.0128, MPE=0.0190, MNE=0.0118, TPR=0.8182, TNR=0.9964
+    - Sample-averaged MAE=0.0137, MPE=0.0056, MNE=0.0393, TPR=0.5455, TNR=0.9986
+tv80:
+    - Baseline MAE=0.0082, MPE=0.0022, MNE=0.0245, TPR=0.9512, TNR=0.9763
+    - Sample-averaged MAE=0.0092, MPE=0.0048, MNE=0.0227, TPR=0.9241, TNR=0.9819
+usb_funct:
+    - Baseline MAE=0.0029, MPE=0.0011, MNE=0.0207, TPR=1.0000, TNR=0.9997
+    - Sample-averaged MAE=0.0048, MPE=0.0032, MNE=0.0386, TPR=0.7273, TNR=0.9998
+usb_phy:
+    - Baseline MAE=0.0033, MPE=0.0090, MNE=0.0018, TPR=0.9555, TNR=0.9841
+    - Sample-averaged MAE=0.0050, MPE=0.0043, MNE=0.0135, TPR=0.9440, TNR=0.9868
+wb_dma:
+    - Baseline MAE=0.0088, MPE=0.0040, MNE=0.0226, TPR=0.9767, TNR=0.9842
+    - Sample-averaged MAE=0.0103, MPE=0.0064, MNE=0.0259, TPR=0.9567, TNR=0.9886
+ethernet:
+    - Baseline MAE=0.0013, MPE=0.0040, MNE=0.0011, TPR=0.1395, TNR=0.9997
+    - Sample-averaged MAE=0.0044, MPE=0.0037, MNE=0.0252, TPR=0.0930, TNR=0.9998
+jpeg:
+    - Baseline MAE=0.0142, MPE=0.0041, MNE=0.0479, TPR=0.9226, TNR=0.9881
+    - Sample-averaged MAE=0.0150, MPE=0.0055, MNE=0.0516, TPR=0.9135, TNR=0.9887
+
+Overall results:
+Sample-averaged
+    - Baseline MAE: 0.0067, MPE: 0.0041, MNE: 0.0090, TPR: 0.9325, TNR: 0.9883
+    - Model MAE: 0.0087, MPE: 0.0050, MNE: 0.0334, TPR: 0.9119, TNR: 0.9907
+Fold-averaged
+    - Baseline MAE: 0.0066, MPE: 0.0057, MNE: 0.0161, TPR: 0.8630, TNR: 0.9869
+    - Model MAE: 0.0083, MPE: 0.0051, MNE: 0.0247, TPR: 0.7953, TNR: 0.9905
+

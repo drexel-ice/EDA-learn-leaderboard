@@ -1,0 +1,54 @@
+Flow run: 2026-10-14T10:42:45.598815 UTC
+Finished: 2026-10-14T11:36:14.372141 UTC
+Status: success
+Total runtime: 3208.8s
+
+Configuration:
+  project: timing_path_arrival_time_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-global_place-sample5
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/ihp-sg13g2
+  initial_stage: global_place
+  config_yaml: projects/timing_path_arrival_time_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 0.05
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-global_place-sample5
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-global_place-sample5
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp/ihp-sg13g2-global_place
+
+Step timings:
+  create_cache: 2907.4s (cache_dir=/data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-global_place-sample5)
+  train ac97_ctrl: 169.1s
+  train aes_core: 164.7s
+  train des3_area: 164.9s
+  train i2c: 167.2s
+  train mem_ctrl: 167.3s
+  train pci: 162.7s
+  train sasc: 165.1s
+  train simple_spi: 167.9s
+  train spi: 170.0s
+  train ss_pcm: 167.6s
+  train systemcaes: 167.6s
+  train systemcdes: 168.4s
+  train tv80: 161.1s
+  train usb_funct: 164.8s
+  train usb_phy: 167.3s
+  train wb_dma: 163.5s
+  train ethernet: 167.2s
+  train jpeg: 167.6s
+  evaluate: 131.2s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 2994.0s
+  max train time: 170.0s
+  train wall time (parallel): 170.0s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-global_place-sample5/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-global_place-sample5/eval.yaml

@@ -1,0 +1,54 @@
+Flow run: 2026-10-14T04:21:12.965144 UTC
+Finished: 2026-10-14T05:50:07.596645 UTC
+Status: success
+Total runtime: 5334.6s
+
+Configuration:
+  project: timing_path_arrival_time_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-floorplan-sample50
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/ihp-sg13g2
+  initial_stage: floorplan
+  config_yaml: projects/timing_path_arrival_time_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 0.5
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-floorplan-sample50
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-floorplan-sample50
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp/ihp-sg13g2-floorplan
+
+Step timings:
+  create_cache: 4268.7s (cache_dir=/data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-floorplan-sample50)
+  train ac97_ctrl: 977.2s
+  train aes_core: 984.5s
+  train des3_area: 970.6s
+  train i2c: 966.7s
+  train mem_ctrl: 971.3s
+  train pci: 972.3s
+  train sasc: 956.8s
+  train simple_spi: 968.7s
+  train spi: 946.4s
+  train ss_pcm: 968.7s
+  train systemcaes: 978.8s
+  train systemcdes: 957.7s
+  train tv80: 963.4s
+  train usb_funct: 969.5s
+  train usb_phy: 977.1s
+  train wb_dma: 960.6s
+  train ethernet: 968.5s
+  train jpeg: 982.6s
+  evaluate: 81.4s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 17441.4s
+  max train time: 984.5s
+  train wall time (parallel): 984.5s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-floorplan-sample50/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-floorplan-sample50/eval.yaml

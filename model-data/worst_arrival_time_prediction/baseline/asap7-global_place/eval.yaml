@@ -1,0 +1,83 @@
+source_eval: worst_arrival_time_prediction/fixed_mlp-standard-v1.0.0/asap7-global_place/eval.yaml
+per_circuit:
+- circuit: ac97_ctrl
+  baseline:
+    mae: 0.06468611184020256
+    mape: 0.17345516434352928
+- circuit: aes_core
+  baseline:
+    mae: 0.04579351874661426
+    mape: 0.05834763674749368
+- circuit: des3_area
+  baseline:
+    mae: 0.02324629622177678
+    mape: 0.027471483854023183
+- circuit: i2c
+  baseline:
+    mae: 0.0679361112444761
+    mape: 0.16464223202478565
+- circuit: mem_ctrl
+  baseline:
+    mae: 0.03717222227463139
+    mape: 0.03830207609815717
+- circuit: pci
+  baseline:
+    mae: 0.09281481412317608
+    mape: 0.16510491451671108
+- circuit: sasc
+  baseline:
+    mae: 0.0035425924643642352
+    mape: 0.012599640822088313
+- circuit: simple_spi
+  baseline:
+    mae: 0.05631203722603585
+    mape: 0.14820851858880094
+- circuit: spi
+  baseline:
+    mae: 0.04002222196874242
+    mape: 0.04729283192090881
+- circuit: ss_pcm
+  baseline:
+    mae: 0.046462962853557735
+    mape: 0.2164633788402666
+- circuit: systemcaes
+  baseline:
+    mae: 0.033962037226823755
+    mape: 0.03791502446410248
+- circuit: systemcdes
+  baseline:
+    mae: 0.031873148260495705
+    mape: 0.0408905241030238
+- circuit: tv80
+  baseline:
+    mae: 0.04922222260856711
+    mape: 0.03999225659325481
+- circuit: usb_funct
+  baseline:
+    mae: 0.04901851884331706
+    mape: 0.1596271723791911
+- circuit: usb_phy
+  baseline:
+    mae: 0.06365370409752127
+    mape: 0.18491553066428135
+- circuit: wb_dma
+  baseline:
+    mae: 0.1103425933382143
+    mape: 0.21777244554798617
+- circuit: ethernet
+  baseline:
+    mae: 0.15151131859914735
+    mape: 0.17751877750891665
+- circuit: jpeg
+  baseline:
+    mae: 0.12405370210855639
+    mape: 0.10194916360508365
+overall:
+  sample_averaged:
+    baseline:
+      mae: 0.060552317116268545
+      mape: 0.1117361430938329
+  fold_averaged:
+    baseline:
+      mae: 0.060645896335901145
+      mape: 0.11180382070125582

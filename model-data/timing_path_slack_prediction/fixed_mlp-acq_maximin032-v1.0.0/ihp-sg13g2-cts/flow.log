@@ -1,0 +1,54 @@
+Flow run: 2026-10-23T20:24:20.467440 UTC
+Finished: 2026-10-23T21:00:27.531629 UTC
+Status: success
+Total runtime: 2167.1s
+
+Configuration:
+  project: timing_path_slack_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp_subset3/ihp-sg13g2-cts
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/ihp-sg13g2
+  initial_stage: cts
+  config_yaml: projects/timing_path_slack_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  parameter_config_ids: 23,14,100,105,61,48,37,81,65,30,31,35,107,36,19,92,94,59,60,99,82,47,49,86,53,54,3,75,41,7,79,9
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp_subset3/ihp-sg13g2-cts
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/ihp-sg13g2-cts
+
+Step timings:
+  train ac97_ctrl: 1998.7s
+  train aes_core: 1964.4s
+  train des3_area: 2015.7s
+  train i2c: 2008.9s
+  train mem_ctrl: 2002.7s
+  train pci: 1961.2s
+  train sasc: 2007.8s
+  train simple_spi: 2017.6s
+  train spi: 1996.2s
+  train ss_pcm: 1991.8s
+  train systemcaes: 2002.1s
+  train systemcdes: 1999.9s
+  train tv80: 1993.3s
+  train usb_funct: 1996.6s
+  train usb_phy: 2003.7s
+  train wb_dma: 2003.8s
+  train ethernet: 2026.2s
+  train jpeg: 2000.4s
+  evaluate: 140.8s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 35991.0s
+  max train time: 2026.2s
+  train wall time (parallel): 2026.2s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp_subset3/ihp-sg13g2-cts/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp_subset3/ihp-sg13g2-cts/eval.yaml

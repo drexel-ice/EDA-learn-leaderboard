@@ -1,0 +1,184 @@
+timestamp_utc: '2026-10-09T23:44:28.293476'
+log_dir: /data/eda-automl/eda-automl-models/total_negative_slack_prediction/fixed_mlp/nangate45-global_place
+per_circuit:
+- circuit: ac97_ctrl
+  baseline:
+    mae: 30.564471053100206
+    mpe: 1.6080584828159772e-06
+    mne: 40.87997949080179
+  sample_averaged:
+    mae: 47.31567497652344
+    mpe: 47.02402329565157
+    mne: 48.22428213616273
+- circuit: aes_core
+  baseline:
+    mae: 13.62203189281515
+    mpe: 4.974936018697917e-10
+    mne: 19.615725925434916
+  sample_averaged:
+    mae: 68.24594199737714
+    mpe: 68.24594199737714
+    mne: .nan
+- circuit: des3_area
+  baseline:
+    mae: 1.213877103260226
+    mpe: 2.3282882466446608e-07
+    mne: 4.85550771455443
+  sample_averaged:
+    mae: 53.294120567758306
+    mpe: 53.294120567758306
+    mne: .nan
+- circuit: i2c
+  baseline:
+    mae: 4.42081672542929
+    mpe: 8.472279660054483e-07
+    mne: 8.841632603630615
+  sample_averaged:
+    mae: 51.0065133486892
+    mpe: 51.0065133486892
+    mne: .nan
+- circuit: mem_ctrl
+  baseline:
+    mae: 82.23490974677495
+    mpe: 9.265675089409342e-07
+    mne: 140.9741303326374
+  sample_averaged:
+    mae: 80.64741181417452
+    mpe: 49.21799842832948
+    mne: 113.26284079948543
+- circuit: pci
+  baseline:
+    mae: 44.17981363836903
+    mpe: 100.68792080909925
+    mne: 28.034640161017542
+  sample_averaged:
+    mae: 68.51653748314659
+    mpe: 78.25200340711501
+    mne: 16.403161066609755
+- circuit: sasc
+  baseline:
+    mae: 0.7629038694438653
+    mpe: 1.5258069461039365
+    mne: 7.927837941679172e-07
+  sample_averaged:
+    mae: 54.796433638643876
+    mpe: 54.796433638643876
+    mne: .nan
+- circuit: simple_spi
+  baseline:
+    mae: 0.7229380578959014
+    mpe: 0.004622996946133233
+    mne: 1.496508123534113
+  sample_averaged:
+    mae: 53.89418580075829
+    mpe: 53.89418580075829
+    mne: .nan
+- circuit: spi
+  baseline:
+    mae: 32.53128041688836
+    mpe: .nan
+    mne: 32.53128041688836
+  sample_averaged:
+    mae: 42.47146496916266
+    mpe: 43.39072026471931
+    mne: 39.845021267572214
+- circuit: ss_pcm
+  baseline:
+    mae: 1.2811669561403392
+    mpe: 4.2620376916602254e-07
+    mne: 1.7082224661191958
+  sample_averaged:
+    mae: 53.04253378114604
+    mpe: 53.04253378114604
+    mne: .nan
+- circuit: systemcaes
+  baseline:
+    mae: 4.816756710283085
+    mpe: 1.6504991435795091e-06
+    mne: 8.003225442140153
+  sample_averaged:
+    mae: 51.50022104802775
+    mpe: 51.50022104802775
+    mne: .nan
+- circuit: systemcdes
+  baseline:
+    mae: 4.562609640222137
+    mpe: .nan
+    mne: 4.562609640222137
+  sample_averaged:
+    mae: 50.531042032517625
+    mpe: 50.531042032517625
+    mne: .nan
+- circuit: tv80
+  baseline:
+    mae: 30.645862309462952
+    mpe: .nan
+    mne: 30.645862309462952
+  sample_averaged:
+    mae: 50.31858326321459
+    mpe: 49.32256406774782
+    mne: 53.30664084961495
+- circuit: usb_funct
+  baseline:
+    mae: 0.5641809375015328
+    mpe: .nan
+    mne: 0.5641809375015328
+  sample_averaged:
+    mae: 55.828912357875794
+    mpe: 55.828912357875794
+    mne: .nan
+- circuit: usb_phy
+  baseline:
+    mae: 0.9575008543181664
+    mpe: 9.327595762442797e-08
+    mne: 1.75271335077695
+  sample_averaged:
+    mae: 53.6238364334983
+    mpe: 53.6238364334983
+    mne: .nan
+- circuit: wb_dma
+  baseline:
+    mae: 2.134224112699224
+    mpe: 4.171829658959723
+    mne: 1.488154061445895
+  sample_averaged:
+    mae: 53.690849596309754
+    mpe: 53.690849596309754
+    mne: .nan
+- circuit: ethernet
+  baseline:
+    mae: 97.64442845179325
+    mpe: .nan
+    mne: 97.64442845179325
+  sample_averaged:
+    mae: 149.64930999191375
+    mpe: 103.20952580139812
+    mne: 431.3840007477086
+- circuit: jpeg
+  baseline:
+    mae: 686.8895599982454
+    mpe: 2.0194920580252074e-07
+    mne: 693.3090885944727
+  sample_averaged:
+    mae: 661.4675875036844
+    mpe: 9.499850585266646
+    mne: 706.6534702604064
+overall:
+  sample_averaged:
+    baseline:
+      mae: 57.73677206558722
+      mpe: 5.014673789346819
+      mne: 77.02986925323323
+    model:
+      mae: 94.40300414751016
+      mpe: 56.93125149840119
+      mne: 329.3382623295641
+  fold_averaged:
+    baseline:
+      mae: 57.76385180414684
+      mpe: .nan
+      mne: 62.05043837862321
+    model:
+      mae: 94.435620033579
+      mpe: 54.40951535849056
+      mne: .nan

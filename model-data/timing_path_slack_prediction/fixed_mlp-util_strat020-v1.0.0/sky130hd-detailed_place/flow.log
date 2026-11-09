@@ -1,0 +1,54 @@
+Flow run: 2026-10-21T23:02:49.267596 UTC
+Finished: 2026-10-22T00:15:03.703382 UTC
+Status: success
+Total runtime: 4334.4s
+
+Configuration:
+  project: timing_path_slack_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/sky130hd-detailed_place-sample20
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/sky130hd
+  initial_stage: detailed_place
+  config_yaml: projects/timing_path_slack_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 0.2
+  parameter_config_ids: default
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/sky130hd-detailed_place-sample20
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/sky130hd-detailed_place
+
+Step timings:
+  train ac97_ctrl: 4095.2s
+  train aes_core: 4056.7s
+  train des3_area: 4054.5s
+  train i2c: 4219.0s
+  train mem_ctrl: 4060.7s
+  train pci: 4253.0s
+  train sasc: 4167.3s
+  train simple_spi: 4202.2s
+  train spi: 4216.3s
+  train ss_pcm: 4234.7s
+  train systemcaes: 4233.5s
+  train systemcdes: 4164.5s
+  train tv80: 4216.4s
+  train usb_funct: 4191.0s
+  train usb_phy: 4160.2s
+  train wb_dma: 4235.6s
+  train ethernet: 4196.3s
+  train jpeg: 4207.8s
+  evaluate: 81.3s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 75165.1s
+  max train time: 4253.0s
+  train wall time (parallel): 4253.0s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/sky130hd-detailed_place-sample20/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/sky130hd-detailed_place-sample20/eval.yaml

@@ -1,0 +1,48 @@
+Baseline-only evaluation
+Source evaluation: total_area_prediction/fixed_mlp-standard-v1.0.0/asap7-global_route/eval.yaml
+Metric values retain their original units and scale.
+
+Per-circuit results:
+
+ac97_ctrl:
+    - Baseline MAE=0.0000, MAPE=0.0000, R2=1.0000
+aes_core:
+    - Baseline MAE=0.0000, MAPE=0.0000, R2=1.0000
+des3_area:
+    - Baseline MAE=0.0000, MAPE=0.0000, R2=1.0000
+i2c:
+    - Baseline MAE=0.0000, MAPE=0.0000, R2=1.0000
+mem_ctrl:
+    - Baseline MAE=0.0000, MAPE=0.0000, R2=1.0000
+pci:
+    - Baseline MAE=0.0000, MAPE=0.0000, R2=1.0000
+sasc:
+    - Baseline MAE=0.0000, MAPE=0.0000, R2=1.0000
+simple_spi:
+    - Baseline MAE=0.0000, MAPE=0.0000, R2=1.0000
+spi:
+    - Baseline MAE=0.0000, MAPE=0.0000, R2=1.0000
+ss_pcm:
+    - Baseline MAE=0.0000, MAPE=0.0000, R2=1.0000
+systemcaes:
+    - Baseline MAE=0.0000, MAPE=0.0000, R2=1.0000
+systemcdes:
+    - Baseline MAE=0.0000, MAPE=0.0000, R2=1.0000
+tv80:
+    - Baseline MAE=0.0000, MAPE=0.0000, R2=1.0000
+usb_funct:
+    - Baseline MAE=0.0000, MAPE=0.0000, R2=1.0000
+usb_phy:
+    - Baseline MAE=0.0000, MAPE=0.0000, R2=1.0000
+wb_dma:
+    - Baseline MAE=0.0000, MAPE=0.0000, R2=1.0000
+ethernet:
+    - Baseline MAE=0.0000, MAPE=0.0000, R2=1.0000
+jpeg:
+    - Baseline MAE=0.0000, MAPE=0.0000, R2=1.0000
+
+Overall results:
+Sample-averaged
+    - Baseline MAE=0.0000, MAPE=0.0000, R2=1.0000
+Fold-averaged
+    - Baseline MAE=0.0000, MAPE=0.0000, R2=1.0000

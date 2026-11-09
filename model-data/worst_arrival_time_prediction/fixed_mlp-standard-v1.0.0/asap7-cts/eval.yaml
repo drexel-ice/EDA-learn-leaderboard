@@ -1,0 +1,144 @@
+timestamp_utc: '2026-10-10T00:05:36.474958'
+log_dir: /data/eda-automl/eda-automl-models/worst_arrival_time_prediction/fixed_mlp/asap7-cts
+per_circuit:
+- circuit: ac97_ctrl
+  baseline:
+    mae: 0.04923703736222908
+    mape: 0.1514578771876501
+  sample_averaged:
+    mae: 0.04808546667371089
+    mape: 0.14763431363487167
+- circuit: aes_core
+  baseline:
+    mae: 0.008287962871862007
+    mape: 0.010908822336632148
+  sample_averaged:
+    mae: 0.007235723650661658
+    mape: 0.009376163218010715
+- circuit: des3_area
+  baseline:
+    mae: 0.0057962962305185325
+    mape: 0.006569332731123694
+  sample_averaged:
+    mae: 0.007302910027454324
+    mape: 0.008164362009154755
+- circuit: i2c
+  baseline:
+    mae: 0.0025527778292466475
+    mape: 0.006220283830123349
+  sample_averaged:
+    mae: 0.00452874277192799
+    mape: 0.011000248500413168
+- circuit: mem_ctrl
+  baseline:
+    mae: 0.009376852180777377
+    mape: 0.010359211618833172
+  sample_averaged:
+    mae: 0.007623915182787231
+    mape: 0.008258549884504472
+- circuit: pci
+  baseline:
+    mae: 0.027849074445950087
+    mape: 0.04755608394060364
+  sample_averaged:
+    mae: 0.031268798236942515
+    mape: 0.052944701527182496
+- circuit: sasc
+  baseline:
+    mae: 0.0005759260809679749
+    mape: 0.0020643332917221666
+  sample_averaged:
+    mae: 0.006021268572375601
+    mape: 0.021508357186147162
+- circuit: simple_spi
+  baseline:
+    mae: 0.003814814820527555
+    mape: 0.010427036172143099
+  sample_averaged:
+    mae: 0.00588056625726852
+    mape: 0.015693479206764508
+- circuit: spi
+  baseline:
+    mae: 0.0104333333699097
+    mape: 0.01343935504321464
+  sample_averaged:
+    mae: 0.009529290495544691
+    mape: 0.012051062686262506
+- circuit: ss_pcm
+  baseline:
+    mae: 0.009017592769554257
+    mape: 0.04342340356276263
+  sample_averaged:
+    mae: 0.013669505272913777
+    mape: 0.06520740830325696
+- circuit: systemcaes
+  baseline:
+    mae: 0.007093518575033806
+    mape: 0.008302392703604382
+  sample_averaged:
+    mae: 0.004656650698652047
+    mape: 0.0052569669077775156
+- circuit: systemcdes
+  baseline:
+    mae: 0.00830740759020309
+    mape: 0.010963725641736225
+  sample_averaged:
+    mae: 0.007554121183973645
+    mape: 0.009838183836409513
+- circuit: tv80
+  baseline:
+    mae: 0.010740740708491922
+    mape: 0.008970259198331776
+  sample_averaged:
+    mae: 0.009133422489880982
+    mape: 0.00757079347670198
+- circuit: usb_funct
+  baseline:
+    mae: 0.009612962978969386
+    mape: 0.03282722055775108
+  sample_averaged:
+    mae: 0.013330379816859103
+    mape: 0.04452328275944148
+- circuit: usb_phy
+  baseline:
+    mae: 0.001512037068303329
+    mape: 0.004416322234116886
+  sample_averaged:
+    mae: 0.004942219082118607
+    mape: 0.014406777547595513
+- circuit: wb_dma
+  baseline:
+    mae: 0.0025527778041886636
+    mape: 0.005081411969726497
+  sample_averaged:
+    mae: 0.005583206097697314
+    mape: 0.011052544469055401
+- circuit: ethernet
+  baseline:
+    mae: 0.007032075459398136
+    mape: 0.00811661626373722
+  sample_averaged:
+    mae: 0.01159007731929966
+    mape: 0.01348521504973195
+- circuit: jpeg
+  baseline:
+    mae: 0.004677777818499878
+    mape: 0.004245292170939808
+  sample_averaged:
+    mae: 0.007352596974457091
+    mape: 0.0062971193793988035
+overall:
+  sample_averaged:
+    baseline:
+      mae: 0.009918022746272605
+      mape: 0.02142196532264974
+    model:
+      mae: 0.011404746041323468
+      mape: 0.025805426758408877
+  fold_averaged:
+    baseline:
+      mae: 0.009915053664701747
+      mape: 0.021408276691930697
+    model:
+      mae: 0.011404936711362536
+      mape: 0.025792751643482253

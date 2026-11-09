@@ -1,0 +1,54 @@
+Flow run: 2026-10-23T18:48:08.186905 UTC
+Finished: 2026-10-23T19:18:26.430332 UTC
+Status: success
+Total runtime: 1818.2s
+
+Configuration:
+  project: timing_path_arrival_time_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset3/ihp-sg13g2-floorplan
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/ihp-sg13g2
+  initial_stage: floorplan
+  config_yaml: projects/timing_path_arrival_time_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  parameter_config_ids: 23,14,100,105,61,48,37,81,65,30,31,35,107,36,19,92,94,59,60,99,82,47,49,86,53,54,3,75,41,7,79,9
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset3/ihp-sg13g2-floorplan
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp/ihp-sg13g2-floorplan
+
+Step timings:
+  train ac97_ctrl: 1670.7s
+  train aes_core: 1685.1s
+  train des3_area: 1651.2s
+  train i2c: 1697.1s
+  train mem_ctrl: 1686.2s
+  train pci: 1686.0s
+  train sasc: 1673.1s
+  train simple_spi: 1693.3s
+  train spi: 1693.7s
+  train ss_pcm: 1685.0s
+  train systemcaes: 1687.8s
+  train systemcdes: 1690.9s
+  train tv80: 1679.1s
+  train usb_funct: 1695.1s
+  train usb_phy: 1695.7s
+  train wb_dma: 1697.2s
+  train ethernet: 1702.9s
+  train jpeg: 1715.4s
+  evaluate: 102.8s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 30385.5s
+  max train time: 1715.4s
+  train wall time (parallel): 1715.4s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset3/ihp-sg13g2-floorplan/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset3/ihp-sg13g2-floorplan/eval.yaml

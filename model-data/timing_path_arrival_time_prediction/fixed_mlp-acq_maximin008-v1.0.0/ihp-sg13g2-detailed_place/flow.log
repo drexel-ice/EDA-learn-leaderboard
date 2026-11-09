@@ -1,0 +1,54 @@
+Flow run: 2026-10-23T17:40:45.663311 UTC
+Finished: 2026-10-23T17:50:36.531169 UTC
+Status: success
+Total runtime: 590.9s
+
+Configuration:
+  project: timing_path_arrival_time_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset2/ihp-sg13g2-detailed_place
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/ihp-sg13g2
+  initial_stage: detailed_place
+  config_yaml: projects/timing_path_arrival_time_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  parameter_config_ids: 23,14,100,105,61,48,37,81
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset2/ihp-sg13g2-detailed_place
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp/ihp-sg13g2-detailed_place
+
+Step timings:
+  train ac97_ctrl: 467.9s
+  train aes_core: 476.4s
+  train des3_area: 463.7s
+  train i2c: 452.7s
+  train mem_ctrl: 443.7s
+  train pci: 460.3s
+  train sasc: 463.4s
+  train simple_spi: 464.0s
+  train spi: 478.6s
+  train ss_pcm: 462.7s
+  train systemcaes: 470.2s
+  train systemcdes: 473.6s
+  train tv80: 461.6s
+  train usb_funct: 478.2s
+  train usb_phy: 465.8s
+  train wb_dma: 457.2s
+  train ethernet: 467.6s
+  train jpeg: 480.7s
+  evaluate: 110.1s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 8388.2s
+  max train time: 480.7s
+  train wall time (parallel): 480.7s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset2/ihp-sg13g2-detailed_place/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset2/ihp-sg13g2-detailed_place/eval.yaml

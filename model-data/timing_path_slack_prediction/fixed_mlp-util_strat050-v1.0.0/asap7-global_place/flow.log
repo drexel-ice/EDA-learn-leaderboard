@@ -1,0 +1,54 @@
+Flow run: 2026-10-22T08:25:35.472195 UTC
+Finished: 2026-10-22T09:35:50.486142 UTC
+Status: success
+Total runtime: 4215.0s
+
+Configuration:
+  project: timing_path_slack_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/asap7-global_place-sample50
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/asap7
+  initial_stage: global_place
+  config_yaml: projects/timing_path_slack_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 0.5
+  parameter_config_ids: default
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/asap7-global_place-sample50
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/asap7-global_place
+
+Step timings:
+  train ac97_ctrl: 3950.7s
+  train aes_core: 4143.6s
+  train des3_area: 3998.4s
+  train i2c: 3981.5s
+  train mem_ctrl: 4061.0s
+  train pci: 4135.7s
+  train sasc: 3971.3s
+  train simple_spi: 4014.7s
+  train spi: 3957.1s
+  train ss_pcm: 4120.2s
+  train systemcaes: 4002.3s
+  train systemcdes: 4081.0s
+  train tv80: 4102.0s
+  train usb_funct: 4064.0s
+  train usb_phy: 3959.4s
+  train wb_dma: 4154.6s
+  train ethernet: 4025.3s
+  train jpeg: 4023.4s
+  evaluate: 60.4s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 72746.2s
+  max train time: 4154.6s
+  train wall time (parallel): 4154.6s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/asap7-global_place-sample50/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/asap7-global_place-sample50/eval.yaml

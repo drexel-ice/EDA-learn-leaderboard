@@ -1,0 +1,54 @@
+Flow run: 2026-10-24T14:16:12.130019 UTC
+Finished: 2026-10-24T15:28:38.383029 UTC
+Status: success
+Total runtime: 4346.3s
+
+Configuration:
+  project: timing_path_arrival_time_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset5/asap7-global_place
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/asap7
+  initial_stage: global_place
+  config_yaml: projects/timing_path_arrival_time_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  parameter_config_ids: 23,14,100,105,61,48,37,81,65,30,31,35,107,36,19,92,94,59,60,99,82,47,49,86,53,54,3,75,41,7,79,9,29,66,67,104,33,106,71,72,55,91,21,93,58,25,26,62,10,50,15,87,88,17,89,90,73,2,74,4,76,6,42,43,101,102,103,32,68,69,34,70,20,56,22,95,24,96,97,63,46,11,12,84,13,16,52,18,1,38,39,77,78,44,80,45
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset5/asap7-global_place
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp/asap7-global_place
+
+Step timings:
+  train ac97_ctrl: 4228.1s
+  train aes_core: 4245.6s
+  train des3_area: 4027.2s
+  train i2c: 4194.2s
+  train mem_ctrl: 4211.8s
+  train pci: 4104.3s
+  train sasc: 4061.1s
+  train simple_spi: 4246.2s
+  train spi: 4256.1s
+  train ss_pcm: 4216.2s
+  train systemcaes: 4254.5s
+  train systemcdes: 4239.1s
+  train tv80: 4259.3s
+  train usb_funct: 4231.6s
+  train usb_phy: 4259.9s
+  train wb_dma: 4249.5s
+  train ethernet: 4243.5s
+  train jpeg: 4292.3s
+  evaluate: 53.9s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 75820.6s
+  max train time: 4292.3s
+  train wall time (parallel): 4292.3s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset5/asap7-global_place/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset5/asap7-global_place/eval.yaml

@@ -1,0 +1,54 @@
+Flow run: 2026-10-23T19:31:49.637635 UTC
+Finished: 2026-10-23T19:55:27.347820 UTC
+Status: success
+Total runtime: 1417.7s
+
+Configuration:
+  project: timing_path_slack_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp_subset3/nangate45-detailed_place
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/nangate45
+  initial_stage: detailed_place
+  config_yaml: projects/timing_path_slack_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  parameter_config_ids: 23,14,100,105,61,48,37,81,65,30,31,35,107,36,19,92,94,59,60,99,82,47,49,86,53,54,3,75,41,7,79,9
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp_subset3/nangate45-detailed_place
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/nangate45-detailed_place
+
+Step timings:
+  train ac97_ctrl: 1333.8s
+  train aes_core: 1330.0s
+  train des3_area: 1323.7s
+  train i2c: 1328.1s
+  train mem_ctrl: 1369.7s
+  train pci: 1330.7s
+  train sasc: 1258.2s
+  train simple_spi: 1317.5s
+  train spi: 1296.4s
+  train ss_pcm: 1288.8s
+  train systemcaes: 1336.6s
+  train systemcdes: 1282.7s
+  train tv80: 1371.8s
+  train usb_funct: 1269.3s
+  train usb_phy: 1265.6s
+  train wb_dma: 1314.2s
+  train ethernet: 1285.8s
+  train jpeg: 1281.5s
+  evaluate: 45.8s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 23584.4s
+  max train time: 1371.8s
+  train wall time (parallel): 1371.8s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp_subset3/nangate45-detailed_place/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp_subset3/nangate45-detailed_place/eval.yaml

@@ -1,0 +1,54 @@
+Flow run: 2026-10-13T14:38:33.339654 UTC
+Finished: 2026-10-13T16:24:54.842030 UTC
+Status: success
+Total runtime: 6381.5s
+
+Configuration:
+  project: timing_path_slack_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/ihp-sg13g2-cts
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/ihp-sg13g2
+  initial_stage: cts
+  config_yaml: projects/timing_path_slack_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/ihp-sg13g2-cts
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/ihp-sg13g2-cts
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/ihp-sg13g2-cts
+
+Step timings:
+  create_cache: 3467.1s (cache_dir=/data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/ihp-sg13g2-cts)
+  train ac97_ctrl: 2759.0s
+  train aes_core: 2657.1s
+  train des3_area: 2733.8s
+  train i2c: 2670.4s
+  train mem_ctrl: 2696.9s
+  train pci: 2730.3s
+  train sasc: 2728.1s
+  train simple_spi: 2682.3s
+  train spi: 2739.2s
+  train ss_pcm: 2712.9s
+  train systemcaes: 2707.8s
+  train systemcdes: 2689.7s
+  train tv80: 2680.2s
+  train usb_funct: 2687.1s
+  train usb_phy: 2688.0s
+  train wb_dma: 2686.9s
+  train ethernet: 2719.5s
+  train jpeg: 2731.3s
+  evaluate: 155.3s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 48700.4s
+  max train time: 2759.0s
+  train wall time (parallel): 2759.0s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/ihp-sg13g2-cts/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/ihp-sg13g2-cts/eval.yaml

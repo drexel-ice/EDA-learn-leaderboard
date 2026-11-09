@@ -1,0 +1,54 @@
+Flow run: 2026-10-22T09:44:33.849101 UTC
+Finished: 2026-10-22T10:54:43.885468 UTC
+Status: success
+Total runtime: 4210.0s
+
+Configuration:
+  project: timing_path_slack_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/asap7-cts-sample20
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/asap7
+  initial_stage: cts
+  config_yaml: projects/timing_path_slack_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 0.2
+  parameter_config_ids: default
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/asap7-cts-sample20
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/asap7-cts
+
+Step timings:
+  train ac97_ctrl: 3861.5s
+  train aes_core: 3853.7s
+  train des3_area: 3858.9s
+  train i2c: 4012.6s
+  train mem_ctrl: 3842.5s
+  train pci: 3798.0s
+  train sasc: 3910.7s
+  train simple_spi: 3859.9s
+  train spi: 4065.7s
+  train ss_pcm: 4135.4s
+  train systemcaes: 3912.5s
+  train systemcdes: 3896.5s
+  train tv80: 3817.3s
+  train usb_funct: 4058.3s
+  train usb_phy: 3985.3s
+  train wb_dma: 4102.2s
+  train ethernet: 4086.5s
+  train jpeg: 3980.5s
+  evaluate: 74.6s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 71038.1s
+  max train time: 4135.4s
+  train wall time (parallel): 4135.4s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/asap7-cts-sample20/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/asap7-cts-sample20/eval.yaml

@@ -1,0 +1,55 @@
+Flow run: 2026-10-26T22:44:27.292393 UTC
+Finished: 2026-10-27T04:11:41.599929 UTC
+Status: success
+Total runtime: 19634.3s
+
+Configuration:
+  project: net_arc_delay_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/asap7-floorplan
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/asap7
+  initial_stage: floorplan
+  config_yaml: projects/net_arc_delay_prediction/experiments/fixed_mlp_floorplan.yaml
+  sampling_frac: 1.0
+  parameter_config_ids: default
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/asap7-floorplan
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/asap7-floorplan
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/asap7-floorplan
+
+Step timings:
+  create_cache: 3626.1s (cache_dir=/data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/asap7-floorplan)
+  train ac97_ctrl: 15071.0s
+  train aes_core: 15269.8s
+  train des3_area: 15111.1s
+  train i2c: 14994.0s
+  train mem_ctrl: 14699.3s
+  train pci: 15070.4s
+  train sasc: 15012.2s
+  train simple_spi: 15092.8s
+  train spi: 14382.1s
+  train ss_pcm: 15140.8s
+  train systemcaes: 14850.4s
+  train systemcdes: 15162.3s
+  train tv80: 14608.0s
+  train usb_funct: 15062.5s
+  train usb_phy: 14777.9s
+  train wb_dma: 15064.2s
+  train ethernet: 14799.2s
+  train jpeg: 14789.1s
+  evaluate: 738.3s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 268957.1s
+  max train time: 15269.8s
+  train wall time (parallel): 15269.8s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/asap7-floorplan/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/asap7-floorplan/eval.yaml

@@ -1,0 +1,103 @@
+source_eval: cell_arc_slew_prediction/fixed_mlp-standard-v1.0.0/asap7-cts/eval.yaml
+per_circuit:
+- circuit: ac97_ctrl
+  baseline:
+    mae: 0.0002950637319047072
+    mape: 0.014385615976231413
+    r2: 0.9677550837308619
+- circuit: aes_core
+  baseline:
+    mae: 0.0003583825729740925
+    mape: 0.017885243798232243
+    r2: 0.9459232655167553
+- circuit: des3_area
+  baseline:
+    mae: 0.00024170217391202077
+    mape: 0.012299354876736467
+    r2: 0.9519287400654427
+- circuit: i2c
+  baseline:
+    mae: 0.002224339650731337
+    mape: 0.04775072013404823
+    r2: 0.881361065274569
+- circuit: mem_ctrl
+  baseline:
+    mae: 0.00018698118499146295
+    mape: 0.010406852627049205
+    r2: 0.9924985648069988
+- circuit: pci
+  baseline:
+    mae: 0.0004927537296952452
+    mape: 0.009267716244567365
+    r2: 0.9556338996158065
+- circuit: sasc
+  baseline:
+    mae: 0.00014267560433393282
+    mape: 0.008391020429815663
+    r2: 0.9930431993925272
+- circuit: simple_spi
+  baseline:
+    mae: 0.0002370172974214811
+    mape: 0.013506767357391475
+    r2: 0.9918331878104301
+- circuit: spi
+  baseline:
+    mae: 0.0006179933421476698
+    mape: 0.020687979106789704
+    r2: 0.9289742815863068
+- circuit: ss_pcm
+  baseline:
+    mae: 0.00012169866139670982
+    mape: 0.006271562036634138
+    r2: 0.9901433669929195
+- circuit: systemcaes
+  baseline:
+    mae: 0.0006530194338216051
+    mape: 0.032003457078699796
+    r2: 0.9624607379929311
+- circuit: systemcdes
+  baseline:
+    mae: 0.00028571661605398163
+    mape: 0.016333439586989032
+    r2: 0.9848835394659571
+- circuit: tv80
+  baseline:
+    mae: 0.00030686098504365726
+    mape: 0.016830985744919823
+    r2: 0.9680598346631246
+- circuit: usb_funct
+  baseline:
+    mae: 2.8345408413542562e-05
+    mape: 0.0019178567327165876
+    r2: 0.9990756221707968
+- circuit: usb_phy
+  baseline:
+    mae: 0.00010244510593698293
+    mape: 0.007612340111037431
+    r2: 0.9928750166641243
+- circuit: wb_dma
+  baseline:
+    mae: 7.702667157403283e-05
+    mape: 0.0035922944152425983
+    r2: 0.9889851436315783
+- circuit: ethernet
+  baseline:
+    mae: 0.0003458763286398332
+    mape: 0.008696214589453655
+    r2: 0.9652430084605756
+- circuit: jpeg
+  baseline:
+    mae: 0.00012625743881223496
+    mape: 0.0043664436392929955
+    r2: 0.9709420426213379
+overall:
+  sample_averaged:
+    baseline:
+      mae: 0.00033381332876249533
+      mape: 0.009796494047483773
+      r2: 0.9639258554104781
+  fold_averaged:
+    baseline:
+      mae: 0.000380230885433585
+      mape: 0.014011436915880434
+      r2: 0.9684233111368358

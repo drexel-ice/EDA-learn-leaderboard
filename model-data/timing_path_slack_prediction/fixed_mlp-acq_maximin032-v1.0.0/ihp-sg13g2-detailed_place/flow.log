@@ -1,0 +1,54 @@
+Flow run: 2026-10-23T19:51:43.194848 UTC
+Finished: 2026-10-23T20:23:58.199142 UTC
+Status: success
+Total runtime: 1935.0s
+
+Configuration:
+  project: timing_path_slack_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp_subset3/ihp-sg13g2-detailed_place
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/ihp-sg13g2
+  initial_stage: detailed_place
+  config_yaml: projects/timing_path_slack_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  parameter_config_ids: 23,14,100,105,61,48,37,81,65,30,31,35,107,36,19,92,94,59,60,99,82,47,49,86,53,54,3,75,41,7,79,9
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp_subset3/ihp-sg13g2-detailed_place
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/ihp-sg13g2-detailed_place
+
+Step timings:
+  train ac97_ctrl: 1816.3s
+  train aes_core: 1802.8s
+  train des3_area: 1761.2s
+  train i2c: 1754.5s
+  train mem_ctrl: 1772.5s
+  train pci: 1813.1s
+  train sasc: 1792.1s
+  train simple_spi: 1810.4s
+  train spi: 1796.4s
+  train ss_pcm: 1807.2s
+  train systemcaes: 1827.7s
+  train systemcdes: 1811.0s
+  train tv80: 1803.5s
+  train usb_funct: 1814.7s
+  train usb_phy: 1775.8s
+  train wb_dma: 1753.7s
+  train ethernet: 1814.6s
+  train jpeg: 1774.9s
+  evaluate: 107.3s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 32302.5s
+  max train time: 1827.7s
+  train wall time (parallel): 1827.7s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp_subset3/ihp-sg13g2-detailed_place/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp_subset3/ihp-sg13g2-detailed_place/eval.yaml

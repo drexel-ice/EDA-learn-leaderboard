@@ -1,0 +1,55 @@
+{
+  "experiments": {
+    "fixed_mlp|acq_maximin002": {
+      "descriptor": "acq_maximin002",
+      "experiment_name": "fixed_mlp",
+      "version": "v1.0.0"
+    },
+    "fixed_mlp|acq_maximin008": {
+      "descriptor": "acq_maximin008",
+      "experiment_name": "fixed_mlp",
+      "version": "v1.0.0"
+    },
+    "fixed_mlp|acq_maximin032": {
+      "descriptor": "acq_maximin032",
+      "experiment_name": "fixed_mlp",
+      "version": "v1.0.0"
+    },
+    "fixed_mlp|acq_maximin064": {
+      "descriptor": "acq_maximin064",
+      "experiment_name": "fixed_mlp",
+      "version": "v1.0.0"
+    },
+    "fixed_mlp|acq_maximin096": {
+      "descriptor": "acq_maximin096",
+      "experiment_name": "fixed_mlp",
+      "version": "v1.0.0"
+    },
+    "fixed_mlp|standard": {
+      "descriptor": "standard",
+      "experiment_name": "fixed_mlp",
+      "version": "v1.0.0"
+    },
+    "fixed_mlp|util_strat005": {
+      "descriptor": "util_strat005",
+      "experiment_name": "fixed_mlp",
+      "version": "v1.0.0"
+    },
+    "fixed_mlp|util_strat010": {
+      "descriptor": "util_strat010",
+      "experiment_name": "fixed_mlp",
+      "version": "v1.0.0"
+    },
+    "fixed_mlp|util_strat020": {
+      "descriptor": "util_strat020",
+      "experiment_name": "fixed_mlp",
+      "version": "v1.0.0"
+    },
+    "fixed_mlp|util_strat050": {
+      "descriptor": "util_strat050",
+      "experiment_name": "fixed_mlp",
+      "version": "v1.0.0"
+    }
+  },
+  "schema_version": 1
+}

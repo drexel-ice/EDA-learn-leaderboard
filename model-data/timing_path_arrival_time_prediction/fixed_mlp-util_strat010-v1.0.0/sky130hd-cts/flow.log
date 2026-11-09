@@ -1,0 +1,54 @@
+Flow run: 2026-10-14T19:56:30.596938 UTC
+Finished: 2026-10-14T21:07:11.185790 UTC
+Status: success
+Total runtime: 4240.6s
+
+Configuration:
+  project: timing_path_arrival_time_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/sky130hd-cts-sample10
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/sky130hd
+  initial_stage: cts
+  config_yaml: projects/timing_path_arrival_time_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 0.1
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/sky130hd-cts-sample10
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/sky130hd-cts-sample10
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp/sky130hd-cts
+
+Step timings:
+  create_cache: 3929.2s (cache_dir=/data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/sky130hd-cts-sample10)
+  train ac97_ctrl: 247.5s
+  train aes_core: 238.2s
+  train des3_area: 237.3s
+  train i2c: 240.0s
+  train mem_ctrl: 234.1s
+  train pci: 245.2s
+  train sasc: 234.3s
+  train simple_spi: 237.5s
+  train spi: 240.0s
+  train ss_pcm: 237.8s
+  train systemcaes: 236.2s
+  train systemcdes: 237.8s
+  train tv80: 244.2s
+  train usb_funct: 237.6s
+  train usb_phy: 237.8s
+  train wb_dma: 234.3s
+  train ethernet: 250.9s
+  train jpeg: 241.1s
+  evaluate: 60.4s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 4311.7s
+  max train time: 250.9s
+  train wall time (parallel): 250.9s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/sky130hd-cts-sample10/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/sky130hd-cts-sample10/eval.yaml

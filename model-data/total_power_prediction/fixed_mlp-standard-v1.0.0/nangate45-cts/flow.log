@@ -1,0 +1,53 @@
+Flow run: 2026-10-09T23:45:33.375247 UTC
+Finished: 2026-10-09T23:46:03.354727 UTC
+Status: success
+Total runtime: 30.0s
+
+Configuration:
+  project: total_power_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/total_power_prediction/fixed_mlp/nangate45-cts
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/nangate45
+  initial_stage: cts
+  config_yaml: projects/total_power_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: False
+  train_cache_data_dir: n/a
+  eval_cache_data: False
+  eval_cache_data_dir: n/a
+
+Step timings:
+  train ac97_ctrl: 18.4s
+  train aes_core: 18.9s
+  train des3_area: 18.4s
+  train i2c: 17.0s
+  train mem_ctrl: 17.3s
+  train pci: 19.4s
+  train sasc: 15.9s
+  train simple_spi: 19.2s
+  train spi: 19.1s
+  train ss_pcm: 17.6s
+  train systemcaes: 19.4s
+  train systemcdes: 19.1s
+  train tv80: 18.2s
+  train usb_funct: 18.3s
+  train usb_phy: 19.0s
+  train wb_dma: 19.2s
+  train ethernet: 18.7s
+  train jpeg: 19.4s
+  evaluate: 10.5s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 332.5s
+  max train time: 19.4s
+  train wall time (parallel): 19.4s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/total_power_prediction/fixed_mlp/nangate45-cts/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/total_power_prediction/fixed_mlp/nangate45-cts/eval.yaml

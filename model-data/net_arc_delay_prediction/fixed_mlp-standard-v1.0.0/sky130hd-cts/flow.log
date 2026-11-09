@@ -1,0 +1,54 @@
+Flow run: 2026-10-12T16:56:00.485359 UTC
+Finished: 2026-10-13T10:27:25.202143 UTC
+Status: success
+Total runtime: 63084.7s
+
+Configuration:
+  project: net_arc_delay_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/sky130hd-cts
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/sky130hd
+  initial_stage: cts
+  config_yaml: projects/net_arc_delay_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/sky130hd-cts
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/sky130hd-cts
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/sky130hd-cts
+
+Step timings:
+  create_cache: 5054.3s (cache_dir=/data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/sky130hd-cts)
+  train ac97_ctrl: 53445.5s
+  train aes_core: 54455.6s
+  train des3_area: 54329.0s
+  train i2c: 53674.4s
+  train mem_ctrl: 55174.5s
+  train pci: 54345.3s
+  train sasc: 54131.3s
+  train simple_spi: 55591.0s
+  train spi: 53595.4s
+  train ss_pcm: 54084.9s
+  train systemcaes: 55268.5s
+  train systemcdes: 53597.1s
+  train tv80: 53357.4s
+  train usb_funct: 54794.5s
+  train usb_phy: 53688.4s
+  train wb_dma: 54650.1s
+  train ethernet: 53923.6s
+  train jpeg: 53546.7s
+  evaluate: 2439.3s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 975653.3s
+  max train time: 55591.0s
+  train wall time (parallel): 55591.0s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/sky130hd-cts/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/sky130hd-cts/eval.yaml

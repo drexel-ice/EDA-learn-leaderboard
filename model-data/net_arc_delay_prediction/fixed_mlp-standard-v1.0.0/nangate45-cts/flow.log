@@ -1,0 +1,54 @@
+Flow run: 2026-10-11T06:58:57.813660 UTC
+Finished: 2026-10-11T19:18:40.347626 UTC
+Status: success
+Total runtime: 44382.5s
+
+Configuration:
+  project: net_arc_delay_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/nangate45-cts
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/nangate45
+  initial_stage: cts
+  config_yaml: projects/net_arc_delay_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/nangate45-cts
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/nangate45-cts
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/nangate45-cts
+
+Step timings:
+  create_cache: 2919.4s (cache_dir=/data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/nangate45-cts)
+  train ac97_ctrl: 39019.3s
+  train aes_core: 39087.2s
+  train des3_area: 39056.3s
+  train i2c: 38950.9s
+  train mem_ctrl: 38422.5s
+  train pci: 39162.4s
+  train sasc: 39188.5s
+  train simple_spi: 38087.2s
+  train spi: 39249.7s
+  train ss_pcm: 38011.4s
+  train systemcaes: 39151.6s
+  train systemcdes: 37931.5s
+  train tv80: 38073.8s
+  train usb_funct: 39042.9s
+  train usb_phy: 39224.5s
+  train wb_dma: 37857.3s
+  train ethernet: 38663.8s
+  train jpeg: 38557.5s
+  evaluate: 2213.3s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 696738.3s
+  max train time: 39249.7s
+  train wall time (parallel): 39249.7s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/nangate45-cts/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/net_arc_delay_prediction/fixed_mlp/nangate45-cts/eval.yaml

@@ -1,0 +1,54 @@
+Flow run: 2026-10-14T14:16:16.652085 UTC
+Finished: 2026-10-14T14:53:04.868015 UTC
+Status: success
+Total runtime: 2208.2s
+
+Configuration:
+  project: interconnect_length_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp-statified_sampled/nangate45-cts-sample10
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/nangate45
+  initial_stage: cts
+  config_yaml: projects/interconnect_length_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 0.1
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp-statified_sampled/nangate45-cts-sample10
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp-statified_sampled/nangate45-cts-sample10
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp/nangate45-cts
+
+Step timings:
+  create_cache: 689.0s (cache_dir=/data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp-statified_sampled/nangate45-cts-sample10)
+  train ac97_ctrl: 1086.4s
+  train aes_core: 1035.6s
+  train des3_area: 1084.3s
+  train i2c: 1071.4s
+  train mem_ctrl: 1045.9s
+  train pci: 1084.1s
+  train sasc: 1068.5s
+  train simple_spi: 1064.6s
+  train spi: 1056.4s
+  train ss_pcm: 1044.8s
+  train systemcaes: 1042.5s
+  train systemcdes: 1085.8s
+  train tv80: 1081.3s
+  train usb_funct: 1089.4s
+  train usb_phy: 1078.4s
+  train wb_dma: 1079.9s
+  train ethernet: 1050.8s
+  train jpeg: 1055.4s
+  evaluate: 429.7s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 19205.4s
+  max train time: 1089.4s
+  train wall time (parallel): 1089.4s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp-statified_sampled/nangate45-cts-sample10/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp-statified_sampled/nangate45-cts-sample10/eval.yaml

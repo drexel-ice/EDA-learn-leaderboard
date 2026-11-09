@@ -1,0 +1,103 @@
+source_eval: cell_arc_delay_prediction/fixed_mlp-standard-v1.0.0/asap7-floorplan/eval.yaml
+per_circuit:
+- circuit: ac97_ctrl
+  baseline:
+    mae: 0.0003650938155989396
+    mape: 1.0
+    r2: -0.23174132541188008
+- circuit: aes_core
+  baseline:
+    mae: 0.0004139798695847595
+    mape: 1.0
+    r2: -0.1845707217040502
+- circuit: des3_area
+  baseline:
+    mae: 0.0001842936922277265
+    mape: 1.0
+    r2: -0.2730059745695925
+- circuit: i2c
+  baseline:
+    mae: 0.00012290827754747038
+    mape: 1.0
+    r2: -0.3047362093716486
+- circuit: mem_ctrl
+  baseline:
+    mae: 0.002558604749004049
+    mape: 1.0
+    r2: -0.12870637237470706
+- circuit: pci
+  baseline:
+    mae: 0.0011812142535539288
+    mape: 1.0
+    r2: -0.1980071138563122
+- circuit: sasc
+  baseline:
+    mae: 0.0006523606260838829
+    mape: 377920.3842814732
+    r2: -204.51354832262726
+- circuit: simple_spi
+  baseline:
+    mae: 0.00010443806729416337
+    mape: 1.0
+    r2: -0.32704154583318634
+- circuit: spi
+  baseline:
+    mae: 0.0016385752987422737
+    mape: 1.0
+    r2: -0.094589220308118
+- circuit: ss_pcm
+  baseline:
+    mae: 0.00030910735194261793
+    mape: 96991.84596013938
+    r2: -75.08626121939822
+- circuit: systemcaes
+  baseline:
+    mae: 0.00035623242294643726
+    mape: 1.0
+    r2: -0.13304454623159256
+- circuit: systemcdes
+  baseline:
+    mae: 0.00017805791508713863
+    mape: 1.0
+    r2: -0.17213129180889664
+- circuit: tv80
+  baseline:
+    mae: 0.00016037031433564
+    mape: 1.0
+    r2: -0.12926448713665883
+- circuit: usb_funct
+  baseline:
+    mae: 0.0014918506816992824
+    mape: 1755439.111338481
+    r2: -30.676137578142953
+- circuit: usb_phy
+  baseline:
+    mae: 8.708305688893691e-05
+    mape: 1.0
+    r2: -0.1468259231469229
+- circuit: wb_dma
+  baseline:
+    mae: 0.0049215420437111815
+    mape: 9578687.264788242
+    r2: -2.5527901942843787
+- circuit: ethernet
+  baseline:
+    mae: 0.003841711274222261
+    mape: 1.0
+    r2: -0.22730367126860052
+- circuit: jpeg
+  baseline:
+    mae: 0.0030685107750992916
+    mape: 1.0
+    r2: -0.11114605710156189
+overall:
+  sample_averaged:
+    baseline:
+      mae: 0.003112510696162832
+      mape: 149501.84696209847
+      r2: -0.21167031208382658
+  fold_averaged:
+    baseline:
+      mae: 0.0012019963603094432
+      mape: 656058.4781315742
+      r2: -17.52726954303203

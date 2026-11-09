@@ -1,0 +1,54 @@
+Flow run: 2026-10-23T03:15:32.900580 UTC
+Finished: 2026-10-23T03:37:45.843176 UTC
+Status: success
+Total runtime: 1332.9s
+
+Configuration:
+  project: interconnect_length_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp_subset2/nangate45-detailed_place
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/nangate45
+  initial_stage: detailed_place
+  config_yaml: projects/interconnect_length_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  parameter_config_ids: 23,14,100,105,61,48,37,81
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp_subset2/nangate45-detailed_place
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp/nangate45-detailed_place
+
+Step timings:
+  train ac97_ctrl: 888.2s
+  train aes_core: 885.6s
+  train des3_area: 919.7s
+  train i2c: 880.0s
+  train mem_ctrl: 895.3s
+  train pci: 890.6s
+  train sasc: 882.8s
+  train simple_spi: 895.7s
+  train spi: 936.0s
+  train ss_pcm: 895.0s
+  train systemcaes: 877.7s
+  train systemcdes: 884.2s
+  train tv80: 878.2s
+  train usb_funct: 882.3s
+  train usb_phy: 873.2s
+  train wb_dma: 891.6s
+  train ethernet: 893.8s
+  train jpeg: 884.1s
+  evaluate: 396.8s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 16033.9s
+  max train time: 936.0s
+  train wall time (parallel): 936.0s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp_subset2/nangate45-detailed_place/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp_subset2/nangate45-detailed_place/eval.yaml

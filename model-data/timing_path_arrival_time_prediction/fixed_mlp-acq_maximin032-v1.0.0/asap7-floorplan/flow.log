@@ -1,0 +1,54 @@
+Flow run: 2026-10-23T21:00:28.328541 UTC
+Finished: 2026-10-23T21:23:16.254769 UTC
+Status: success
+Total runtime: 1367.9s
+
+Configuration:
+  project: timing_path_arrival_time_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset3/asap7-floorplan
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/asap7
+  initial_stage: floorplan
+  config_yaml: projects/timing_path_arrival_time_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  parameter_config_ids: 23,14,100,105,61,48,37,81,65,30,31,35,107,36,19,92,94,59,60,99,82,47,49,86,53,54,3,75,41,7,79,9
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset3/asap7-floorplan
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp/asap7-floorplan
+
+Step timings:
+  train ac97_ctrl: 1313.1s
+  train aes_core: 1279.2s
+  train des3_area: 1293.6s
+  train i2c: 1290.0s
+  train mem_ctrl: 1324.0s
+  train pci: 1288.4s
+  train sasc: 1282.0s
+  train simple_spi: 1323.6s
+  train spi: 1294.8s
+  train ss_pcm: 1289.9s
+  train systemcaes: 1282.5s
+  train systemcdes: 1282.4s
+  train tv80: 1265.3s
+  train usb_funct: 1316.7s
+  train usb_phy: 1319.6s
+  train wb_dma: 1310.9s
+  train ethernet: 1313.6s
+  train jpeg: 1301.3s
+  evaluate: 43.8s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 23370.9s
+  max train time: 1324.0s
+  train wall time (parallel): 1324.0s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset3/asap7-floorplan/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset3/asap7-floorplan/eval.yaml

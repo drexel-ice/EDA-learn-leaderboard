@@ -1,0 +1,54 @@
+Flow run: 2026-10-13T13:02:25.334059 UTC
+Finished: 2026-10-13T14:38:11.546370 UTC
+Status: success
+Total runtime: 5746.2s
+
+Configuration:
+  project: timing_path_slack_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/ihp-sg13g2-detailed_place
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/ihp-sg13g2
+  initial_stage: detailed_place
+  config_yaml: projects/timing_path_slack_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/ihp-sg13g2-detailed_place
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/ihp-sg13g2-detailed_place
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/ihp-sg13g2-detailed_place
+
+Step timings:
+  create_cache: 3520.2s (cache_dir=/data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/ihp-sg13g2-detailed_place)
+  train ac97_ctrl: 2042.8s
+  train aes_core: 2056.9s
+  train des3_area: 2037.6s
+  train i2c: 2050.5s
+  train mem_ctrl: 2055.6s
+  train pci: 2046.1s
+  train sasc: 2064.1s
+  train simple_spi: 2050.0s
+  train spi: 2054.7s
+  train ss_pcm: 2030.4s
+  train systemcaes: 2034.1s
+  train systemcdes: 2120.4s
+  train tv80: 2050.0s
+  train usb_funct: 2038.2s
+  train usb_phy: 2057.6s
+  train wb_dma: 2099.2s
+  train ethernet: 2061.6s
+  train jpeg: 2088.0s
+  evaluate: 105.6s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 37037.9s
+  max train time: 2120.4s
+  train wall time (parallel): 2120.4s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/ihp-sg13g2-detailed_place/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/ihp-sg13g2-detailed_place/eval.yaml

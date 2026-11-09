@@ -1,0 +1,68 @@
+Evaluation run: 2026-10-09T23:48:05.525227 UTC
+log_dir: /data/eda-automl/eda-automl-models/total_negative_slack_prediction/fixed_mlp/nangate45-global_route
+
+Per-circuit results:
+
+ac97_ctrl:
+    - Baseline MAE=0.0000, MPE=nan, MNE=nan
+    - Sample-averaged MAE=0.0155, MPE=0.0048, MNE=0.0164
+aes_core:
+    - Baseline MAE=0.0000, MPE=nan, MNE=nan
+    - Sample-averaged MAE=0.0151, MPE=nan, MNE=0.0151
+des3_area:
+    - Baseline MAE=0.0000, MPE=nan, MNE=nan
+    - Sample-averaged MAE=0.0155, MPE=0.0009, MNE=0.0158
+i2c:
+    - Baseline MAE=0.0000, MPE=nan, MNE=nan
+    - Sample-averaged MAE=0.0038, MPE=0.0041, MNE=0.0019
+mem_ctrl:
+    - Baseline MAE=0.0000, MPE=nan, MNE=nan
+    - Sample-averaged MAE=0.0097, MPE=0.0046, MNE=0.0108
+pci:
+    - Baseline MAE=0.0000, MPE=nan, MNE=nan
+    - Sample-averaged MAE=0.0123, MPE=0.0259, MNE=0.0084
+sasc:
+    - Baseline MAE=0.0000, MPE=nan, MNE=nan
+    - Sample-averaged MAE=0.0027, MPE=0.0012, MNE=0.0030
+simple_spi:
+    - Baseline MAE=0.0000, MPE=nan, MNE=nan
+    - Sample-averaged MAE=0.0023, MPE=0.0023, MNE=0.0022
+spi:
+    - Baseline MAE=0.0000, MPE=nan, MNE=nan
+    - Sample-averaged MAE=0.0055, MPE=0.0031, MNE=0.0070
+ss_pcm:
+    - Baseline MAE=0.0000, MPE=nan, MNE=nan
+    - Sample-averaged MAE=0.0025, MPE=0.0011, MNE=0.0027
+systemcaes:
+    - Baseline MAE=0.0000, MPE=nan, MNE=nan
+    - Sample-averaged MAE=0.0151, MPE=nan, MNE=0.0151
+systemcdes:
+    - Baseline MAE=0.0000, MPE=nan, MNE=nan
+    - Sample-averaged MAE=0.0065, MPE=0.0030, MNE=0.0078
+tv80:
+    - Baseline MAE=0.0000, MPE=nan, MNE=nan
+    - Sample-averaged MAE=0.0131, MPE=0.0046, MNE=0.0143
+usb_funct:
+    - Baseline MAE=0.0000, MPE=nan, MNE=nan
+    - Sample-averaged MAE=0.0101, MPE=nan, MNE=0.0101
+usb_phy:
+    - Baseline MAE=0.0000, MPE=nan, MNE=nan
+    - Sample-averaged MAE=0.0024, MPE=0.0023, MNE=0.0026
+wb_dma:
+    - Baseline MAE=0.0000, MPE=nan, MNE=nan
+    - Sample-averaged MAE=0.0071, MPE=0.0075, MNE=0.0069
+ethernet:
+    - Baseline MAE=0.0000, MPE=nan, MNE=nan
+    - Sample-averaged MAE=0.0378, MPE=nan, MNE=0.0378
+jpeg:
+    - Baseline MAE=0.0000, MPE=nan, MNE=nan
+    - Sample-averaged MAE=0.0574, MPE=0.0574, MNE=nan
+
+Overall results:
+Sample-averaged
+    - Baseline MAE: 0.0000, MPE: nan, MNE: nan
+    - Model MAE: 0.0130, MPE: 0.0154, MNE: 0.0121
+Fold-averaged
+    - Baseline MAE: 0.0000, MPE: nan, MNE: nan
+    - Model MAE: 0.0130, MPE: nan, MNE: nan
+

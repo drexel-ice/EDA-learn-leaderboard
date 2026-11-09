@@ -1,0 +1,48 @@
+Baseline-only evaluation
+Source evaluation: cell_arc_slew_prediction/fixed_mlp-standard-v1.0.0/sky130hd-cts/eval.yaml
+Metric values retain their original units and scale.
+
+Per-circuit results:
+
+ac97_ctrl:
+    - Baseline MAE=0.0041, MAPE=0.0276, R2=0.9528
+aes_core:
+    - Baseline MAE=0.0095, MAPE=0.0686, R2=0.8812
+des3_area:
+    - Baseline MAE=0.0111, MAPE=0.1270, R2=0.7562
+i2c:
+    - Baseline MAE=0.0020, MAPE=0.0196, R2=0.9924
+mem_ctrl:
+    - Baseline MAE=0.0061, MAPE=0.0591, R2=0.9152
+pci:
+    - Baseline MAE=0.0083, MAPE=0.0531, R2=0.9363
+sasc:
+    - Baseline MAE=0.0035, MAPE=0.0253, R2=0.8804
+simple_spi:
+    - Baseline MAE=0.0067, MAPE=0.0688, R2=0.8820
+spi:
+    - Baseline MAE=0.0137, MAPE=0.1332, R2=0.7811
+ss_pcm:
+    - Baseline MAE=0.0100, MAPE=0.1105, R2=0.6307
+systemcaes:
+    - Baseline MAE=0.0048, MAPE=0.0397, R2=0.9747
+systemcdes:
+    - Baseline MAE=0.0055, MAPE=0.0549, R2=0.9666
+tv80:
+    - Baseline MAE=0.0045, MAPE=0.0434, R2=0.8787
+usb_funct:
+    - Baseline MAE=0.0120, MAPE=0.0845, R2=0.8802
+usb_phy:
+    - Baseline MAE=0.0040, MAPE=0.0361, R2=0.9125
+wb_dma:
+    - Baseline MAE=0.0044, MAPE=0.0338, R2=0.9349
+ethernet:
+    - Baseline MAE=0.0044, MAPE=0.0411, R2=0.9347
+jpeg:
+    - Baseline MAE=0.0061, MAPE=0.0589, R2=0.9554
+
+Overall results:
+Sample-averaged
+    - Baseline MAE=0.0054, MAPE=0.0465, R2=0.9385
+Fold-averaged
+    - Baseline MAE=0.0067, MAPE=0.0603, R2=0.8915

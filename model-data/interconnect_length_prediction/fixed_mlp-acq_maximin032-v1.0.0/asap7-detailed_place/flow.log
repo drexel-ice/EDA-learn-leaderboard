@@ -1,0 +1,54 @@
+Flow run: 2026-10-23T07:02:50.163512 UTC
+Finished: 2026-10-23T08:36:58.469725 UTC
+Status: success
+Total runtime: 5648.3s
+
+Configuration:
+  project: interconnect_length_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp_subset3/asap7-detailed_place
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/asap7
+  initial_stage: detailed_place
+  config_yaml: projects/interconnect_length_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  parameter_config_ids: 23,14,100,105,61,48,37,81,65,30,31,35,107,36,19,92,94,59,60,99,82,47,49,86,53,54,3,75,41,7,79,9
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp_subset3/asap7-detailed_place
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp/asap7-detailed_place
+
+Step timings:
+  train ac97_ctrl: 4789.7s
+  train aes_core: 4937.0s
+  train des3_area: 4939.8s
+  train i2c: 4940.8s
+  train mem_ctrl: 4788.5s
+  train pci: 4882.9s
+  train sasc: 4884.9s
+  train simple_spi: 4886.6s
+  train spi: 4939.5s
+  train ss_pcm: 4905.8s
+  train systemcaes: 4818.7s
+  train systemcdes: 4894.8s
+  train tv80: 4849.0s
+  train usb_funct: 4927.3s
+  train usb_phy: 4946.3s
+  train wb_dma: 4908.1s
+  train ethernet: 4910.8s
+  train jpeg: 4998.1s
+  evaluate: 650.1s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 88148.5s
+  max train time: 4998.1s
+  train wall time (parallel): 4998.1s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp_subset3/asap7-detailed_place/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp_subset3/asap7-detailed_place/eval.yaml

@@ -1,0 +1,54 @@
+Flow run: 2026-10-16T09:05:22.156500 UTC
+Finished: 2026-10-16T10:07:16.949385 UTC
+Status: success
+Total runtime: 3714.8s
+
+Configuration:
+  project: interconnect_length_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp_subset3/asap7-global_place
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/asap7
+  initial_stage: global_place
+  config_yaml: projects/interconnect_length_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  parameter_config_ids: 23,14,100,105,61,48,37,81,65,30,31,35,107,36,19,92,94,59,60,99,82,47,49,86,53,54,3,75,41,7,79,9
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp_subset3/asap7-global_place
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp/asap7-global_place
+
+Step timings:
+  train ac97_ctrl: 3053.9s
+  train aes_core: 3036.6s
+  train des3_area: 3047.9s
+  train i2c: 3073.7s
+  train mem_ctrl: 3042.3s
+  train pci: 3058.5s
+  train sasc: 3043.7s
+  train simple_spi: 3035.3s
+  train spi: 3034.9s
+  train ss_pcm: 3050.5s
+  train systemcaes: 2918.1s
+  train systemcdes: 3038.1s
+  train tv80: 3044.2s
+  train usb_funct: 3051.4s
+  train usb_phy: 3045.1s
+  train wb_dma: 3059.4s
+  train ethernet: 3027.8s
+  train jpeg: 3035.5s
+  evaluate: 641.0s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 54696.9s
+  max train time: 3073.7s
+  train wall time (parallel): 3073.7s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp_subset3/asap7-global_place/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp_subset3/asap7-global_place/eval.yaml

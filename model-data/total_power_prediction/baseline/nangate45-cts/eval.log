@@ -1,0 +1,48 @@
+Baseline-only evaluation
+Source evaluation: total_power_prediction/fixed_mlp-standard-v1.0.0/nangate45-cts/eval.yaml
+Metric values retain their original units and scale.
+
+Per-circuit results:
+
+ac97_ctrl:
+    - Baseline MAE=21.4953, MAPE=0.0004, R2=1.0000
+aes_core:
+    - Baseline MAE=490.7407, MAPE=0.0016, R2=0.9996
+des3_area:
+    - Baseline MAE=45.0926, MAPE=0.0055, R2=0.9957
+i2c:
+    - Baseline MAE=5.3704, MAPE=0.0014, R2=0.9998
+mem_ctrl:
+    - Baseline MAE=394.4445, MAPE=0.0080, R2=0.9924
+pci:
+    - Baseline MAE=12.9630, MAPE=0.0004, R2=1.0000
+sasc:
+    - Baseline MAE=55.1852, MAPE=0.0064, R2=0.9966
+simple_spi:
+    - Baseline MAE=149.9074, MAPE=0.0159, R2=0.9858
+spi:
+    - Baseline MAE=517.5926, MAPE=0.0190, R2=0.9658
+ss_pcm:
+    - Baseline MAE=67.3148, MAPE=0.0119, R2=0.9841
+systemcaes:
+    - Baseline MAE=311.1111, MAPE=0.0035, R2=0.9968
+systemcdes:
+    - Baseline MAE=58.3333, MAPE=0.0019, R2=0.9995
+tv80:
+    - Baseline MAE=73.1482, MAPE=0.0026, R2=0.9991
+usb_funct:
+    - Baseline MAE=4.9074, MAPE=0.0005, R2=0.9999
+usb_phy:
+    - Baseline MAE=84.2593, MAPE=0.0142, R2=0.9776
+wb_dma:
+    - Baseline MAE=12.9630, MAPE=0.0008, R2=0.9998
+ethernet:
+    - Baseline MAE=367.9245, MAPE=0.0026, R2=0.9986
+jpeg:
+    - Baseline MAE=2370.3703, MAPE=0.0054, R2=0.9939
+
+Overall results:
+Sample-averaged
+    - Baseline MAE=280.2164, MAPE=0.0057, R2=0.9998
+Fold-averaged
+    - Baseline MAE=280.1735, MAPE=0.0057, R2=0.9936

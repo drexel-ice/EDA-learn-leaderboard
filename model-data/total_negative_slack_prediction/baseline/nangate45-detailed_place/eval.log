@@ -1,0 +1,48 @@
+Baseline-only evaluation
+Source evaluation: total_negative_slack_prediction/fixed_mlp-standard-v1.0.0/nangate45-detailed_place/eval.yaml
+Metric values retain their original units and scale.
+
+Per-circuit results:
+
+ac97_ctrl:
+    - Baseline MAE=42.6355, MPE=nan, MNE=42.6355
+aes_core:
+    - Baseline MAE=11.1733, MPE=nan, MNE=11.1733
+des3_area:
+    - Baseline MAE=3.9261, MPE=0.0000, MNE=7.8523
+i2c:
+    - Baseline MAE=4.4513, MPE=0.0000, MNE=8.5846
+mem_ctrl:
+    - Baseline MAE=70.3483, MPE=0.0000, MNE=126.6269
+pci:
+    - Baseline MAE=39.6138, MPE=41.5061, MNE=38.4558
+sasc:
+    - Baseline MAE=0.6794, MPE=1.3588, MNE=0.0000
+simple_spi:
+    - Baseline MAE=1.0331, MPE=nan, MNE=1.0331
+spi:
+    - Baseline MAE=33.5198, MPE=0.0000, MNE=55.6945
+ss_pcm:
+    - Baseline MAE=1.3460, MPE=nan, MNE=1.3460
+systemcaes:
+    - Baseline MAE=7.4136, MPE=0.0000, MNE=10.0084
+systemcdes:
+    - Baseline MAE=4.1966, MPE=0.0000, MNE=5.8106
+tv80:
+    - Baseline MAE=22.5931, MPE=0.0000, MNE=45.1862
+usb_funct:
+    - Baseline MAE=4.4041, MPE=0.0000, MNE=6.8934
+usb_phy:
+    - Baseline MAE=1.0363, MPE=0.0000, MNE=1.8051
+wb_dma:
+    - Baseline MAE=4.4544, MPE=3.2223, MNE=4.5018
+ethernet:
+    - Baseline MAE=5.9317, MPE=nan, MNE=5.9317
+jpeg:
+    - Baseline MAE=145.2845, MPE=nan, MNE=145.2845
+
+Overall results:
+Sample-averaged
+    - Baseline MAE=22.4533, MPE=3.6268, MNE=28.8632
+Fold-averaged
+    - Baseline MAE=22.4467, MPE=nan, MNE=28.8235

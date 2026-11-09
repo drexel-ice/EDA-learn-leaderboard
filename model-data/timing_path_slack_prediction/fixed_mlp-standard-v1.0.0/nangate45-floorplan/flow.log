@@ -1,0 +1,54 @@
+Flow run: 2026-10-13T02:15:15.116800 UTC
+Finished: 2026-10-13T03:33:22.553377 UTC
+Status: success
+Total runtime: 4687.4s
+
+Configuration:
+  project: timing_path_slack_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/nangate45-floorplan
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/nangate45
+  initial_stage: floorplan
+  config_yaml: projects/timing_path_slack_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/nangate45-floorplan
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/nangate45-floorplan
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/nangate45-floorplan
+
+Step timings:
+  create_cache: 4071.2s (cache_dir=/data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/nangate45-floorplan)
+  train ac97_ctrl: 561.3s
+  train aes_core: 544.0s
+  train des3_area: 544.6s
+  train i2c: 529.8s
+  train mem_ctrl: 565.2s
+  train pci: 564.4s
+  train sasc: 556.3s
+  train simple_spi: 559.7s
+  train spi: 564.8s
+  train ss_pcm: 565.8s
+  train systemcaes: 564.1s
+  train systemcdes: 522.0s
+  train tv80: 544.0s
+  train usb_funct: 561.5s
+  train usb_phy: 563.8s
+  train wb_dma: 562.3s
+  train ethernet: 561.4s
+  train jpeg: 561.9s
+  evaluate: 50.3s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 9997.0s
+  max train time: 565.8s
+  train wall time (parallel): 565.8s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/nangate45-floorplan/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/nangate45-floorplan/eval.yaml

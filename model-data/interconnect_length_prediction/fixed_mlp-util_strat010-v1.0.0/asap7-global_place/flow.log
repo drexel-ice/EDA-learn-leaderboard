@@ -1,0 +1,54 @@
+Flow run: 2026-10-14T06:37:41.164607 UTC
+Finished: 2026-10-14T07:14:25.121011 UTC
+Status: success
+Total runtime: 2204.0s
+
+Configuration:
+  project: interconnect_length_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp-statified_sampled/asap7-global_place-sample10
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/asap7
+  initial_stage: global_place
+  config_yaml: projects/interconnect_length_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 0.1
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp-statified_sampled/asap7-global_place-sample10
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp-statified_sampled/asap7-global_place-sample10
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp/asap7-global_place
+
+Step timings:
+  create_cache: 845.3s (cache_dir=/data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp-statified_sampled/asap7-global_place-sample10)
+  train ac97_ctrl: 950.3s
+  train aes_core: 951.5s
+  train des3_area: 950.2s
+  train i2c: 932.2s
+  train mem_ctrl: 941.6s
+  train pci: 948.2s
+  train sasc: 955.0s
+  train simple_spi: 949.5s
+  train spi: 946.4s
+  train ss_pcm: 920.9s
+  train systemcaes: 954.6s
+  train systemcdes: 957.0s
+  train tv80: 931.1s
+  train usb_funct: 941.7s
+  train usb_phy: 938.8s
+  train wb_dma: 935.1s
+  train ethernet: 961.8s
+  train jpeg: 976.2s
+  evaluate: 382.4s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 17042.2s
+  max train time: 976.2s
+  train wall time (parallel): 976.2s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp-statified_sampled/asap7-global_place-sample10/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp-statified_sampled/asap7-global_place-sample10/eval.yaml

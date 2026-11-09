@@ -1,0 +1,54 @@
+Flow run: 2026-10-13T18:47:20.270312 UTC
+Finished: 2026-10-13T20:01:30.562503 UTC
+Status: success
+Total runtime: 4450.3s
+
+Configuration:
+  project: timing_path_slack_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/nangate45-detailed_place
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/nangate45
+  initial_stage: detailed_place
+  config_yaml: projects/timing_path_slack_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/nangate45-detailed_place
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/nangate45-detailed_place
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/nangate45-detailed_place
+
+Step timings:
+  create_cache: 3433.8s (cache_dir=/data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/nangate45-detailed_place)
+  train ac97_ctrl: 936.7s
+  train aes_core: 940.4s
+  train des3_area: 938.1s
+  train i2c: 946.7s
+  train mem_ctrl: 936.9s
+  train pci: 932.6s
+  train sasc: 939.2s
+  train simple_spi: 949.4s
+  train spi: 963.8s
+  train ss_pcm: 936.0s
+  train systemcaes: 935.9s
+  train systemcdes: 955.7s
+  train tv80: 954.7s
+  train usb_funct: 933.3s
+  train usb_phy: 947.9s
+  train wb_dma: 940.6s
+  train ethernet: 962.4s
+  train jpeg: 935.5s
+  evaluate: 52.6s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 16985.6s
+  max train time: 963.8s
+  train wall time (parallel): 963.8s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/nangate45-detailed_place/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/nangate45-detailed_place/eval.yaml

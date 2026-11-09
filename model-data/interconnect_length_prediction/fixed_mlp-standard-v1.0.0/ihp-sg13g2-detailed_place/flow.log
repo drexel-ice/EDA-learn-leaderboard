@@ -1,0 +1,55 @@
+Flow run: 2026-10-16T05:00:36.029753 UTC
+Finished: 2026-10-16T07:56:13.646271 UTC
+Status: success
+Total runtime: 10537.6s
+
+Configuration:
+  project: interconnect_length_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp/ihp-sg13g2-detailed_place
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/ihp-sg13g2
+  initial_stage: detailed_place
+  config_yaml: projects/interconnect_length_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  parameter_config_ids: default
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp/ihp-sg13g2-detailed_place
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp/ihp-sg13g2-detailed_place
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp/ihp-sg13g2-detailed_place
+
+Step timings:
+  create_cache: 751.1s (cache_dir=/data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp/ihp-sg13g2-detailed_place)
+  train ac97_ctrl: 9350.2s
+  train aes_core: 9303.1s
+  train des3_area: 9323.3s
+  train i2c: 9325.2s
+  train mem_ctrl: 9324.0s
+  train pci: 9332.5s
+  train sasc: 9336.2s
+  train simple_spi: 9369.5s
+  train spi: 9375.8s
+  train ss_pcm: 9368.5s
+  train systemcaes: 9363.1s
+  train systemcdes: 9365.5s
+  train tv80: 9370.7s
+  train usb_funct: 9336.2s
+  train usb_phy: 9381.4s
+  train wb_dma: 9332.7s
+  train ethernet: 9289.8s
+  train jpeg: 9267.1s
+  evaluate: 405.0s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 168114.8s
+  max train time: 9381.4s
+  train wall time (parallel): 9381.4s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp/ihp-sg13g2-detailed_place/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp/ihp-sg13g2-detailed_place/eval.yaml

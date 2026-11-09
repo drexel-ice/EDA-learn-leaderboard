@@ -1,0 +1,54 @@
+Flow run: 2026-10-31T19:17:58.489458 UTC
+Finished: 2026-10-31T20:43:46.692172 UTC
+Status: success
+Total runtime: 5148.2s
+
+Configuration:
+  project: timing_path_slack_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/nangate45-detailed_place-sample10
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/nangate45
+  initial_stage: detailed_place
+  config_yaml: projects/timing_path_slack_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 0.1
+  parameter_config_ids: default
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/nangate45-detailed_place-sample10
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/nangate45-detailed_place
+
+Step timings:
+  train ac97_ctrl: 5065.3s
+  train aes_core: 5080.6s
+  train des3_area: 5096.9s
+  train i2c: 4961.4s
+  train mem_ctrl: 5072.1s
+  train pci: 5074.8s
+  train sasc: 5076.3s
+  train simple_spi: 5061.9s
+  train spi: 4974.3s
+  train ss_pcm: 4979.3s
+  train systemcaes: 4977.7s
+  train systemcdes: 5074.2s
+  train tv80: 5037.8s
+  train usb_funct: 5060.1s
+  train usb_phy: 5086.1s
+  train wb_dma: 4872.2s
+  train ethernet: 5037.1s
+  train jpeg: 5070.7s
+  evaluate: 51.3s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 90658.8s
+  max train time: 5096.9s
+  train wall time (parallel): 5096.9s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/nangate45-detailed_place-sample10/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/nangate45-detailed_place-sample10/eval.yaml

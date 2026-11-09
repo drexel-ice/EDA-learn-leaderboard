@@ -1,0 +1,54 @@
+Flow run: 2026-10-16T05:15:08.908888 UTC
+Finished: 2026-10-16T05:30:32.679510 UTC
+Status: success
+Total runtime: 923.8s
+
+Configuration:
+  project: interconnect_length_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp_subset1/ihp-sg13g2-global_place
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/ihp-sg13g2
+  initial_stage: global_place
+  config_yaml: projects/interconnect_length_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  parameter_config_ids: 14,23
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp_subset1/ihp-sg13g2-global_place
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp/ihp-sg13g2-global_place
+
+Step timings:
+  train ac97_ctrl: 369.2s
+  train aes_core: 377.8s
+  train des3_area: 386.9s
+  train i2c: 378.5s
+  train mem_ctrl: 379.1s
+  train pci: 377.0s
+  train sasc: 378.9s
+  train simple_spi: 386.2s
+  train spi: 369.9s
+  train ss_pcm: 378.4s
+  train systemcaes: 376.6s
+  train systemcdes: 377.6s
+  train tv80: 378.4s
+  train usb_funct: 377.8s
+  train usb_phy: 366.8s
+  train wb_dma: 379.1s
+  train ethernet: 336.1s
+  train jpeg: 366.9s
+  evaluate: 536.8s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 6741.3s
+  max train time: 386.9s
+  train wall time (parallel): 386.9s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp_subset1/ihp-sg13g2-global_place/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp_subset1/ihp-sg13g2-global_place/eval.yaml

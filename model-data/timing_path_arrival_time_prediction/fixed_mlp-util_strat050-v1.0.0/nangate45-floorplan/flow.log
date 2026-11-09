@@ -1,0 +1,54 @@
+Flow run: 2026-10-14T04:20:07.061948 UTC
+Finished: 2026-10-14T05:36:51.037009 UTC
+Status: success
+Total runtime: 4604.0s
+
+Configuration:
+  project: timing_path_arrival_time_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/nangate45-floorplan-sample50
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/nangate45
+  initial_stage: floorplan
+  config_yaml: projects/timing_path_arrival_time_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 0.5
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/nangate45-floorplan-sample50
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/nangate45-floorplan-sample50
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp/nangate45-floorplan
+
+Step timings:
+  create_cache: 4356.3s (cache_dir=/data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/nangate45-floorplan-sample50)
+  train ac97_ctrl: 214.0s
+  train aes_core: 207.9s
+  train des3_area: 208.6s
+  train i2c: 212.0s
+  train mem_ctrl: 218.6s
+  train pci: 214.5s
+  train sasc: 209.3s
+  train simple_spi: 207.3s
+  train spi: 216.6s
+  train ss_pcm: 208.0s
+  train systemcaes: 209.2s
+  train systemcdes: 205.2s
+  train tv80: 204.0s
+  train usb_funct: 207.3s
+  train usb_phy: 210.6s
+  train wb_dma: 203.9s
+  train ethernet: 212.8s
+  train jpeg: 215.3s
+  evaluate: 29.0s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 3785.1s
+  max train time: 218.6s
+  train wall time (parallel): 218.6s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/nangate45-floorplan-sample50/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/nangate45-floorplan-sample50/eval.yaml

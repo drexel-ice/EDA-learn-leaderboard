@@ -1,0 +1,48 @@
+Baseline-only evaluation
+Source evaluation: worst_slack_prediction/fixed_mlp-standard-v1.0.0/sky130hd-detailed_place/eval.yaml
+Metric values retain their original units and scale.
+
+Per-circuit results:
+
+ac97_ctrl:
+    - Baseline MAE=1.2877, MPE=nan, MNE=1.2877, TPR=1.0000, TNR=0.0000
+aes_core:
+    - Baseline MAE=2.2826, MPE=nan, MNE=2.2826, TPR=1.0000, TNR=0.0000
+des3_area:
+    - Baseline MAE=2.5341, MPE=nan, MNE=2.5341, TPR=1.0000, TNR=0.0000
+i2c:
+    - Baseline MAE=0.3105, MPE=0.0051, MNE=0.3192, TPR=1.0000, TNR=0.4490
+mem_ctrl:
+    - Baseline MAE=2.5941, MPE=nan, MNE=2.5941, TPR=1.0000, TNR=0.0000
+pci:
+    - Baseline MAE=1.8792, MPE=nan, MNE=1.8792, TPR=1.0000, TNR=0.0000
+sasc:
+    - Baseline MAE=0.1821, MPE=0.1965, MNE=0.1634, TPR=0.7742, TNR=0.7826
+simple_spi:
+    - Baseline MAE=0.5440, MPE=nan, MNE=0.5440, TPR=1.0000, TNR=0.0741
+spi:
+    - Baseline MAE=1.0197, MPE=nan, MNE=1.0197, TPR=1.0000, TNR=0.0645
+ss_pcm:
+    - Baseline MAE=0.9542, MPE=nan, MNE=0.9542, TPR=1.0000, TNR=0.0000
+systemcaes:
+    - Baseline MAE=3.0351, MPE=nan, MNE=3.0351, TPR=1.0000, TNR=0.0000
+systemcdes:
+    - Baseline MAE=1.9904, MPE=nan, MNE=1.9904, TPR=1.0000, TNR=0.0000
+tv80:
+    - Baseline MAE=2.4544, MPE=nan, MNE=2.4544, TPR=1.0000, TNR=0.0000
+usb_funct:
+    - Baseline MAE=2.1934, MPE=nan, MNE=2.1934, TPR=1.0000, TNR=0.0000
+usb_phy:
+    - Baseline MAE=0.6618, MPE=nan, MNE=0.6618, TPR=1.0000, TNR=0.0000
+wb_dma:
+    - Baseline MAE=0.4132, MPE=0.0069, MNE=0.4413, TPR=1.0000, TNR=0.3137
+ethernet:
+    - Baseline MAE=2.7119, MPE=nan, MNE=2.7119, TPR=1.0000, TNR=0.0000
+jpeg:
+    - Baseline MAE=2.3228, MPE=nan, MNE=2.3228, TPR=1.0000, TNR=0.0000
+
+Overall results:
+Sample-averaged
+    - Baseline MAE=1.6244, MPE=0.1697, MNE=1.6801, TPR=0.9853, TNR=0.0839
+Fold-averaged
+    - Baseline MAE=1.6317, MPE=nan, MNE=1.6327, TPR=0.9875, TNR=0.0936

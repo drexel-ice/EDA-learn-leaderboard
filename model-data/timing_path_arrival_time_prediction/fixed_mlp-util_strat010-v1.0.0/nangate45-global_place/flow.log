@@ -1,0 +1,54 @@
+Flow run: 2026-10-14T09:26:09.598010 UTC
+Finished: 2026-10-14T10:08:39.732390 UTC
+Status: success
+Total runtime: 2550.1s
+
+Configuration:
+  project: timing_path_arrival_time_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/nangate45-global_place-sample10
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/nangate45
+  initial_stage: global_place
+  config_yaml: projects/timing_path_arrival_time_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 0.1
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/nangate45-global_place-sample10
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/nangate45-global_place-sample10
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp/nangate45-global_place
+
+Step timings:
+  create_cache: 2444.9s (cache_dir=/data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/nangate45-global_place-sample10)
+  train ac97_ctrl: 74.5s
+  train aes_core: 69.8s
+  train des3_area: 69.5s
+  train i2c: 67.7s
+  train mem_ctrl: 74.5s
+  train pci: 71.7s
+  train sasc: 73.4s
+  train simple_spi: 71.9s
+  train spi: 69.6s
+  train ss_pcm: 69.4s
+  train systemcaes: 70.1s
+  train systemcdes: 71.7s
+  train tv80: 69.9s
+  train usb_funct: 73.1s
+  train usb_phy: 67.7s
+  train wb_dma: 71.7s
+  train ethernet: 75.3s
+  train jpeg: 74.1s
+  evaluate: 29.9s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 1285.6s
+  max train time: 75.3s
+  train wall time (parallel): 75.3s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/nangate45-global_place-sample10/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/nangate45-global_place-sample10/eval.yaml

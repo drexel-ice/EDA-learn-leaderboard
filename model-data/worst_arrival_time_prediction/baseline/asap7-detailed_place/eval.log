@@ -1,0 +1,48 @@
+Baseline-only evaluation
+Source evaluation: worst_arrival_time_prediction/fixed_mlp-standard-v1.0.0/asap7-detailed_place/eval.yaml
+Metric values retain their original units and scale.
+
+Per-circuit results:
+
+ac97_ctrl:
+    - Baseline MAE=0.0614, MAPE=0.1677
+aes_core:
+    - Baseline MAE=0.0326, MAPE=0.0425
+des3_area:
+    - Baseline MAE=0.0352, MAPE=0.0423
+i2c:
+    - Baseline MAE=0.0649, MAPE=0.1571
+mem_ctrl:
+    - Baseline MAE=0.0364, MAPE=0.0375
+pci:
+    - Baseline MAE=0.0802, MAPE=0.1473
+sasc:
+    - Baseline MAE=0.0220, MAPE=0.0781
+simple_spi:
+    - Baseline MAE=0.0531, MAPE=0.1397
+spi:
+    - Baseline MAE=0.0362, MAPE=0.0433
+ss_pcm:
+    - Baseline MAE=0.0479, MAPE=0.2240
+systemcaes:
+    - Baseline MAE=0.0232, MAPE=0.0263
+systemcdes:
+    - Baseline MAE=0.0296, MAPE=0.0379
+tv80:
+    - Baseline MAE=0.0466, MAPE=0.0379
+usb_funct:
+    - Baseline MAE=0.0199, MAPE=0.0673
+usb_phy:
+    - Baseline MAE=0.0608, MAPE=0.1767
+wb_dma:
+    - Baseline MAE=0.0883, MAPE=0.1741
+ethernet:
+    - Baseline MAE=0.1422, MAPE=0.1665
+jpeg:
+    - Baseline MAE=0.1388, MAPE=0.1140
+
+Overall results:
+Sample-averaged
+    - Baseline MAE=0.0565, MAPE=0.1044
+Fold-averaged
+    - Baseline MAE=0.0566, MAPE=0.1044

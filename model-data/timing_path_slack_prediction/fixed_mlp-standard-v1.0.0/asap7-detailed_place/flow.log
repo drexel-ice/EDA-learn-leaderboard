@@ -1,0 +1,54 @@
+Flow run: 2026-10-13T05:46:06.102835 UTC
+Finished: 2026-10-13T07:07:06.217517 UTC
+Status: success
+Total runtime: 4860.1s
+
+Configuration:
+  project: timing_path_slack_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/asap7-detailed_place
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/asap7
+  initial_stage: detailed_place
+  config_yaml: projects/timing_path_slack_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/asap7-detailed_place
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/asap7-detailed_place
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/asap7-detailed_place
+
+Step timings:
+  create_cache: 3759.0s (cache_dir=/data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/asap7-detailed_place)
+  train ac97_ctrl: 1022.1s
+  train aes_core: 1017.9s
+  train des3_area: 1011.5s
+  train i2c: 981.5s
+  train mem_ctrl: 1014.2s
+  train pci: 996.4s
+  train sasc: 1007.7s
+  train simple_spi: 980.2s
+  train spi: 983.1s
+  train ss_pcm: 1024.6s
+  train systemcaes: 1007.9s
+  train systemcdes: 1017.5s
+  train tv80: 1017.9s
+  train usb_funct: 977.7s
+  train usb_phy: 1013.9s
+  train wb_dma: 990.3s
+  train ethernet: 1039.7s
+  train jpeg: 1008.3s
+  evaluate: 61.3s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 18112.2s
+  max train time: 1039.7s
+  train wall time (parallel): 1039.7s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/asap7-detailed_place/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/asap7-detailed_place/eval.yaml

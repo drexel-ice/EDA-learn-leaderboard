@@ -1,0 +1,54 @@
+Flow run: 2026-10-22T00:28:23.785002 UTC
+Finished: 2026-10-22T01:40:18.877576 UTC
+Status: success
+Total runtime: 4315.1s
+
+Configuration:
+  project: timing_path_slack_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-global_place-sample10
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/ihp-sg13g2
+  initial_stage: global_place
+  config_yaml: projects/timing_path_slack_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 0.1
+  parameter_config_ids: default
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-global_place-sample10
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/ihp-sg13g2-global_place
+
+Step timings:
+  train ac97_ctrl: 4129.4s
+  train aes_core: 4125.4s
+  train des3_area: 4128.7s
+  train i2c: 4124.0s
+  train mem_ctrl: 4131.9s
+  train pci: 4155.9s
+  train sasc: 4111.1s
+  train simple_spi: 4109.1s
+  train spi: 4184.2s
+  train ss_pcm: 4196.6s
+  train systemcaes: 4148.6s
+  train systemcdes: 4057.1s
+  train tv80: 4119.7s
+  train usb_funct: 4040.1s
+  train usb_phy: 4127.8s
+  train wb_dma: 4069.1s
+  train ethernet: 4026.2s
+  train jpeg: 4107.7s
+  evaluate: 118.4s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 74092.5s
+  max train time: 4196.6s
+  train wall time (parallel): 4196.6s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-global_place-sample10/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-global_place-sample10/eval.yaml

@@ -1,0 +1,184 @@
+timestamp_utc: '2026-10-09T23:54:23.165392'
+log_dir: /data/eda-automl/eda-automl-models/total_negative_slack_prediction/fixed_mlp/sky130hd-global_route
+per_circuit:
+- circuit: ac97_ctrl
+  baseline:
+    mae: 0.0
+    mpe: .nan
+    mne: .nan
+  sample_averaged:
+    mae: 0.01747314797507392
+    mpe: .nan
+    mne: 0.01747314797507392
+- circuit: aes_core
+  baseline:
+    mae: 0.0
+    mpe: .nan
+    mne: .nan
+  sample_averaged:
+    mae: 0.01549398966340555
+    mpe: .nan
+    mne: 0.01549398966340555
+- circuit: des3_area
+  baseline:
+    mae: 0.0
+    mpe: .nan
+    mne: .nan
+  sample_averaged:
+    mae: 0.00956613627622033
+    mpe: 0.002908884476010616
+    mne: 0.010549593928524038
+- circuit: i2c
+  baseline:
+    mae: 0.0
+    mpe: .nan
+    mne: .nan
+  sample_averaged:
+    mae: 0.00427772704925802
+    mpe: 0.0045381315425038335
+    mne: 0.0010226708836853504
+- circuit: mem_ctrl
+  baseline:
+    mae: 0.0
+    mpe: .nan
+    mne: .nan
+  sample_averaged:
+    mae: 0.011632244896005702
+    mpe: 0.0047067681327462195
+    mne: 0.012338926198379117
+- circuit: pci
+  baseline:
+    mae: 0.0
+    mpe: .nan
+    mne: .nan
+  sample_averaged:
+    mae: 0.009592158176625768
+    mpe: 0.004912802550409522
+    mne: 0.010289083482657975
+- circuit: sasc
+  baseline:
+    mae: 0.0
+    mpe: .nan
+    mne: .nan
+  sample_averaged:
+    mae: 0.002806981749556683
+    mpe: 0.0016417481789463445
+    mne: 0.003055739478113946
+- circuit: simple_spi
+  baseline:
+    mae: 0.0
+    mpe: .nan
+    mne: .nan
+  sample_averaged:
+    mae: 0.0028059195589136194
+    mpe: 0.0031464990964274347
+    mne: 0.0017841809463721733
+- circuit: spi
+  baseline:
+    mae: 0.0
+    mpe: .nan
+    mne: .nan
+  sample_averaged:
+    mae: 0.0045520175524331906
+    mpe: 0.0038588284415767547
+    mne: 0.005086114080470117
+- circuit: ss_pcm
+  baseline:
+    mae: 0.0
+    mpe: .nan
+    mne: .nan
+  sample_averaged:
+    mae: 0.0048741280894588545
+    mpe: 0.001875435933470726
+    mne: 0.004930707186741649
+- circuit: systemcaes
+  baseline:
+    mae: 0.0
+    mpe: .nan
+    mne: .nan
+  sample_averaged:
+    mae: 0.013218972254199561
+    mpe: .nan
+    mne: 0.013218972254199561
+- circuit: systemcdes
+  baseline:
+    mae: 0.0
+    mpe: .nan
+    mne: .nan
+  sample_averaged:
+    mae: 0.0078472847414908
+    mpe: 0.004395683429070881
+    mne: 0.008690117620104966
+- circuit: tv80
+  baseline:
+    mae: 0.0
+    mpe: .nan
+    mne: .nan
+  sample_averaged:
+    mae: 0.02234757063214225
+    mpe: .nan
+    mne: 0.02234757063214225
+- circuit: usb_funct
+  baseline:
+    mae: 0.0
+    mpe: .nan
+    mne: .nan
+  sample_averaged:
+    mae: 0.008189999981334916
+    mpe: 0.0008313311263918877
+    mne: 0.008258772587455878
+- circuit: usb_phy
+  baseline:
+    mae: 0.0
+    mpe: .nan
+    mne: .nan
+  sample_averaged:
+    mae: 0.002238500708093246
+    mpe: 0.0018541122649292476
+    mne: 0.0027373878364550307
+- circuit: wb_dma
+  baseline:
+    mae: 0.0
+    mpe: .nan
+    mne: .nan
+  sample_averaged:
+    mae: 0.007501046638935804
+    mpe: 0.0038720646666155923
+    mne: 0.008226843033399846
+- circuit: ethernet
+  baseline:
+    mae: 0.0
+    mpe: .nan
+    mne: .nan
+  sample_averaged:
+    mae: 0.032580551277432174
+    mpe: 0.015790745615959167
+    mne: 0.032737465349034725
+- circuit: jpeg
+  baseline:
+    mae: 0.0
+    mpe: .nan
+    mne: .nan
+  sample_averaged:
+    mae: 0.06794363394793537
+    mpe: 0.06794363394793537
+    mne: .nan
+overall:
+  sample_averaged:
+    baseline:
+      mae: 0.0
+      mpe: .nan
+      mne: .nan
+    model:
+      mae: 0.013584742517818053
+      mpe: 0.017557042192727808
+      mne: 0.012207900701776657
+  fold_averaged:
+    baseline:
+      mae: 0.0
+      mpe: .nan
+      mne: .nan
+    model:
+      mae: 0.013607889509361988
+      mpe: .nan
+      mne: .nan

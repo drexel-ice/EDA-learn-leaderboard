@@ -1,0 +1,54 @@
+Flow run: 2026-10-14T03:09:31.574913 UTC
+Finished: 2026-10-14T03:43:47.841673 UTC
+Status: success
+Total runtime: 2056.3s
+
+Configuration:
+  project: interconnect_length_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp-statified_sampled/sky130hd-global_place-sample5
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/sky130hd
+  initial_stage: global_place
+  config_yaml: projects/interconnect_length_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 0.05
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp-statified_sampled/sky130hd-global_place-sample5
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp-statified_sampled/sky130hd-global_place-sample5
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp/sky130hd-global_place
+
+Step timings:
+  create_cache: 1011.8s (cache_dir=/data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp-statified_sampled/sky130hd-global_place-sample5)
+  train ac97_ctrl: 557.9s
+  train aes_core: 552.1s
+  train des3_area: 550.3s
+  train i2c: 550.0s
+  train mem_ctrl: 549.8s
+  train pci: 549.0s
+  train sasc: 552.6s
+  train simple_spi: 554.2s
+  train spi: 531.3s
+  train ss_pcm: 559.0s
+  train systemcaes: 565.8s
+  train systemcdes: 554.7s
+  train tv80: 563.3s
+  train usb_funct: 552.0s
+  train usb_phy: 546.3s
+  train wb_dma: 542.6s
+  train ethernet: 545.0s
+  train jpeg: 553.7s
+  evaluate: 478.6s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 9929.7s
+  max train time: 565.8s
+  train wall time (parallel): 565.8s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp-statified_sampled/sky130hd-global_place-sample5/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp-statified_sampled/sky130hd-global_place-sample5/eval.yaml

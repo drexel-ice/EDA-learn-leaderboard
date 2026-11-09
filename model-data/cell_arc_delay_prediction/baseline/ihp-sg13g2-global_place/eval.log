@@ -1,0 +1,48 @@
+Baseline-only evaluation
+Source evaluation: cell_arc_delay_prediction/fixed_mlp-standard-v1.0.0/ihp-sg13g2-global_place/eval.yaml
+Metric values retain their original units and scale.
+
+Per-circuit results:
+
+ac97_ctrl:
+    - Baseline MAE=0.0001, MAPE=12805380.7113, R2=0.0823
+aes_core:
+    - Baseline MAE=0.0001, MAPE=3455467.3429, R2=0.1026
+des3_area:
+    - Baseline MAE=0.0001, MAPE=842371.1020, R2=-0.6565
+i2c:
+    - Baseline MAE=0.0000, MAPE=1082220.1820, R2=-0.5663
+mem_ctrl:
+    - Baseline MAE=0.0001, MAPE=4511787.9075, R2=-0.4198
+pci:
+    - Baseline MAE=0.0001, MAPE=6430202.8354, R2=-0.3154
+sasc:
+    - Baseline MAE=0.0001, MAPE=9382832.2465, R2=0.1712
+simple_spi:
+    - Baseline MAE=0.0001, MAPE=3762121.6825, R2=-0.1809
+spi:
+    - Baseline MAE=0.0001, MAPE=5295022.3572, R2=-0.2598
+ss_pcm:
+    - Baseline MAE=0.0000, MAPE=6782012.2093, R2=0.0183
+systemcaes:
+    - Baseline MAE=0.0001, MAPE=4697477.3777, R2=-0.0205
+systemcdes:
+    - Baseline MAE=0.0001, MAPE=4029293.6722, R2=-0.4694
+tv80:
+    - Baseline MAE=0.0001, MAPE=8911979.1164, R2=-0.3280
+usb_funct:
+    - Baseline MAE=0.0001, MAPE=3231779.9279, R2=0.1169
+usb_phy:
+    - Baseline MAE=0.0000, MAPE=5696441.1773, R2=0.0055
+wb_dma:
+    - Baseline MAE=0.0001, MAPE=4081958.4117, R2=-0.2160
+ethernet:
+    - Baseline MAE=0.0002, MAPE=26205481.3385, R2=0.6396
+jpeg:
+    - Baseline MAE=0.0002, MAPE=26205481.3385, R2=0.6396
+
+Overall results:
+Sample-averaged
+    - Baseline MAE=0.0002, MAPE=22707118.2190, R2=0.6296
+Fold-averaged
+    - Baseline MAE=0.0001, MAPE=7633850.6076, R2=-0.0920

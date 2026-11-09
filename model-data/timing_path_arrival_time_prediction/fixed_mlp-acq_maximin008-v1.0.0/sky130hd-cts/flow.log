@@ -1,0 +1,54 @@
+Flow run: 2026-10-23T18:12:36.823713 UTC
+Finished: 2026-10-23T18:20:54.105024 UTC
+Status: success
+Total runtime: 497.3s
+
+Configuration:
+  project: timing_path_arrival_time_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset2/sky130hd-cts
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/sky130hd
+  initial_stage: cts
+  config_yaml: projects/timing_path_arrival_time_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  parameter_config_ids: 23,14,100,105,61,48,37,81
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset2/sky130hd-cts
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp/sky130hd-cts
+
+Step timings:
+  train ac97_ctrl: 414.6s
+  train aes_core: 420.6s
+  train des3_area: 419.1s
+  train i2c: 402.9s
+  train mem_ctrl: 416.0s
+  train pci: 419.2s
+  train sasc: 414.9s
+  train simple_spi: 420.7s
+  train spi: 412.8s
+  train ss_pcm: 418.3s
+  train systemcaes: 446.4s
+  train systemcdes: 426.5s
+  train tv80: 415.1s
+  train usb_funct: 425.8s
+  train usb_phy: 398.7s
+  train wb_dma: 414.3s
+  train ethernet: 413.2s
+  train jpeg: 412.9s
+  evaluate: 50.8s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 7512.1s
+  max train time: 446.4s
+  train wall time (parallel): 446.4s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset2/sky130hd-cts/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset2/sky130hd-cts/eval.yaml

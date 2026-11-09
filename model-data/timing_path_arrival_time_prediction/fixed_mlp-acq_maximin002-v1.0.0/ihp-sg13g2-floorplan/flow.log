@@ -1,0 +1,28 @@
+Flow run: 2026-10-23T16:51:30.400053 UTC
+Finished: 2026-10-23T16:53:53.389218 UTC
+Status: failed
+Total runtime: 143.0s
+
+Configuration:
+  project: timing_path_arrival_time_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset1/ihp-sg13g2-floorplan
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/ihp-sg13g2
+  initial_stage: floorplan
+  config_yaml: projects/timing_path_arrival_time_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  parameter_config_ids: 23,14
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset1/ihp-sg13g2-floorplan
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp/ihp-sg13g2-floorplan
+
+Step timings:
+
+Error:
+  Command '['/usr/local/bin/python', '-m', 'projects.config_runner', 'timing_path_arrival_time_prediction', 'train', '--test-circuit', 'des3_area', '--dataset-dir', '/data/eda-automl/eda-schema-V2-dataset/ihp-sg13g2', '--initial-stage', 'floorplan', '--config-yaml', 'projects/timing_path_arrival_time_prediction/experiments/fixed_mlp.yaml', '--log-dir', '/data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset1/ihp-sg13g2-floorplan', '--sampling-frac', '1.0', '--parameter-config-ids', '23,14', '--cache-data', '--cache-data-dir', '/data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset1/ihp-sg13g2-floorplan']' returned non-zero exit status 1.

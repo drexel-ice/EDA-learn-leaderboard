@@ -1,0 +1,53 @@
+Flow run: 2026-10-10T00:01:43.695464 UTC
+Finished: 2026-10-10T00:02:29.349708 UTC
+Status: success
+Total runtime: 45.7s
+
+Configuration:
+  project: worst_slack_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/worst_slack_prediction/fixed_mlp/asap7-floorplan
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/asap7
+  initial_stage: floorplan
+  config_yaml: projects/worst_slack_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: False
+  train_cache_data_dir: n/a
+  eval_cache_data: False
+  eval_cache_data_dir: n/a
+
+Step timings:
+  train ac97_ctrl: 32.6s
+  train aes_core: 33.1s
+  train des3_area: 33.2s
+  train i2c: 33.5s
+  train mem_ctrl: 31.8s
+  train pci: 32.8s
+  train sasc: 32.6s
+  train simple_spi: 33.0s
+  train spi: 33.4s
+  train ss_pcm: 32.8s
+  train systemcaes: 30.2s
+  train systemcdes: 32.5s
+  train tv80: 32.9s
+  train usb_funct: 27.7s
+  train usb_phy: 32.7s
+  train wb_dma: 33.4s
+  train ethernet: 33.3s
+  train jpeg: 33.2s
+  evaluate: 12.1s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 584.5s
+  max train time: 33.5s
+  train wall time (parallel): 33.5s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/worst_slack_prediction/fixed_mlp/asap7-floorplan/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/worst_slack_prediction/fixed_mlp/asap7-floorplan/eval.yaml

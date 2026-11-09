@@ -1,0 +1,53 @@
+Flow run: 2026-10-09T23:47:35.648773 UTC
+Finished: 2026-10-09T23:48:22.458748 UTC
+Status: success
+Total runtime: 46.8s
+
+Configuration:
+  project: total_power_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/total_power_prediction/fixed_mlp/sky130hd-floorplan
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/sky130hd
+  initial_stage: floorplan
+  config_yaml: projects/total_power_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: False
+  train_cache_data_dir: n/a
+  eval_cache_data: False
+  eval_cache_data_dir: n/a
+
+Step timings:
+  train ac97_ctrl: 34.0s
+  train aes_core: 35.3s
+  train des3_area: 34.7s
+  train i2c: 35.6s
+  train mem_ctrl: 34.7s
+  train pci: 33.4s
+  train sasc: 25.7s
+  train simple_spi: 35.3s
+  train spi: 35.3s
+  train ss_pcm: 28.3s
+  train systemcaes: 35.4s
+  train systemcdes: 35.6s
+  train tv80: 35.3s
+  train usb_funct: 34.4s
+  train usb_phy: 34.8s
+  train wb_dma: 25.8s
+  train ethernet: 35.2s
+  train jpeg: 34.1s
+  evaluate: 11.2s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 603.1s
+  max train time: 35.6s
+  train wall time (parallel): 35.6s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/total_power_prediction/fixed_mlp/sky130hd-floorplan/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/total_power_prediction/fixed_mlp/sky130hd-floorplan/eval.yaml

@@ -1,0 +1,53 @@
+Flow run: 2026-10-09T23:43:49.796452 UTC
+Finished: 2026-10-09T23:44:32.650879 UTC
+Status: success
+Total runtime: 42.9s
+
+Configuration:
+  project: total_negative_slack_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/total_negative_slack_prediction/fixed_mlp/nangate45-global_place
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/nangate45
+  initial_stage: global_place
+  config_yaml: projects/total_negative_slack_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: False
+  train_cache_data_dir: n/a
+  eval_cache_data: False
+  eval_cache_data_dir: n/a
+
+Step timings:
+  train ac97_ctrl: 28.9s
+  train aes_core: 30.6s
+  train des3_area: 30.6s
+  train i2c: 30.6s
+  train mem_ctrl: 29.1s
+  train pci: 30.2s
+  train sasc: 30.3s
+  train simple_spi: 30.4s
+  train spi: 31.1s
+  train ss_pcm: 30.8s
+  train systemcaes: 30.8s
+  train systemcdes: 31.0s
+  train tv80: 30.8s
+  train usb_funct: 31.1s
+  train usb_phy: 30.5s
+  train wb_dma: 30.3s
+  train ethernet: 31.1s
+  train jpeg: 30.2s
+  evaluate: 11.7s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 548.4s
+  max train time: 31.1s
+  train wall time (parallel): 31.1s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/total_negative_slack_prediction/fixed_mlp/nangate45-global_place/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/total_negative_slack_prediction/fixed_mlp/nangate45-global_place/eval.yaml

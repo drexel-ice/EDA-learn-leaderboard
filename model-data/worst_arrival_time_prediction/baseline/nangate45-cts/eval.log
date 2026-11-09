@@ -1,0 +1,48 @@
+Baseline-only evaluation
+Source evaluation: worst_arrival_time_prediction/fixed_mlp-standard-v1.0.0/nangate45-cts/eval.yaml
+Metric values retain their original units and scale.
+
+Per-circuit results:
+
+ac97_ctrl:
+    - Baseline MAE=0.0235, MAPE=0.0494
+aes_core:
+    - Baseline MAE=0.0228, MAPE=0.0166
+des3_area:
+    - Baseline MAE=0.0090, MAPE=0.0057
+i2c:
+    - Baseline MAE=0.0027, MAPE=0.0042
+mem_ctrl:
+    - Baseline MAE=0.0061, MAPE=0.0041
+pci:
+    - Baseline MAE=0.0357, MAPE=0.0379
+sasc:
+    - Baseline MAE=0.0026, MAPE=0.0061
+simple_spi:
+    - Baseline MAE=0.0035, MAPE=0.0064
+spi:
+    - Baseline MAE=0.0088, MAPE=0.0070
+ss_pcm:
+    - Baseline MAE=0.0066, MAPE=0.0199
+systemcaes:
+    - Baseline MAE=0.0099, MAPE=0.0067
+systemcdes:
+    - Baseline MAE=0.0133, MAPE=0.0103
+tv80:
+    - Baseline MAE=0.0090, MAPE=0.0049
+usb_funct:
+    - Baseline MAE=0.0448, MAPE=0.0819
+usb_phy:
+    - Baseline MAE=0.0045, MAPE=0.0123
+wb_dma:
+    - Baseline MAE=0.0028, MAPE=0.0037
+ethernet:
+    - Baseline MAE=0.0100, MAPE=0.0062
+jpeg:
+    - Baseline MAE=0.0093, MAPE=0.0051
+
+Overall results:
+Sample-averaged
+    - Baseline MAE=0.0125, MAPE=0.0160
+Fold-averaged
+    - Baseline MAE=0.0125, MAPE=0.0160

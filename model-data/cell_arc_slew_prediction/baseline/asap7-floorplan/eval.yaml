@@ -1,0 +1,103 @@
+source_eval: cell_arc_slew_prediction/fixed_mlp-standard-v1.0.0/asap7-floorplan/eval.yaml
+per_circuit:
+- circuit: ac97_ctrl
+  baseline:
+    mae: 0.0047855665438902885
+    mape: 0.18864058007981288
+    r2: 0.6039876625802505
+- circuit: aes_core
+  baseline:
+    mae: 0.007559529251540437
+    mape: 0.2997857174576081
+    r2: 0.3232198030446799
+- circuit: des3_area
+  baseline:
+    mae: 0.0035742302436860343
+    mape: 0.19500710560954593
+    r2: 0.46503455888432
+- circuit: i2c
+  baseline:
+    mae: 0.0035412802790519837
+    mape: 0.18530773676249887
+    r2: 0.7785373494179939
+- circuit: mem_ctrl
+  baseline:
+    mae: 0.05395094849874
+    mape: 0.8806013100452382
+    r2: -97.74041438437214
+- circuit: pci
+  baseline:
+    mae: 0.006431403853322499
+    mape: 0.21769963753221713
+    r2: 0.4326001151972638
+- circuit: sasc
+  baseline:
+    mae: 0.0059195408837978206
+    mape: 0.23433064477061177
+    r2: 0.6605408011001335
+- circuit: simple_spi
+  baseline:
+    mae: 0.004551506383767081
+    mape: 0.24692515709795487
+    r2: 0.5139085816590122
+- circuit: spi
+  baseline:
+    mae: 0.07026355788830499
+    mape: 1.2087186040253715
+    r2: -61.98222283881812
+- circuit: ss_pcm
+  baseline:
+    mae: 0.0033856340286140913
+    mape: 0.1665093862187357
+    r2: 0.5083208279021311
+- circuit: systemcaes
+  baseline:
+    mae: 0.006828937148552737
+    mape: 0.2510811661744038
+    r2: 0.5071004917677464
+- circuit: systemcdes
+  baseline:
+    mae: 0.004679043556029708
+    mape: 0.22417949582706007
+    r2: 0.53835127576159
+- circuit: tv80
+  baseline:
+    mae: 0.003504148386472982
+    mape: 0.2170475328971766
+    r2: 0.5019831933635052
+- circuit: usb_funct
+  baseline:
+    mae: 0.005887356780280678
+    mape: 0.28528754145329743
+    r2: 0.42819172881958556
+- circuit: usb_phy
+  baseline:
+    mae: 0.002643648462182095
+    mape: 0.15627807679520792
+    r2: 0.7239979363325256
+- circuit: wb_dma
+  baseline:
+    mae: 0.024808013733935978
+    mape: 0.48151251959305513
+    r2: -43.39599291729724
+- circuit: ethernet
+  baseline:
+    mae: 0.017687177515031394
+    mape: 0.37447691891503815
+    r2: -2.134677630158349
+- circuit: jpeg
+  baseline:
+    mae: 0.005032644984086713
+    mape: 0.17115654096554206
+    r2: -0.31839162233235463
+overall:
+  sample_averaged:
+    baseline:
+      mae: 0.015244069288999807
+      mape: 0.3433489154009266
+      r2: -4.213475140075269
+  fold_averaged:
+    baseline:
+      mae: 0.01305745380118264
+      mape: 0.33247475956779865
+      r2: -11.032551392619302

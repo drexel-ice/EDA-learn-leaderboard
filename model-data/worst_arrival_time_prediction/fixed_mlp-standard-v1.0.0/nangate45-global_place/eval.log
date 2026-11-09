@@ -1,0 +1,68 @@
+Evaluation run: 2026-10-09T23:44:13.670435 UTC
+log_dir: /data/eda-automl/eda-automl-models/worst_arrival_time_prediction/fixed_mlp/nangate45-global_place
+
+Per-circuit results:
+
+ac97_ctrl:
+    - Baseline MAE=0.1517, MAPE=0.2434
+    - Sample-averaged MAE=0.1811, MAPE=0.2710
+aes_core:
+    - Baseline MAE=0.1360, MAPE=0.1093
+    - Sample-averaged MAE=0.1247, MAPE=0.0955
+des3_area:
+    - Baseline MAE=0.1388, MAPE=0.0819
+    - Sample-averaged MAE=0.1612, MAPE=0.0922
+i2c:
+    - Baseline MAE=0.0547, MAPE=0.0815
+    - Sample-averaged MAE=0.0920, MAPE=0.1401
+mem_ctrl:
+    - Baseline MAE=0.2000, MAPE=0.1295
+    - Sample-averaged MAE=0.1987, MAPE=0.1252
+pci:
+    - Baseline MAE=0.4433, MAPE=0.5010
+    - Sample-averaged MAE=0.4210, MAPE=0.4758
+sasc:
+    - Baseline MAE=0.1003, MAPE=0.2339
+    - Sample-averaged MAE=0.1408, MAPE=0.3285
+simple_spi:
+    - Baseline MAE=0.0890, MAPE=0.1621
+    - Sample-averaged MAE=0.1290, MAPE=0.2352
+spi:
+    - Baseline MAE=0.1573, MAPE=0.1252
+    - Sample-averaged MAE=0.1586, MAPE=0.1228
+ss_pcm:
+    - Baseline MAE=0.0594, MAPE=0.1588
+    - Sample-averaged MAE=0.0876, MAPE=0.2241
+systemcaes:
+    - Baseline MAE=0.1327, MAPE=0.0873
+    - Sample-averaged MAE=0.1427, MAPE=0.0903
+systemcdes:
+    - Baseline MAE=0.1100, MAPE=0.0873
+    - Sample-averaged MAE=0.1233, MAPE=0.0941
+tv80:
+    - Baseline MAE=0.1650, MAPE=0.0901
+    - Sample-averaged MAE=0.1646, MAPE=0.0880
+usb_funct:
+    - Baseline MAE=0.1360, MAPE=0.2284
+    - Sample-averaged MAE=0.1175, MAPE=0.1937
+usb_phy:
+    - Baseline MAE=0.0532, MAPE=0.1177
+    - Sample-averaged MAE=0.0892, MAPE=0.1991
+wb_dma:
+    - Baseline MAE=0.0983, MAPE=0.1107
+    - Sample-averaged MAE=0.1173, MAPE=0.1297
+ethernet:
+    - Baseline MAE=0.1507, MAPE=0.0966
+    - Sample-averaged MAE=0.1402, MAPE=0.0875
+jpeg:
+    - Baseline MAE=0.4874, MAPE=0.2684
+    - Sample-averaged MAE=0.4552, MAPE=0.2507
+
+Overall results:
+Sample-averaged
+    - Baseline MAE: 0.1591, MAPE: 0.1619
+    - Model MAE: 0.1692, MAPE: 0.1803
+Fold-averaged
+    - Baseline MAE: 0.1591, MAPE: 0.1618
+    - Model MAE: 0.1691, MAPE: 0.1802
+

@@ -1,0 +1,48 @@
+Baseline-only evaluation
+Source evaluation: worst_arrival_time_prediction/fixed_mlp-standard-v1.0.0/ihp-sg13g2-floorplan/eval.yaml
+Metric values retain their original units and scale.
+
+Per-circuit results:
+
+ac97_ctrl:
+    - Baseline MAE=1.1753, MAPE=0.9365
+aes_core:
+    - Baseline MAE=4.8634, MAPE=1.4506
+des3_area:
+    - Baseline MAE=1.6481, MAPE=0.3568
+i2c:
+    - Baseline MAE=0.1886, MAPE=0.0836
+mem_ctrl:
+    - Baseline MAE=2.0309, MAPE=0.4774
+pci:
+    - Baseline MAE=5.0062, MAPE=2.0427
+sasc:
+    - Baseline MAE=0.0493, MAPE=0.0360
+simple_spi:
+    - Baseline MAE=0.4515, MAPE=0.2766
+spi:
+    - Baseline MAE=3.7441, MAPE=1.0252
+ss_pcm:
+    - Baseline MAE=0.4687, MAPE=0.5087
+systemcaes:
+    - Baseline MAE=4.8649, MAPE=1.0734
+systemcdes:
+    - Baseline MAE=1.7655, MAPE=0.5314
+tv80:
+    - Baseline MAE=1.0726, MAPE=0.1919
+usb_funct:
+    - Baseline MAE=1.2432, MAPE=0.7432
+usb_phy:
+    - Baseline MAE=0.2551, MAPE=0.2695
+wb_dma:
+    - Baseline MAE=1.6910, MAPE=0.6994
+ethernet:
+    - Baseline MAE=62.1201, MAPE=24.6327
+jpeg:
+    - Baseline MAE=62.1201, MAPE=24.6327
+
+Overall results:
+Sample-averaged
+    - Baseline MAE=8.5506, MAPE=3.3131
+Fold-averaged
+    - Baseline MAE=8.5977, MAPE=3.3316

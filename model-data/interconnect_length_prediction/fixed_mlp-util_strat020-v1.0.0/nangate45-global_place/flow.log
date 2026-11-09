@@ -1,0 +1,54 @@
+Flow run: 2026-10-14T02:09:28.284740 UTC
+Finished: 2026-10-14T03:06:49.949793 UTC
+Status: success
+Total runtime: 3441.7s
+
+Configuration:
+  project: interconnect_length_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp-statified_sampled/nangate45-global_place-sample20
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/nangate45
+  initial_stage: global_place
+  config_yaml: projects/interconnect_length_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 0.2
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp-statified_sampled/nangate45-global_place-sample20
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp-statified_sampled/nangate45-global_place-sample20
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp/nangate45-global_place
+
+Step timings:
+  create_cache: 650.4s (cache_dir=/data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp-statified_sampled/nangate45-global_place-sample20)
+  train ac97_ctrl: 2170.7s
+  train aes_core: 2313.3s
+  train des3_area: 2202.7s
+  train i2c: 2174.6s
+  train mem_ctrl: 2269.1s
+  train pci: 2187.8s
+  train sasc: 2162.8s
+  train simple_spi: 2164.8s
+  train spi: 2178.4s
+  train ss_pcm: 2190.3s
+  train systemcaes: 2268.3s
+  train systemcdes: 2289.4s
+  train tv80: 2295.2s
+  train usb_funct: 2180.1s
+  train usb_phy: 2178.9s
+  train wb_dma: 2292.3s
+  train ethernet: 2301.4s
+  train jpeg: 2294.8s
+  evaluate: 478.0s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 40114.9s
+  max train time: 2313.3s
+  train wall time (parallel): 2313.3s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp-statified_sampled/nangate45-global_place-sample20/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp-statified_sampled/nangate45-global_place-sample20/eval.yaml

@@ -1,0 +1,54 @@
+Flow run: 2026-10-14T11:13:27.655933 UTC
+Finished: 2026-10-14T13:21:27.650801 UTC
+Status: success
+Total runtime: 7680.0s
+
+Configuration:
+  project: timing_path_arrival_time_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/sky130hd-detailed_place-sample50
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/sky130hd
+  initial_stage: detailed_place
+  config_yaml: projects/timing_path_arrival_time_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 0.5
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/sky130hd-detailed_place-sample50
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/sky130hd-detailed_place-sample50
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp/sky130hd-detailed_place
+
+Step timings:
+  create_cache: 3641.5s (cache_dir=/data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/sky130hd-detailed_place-sample50)
+  train ac97_ctrl: 607.0s
+  train aes_core: 607.6s
+  train des3_area: 619.7s
+  train i2c: 617.3s
+  train mem_ctrl: 598.7s
+  train pci: 600.2s
+  train sasc: 620.7s
+  train simple_spi: 624.1s
+  train spi: 626.6s
+  train ss_pcm: 619.8s
+  train systemcaes: 594.7s
+  train systemcdes: 600.7s
+  train tv80: 611.5s
+  train usb_funct: 600.2s
+  train usb_phy: 615.4s
+  train wb_dma: 627.6s
+  train ethernet: 609.9s
+  train jpeg: 603.9s
+  evaluate: 3410.8s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 11005.7s
+  max train time: 627.6s
+  train wall time (parallel): 627.6s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/sky130hd-detailed_place-sample50/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/sky130hd-detailed_place-sample50/eval.yaml

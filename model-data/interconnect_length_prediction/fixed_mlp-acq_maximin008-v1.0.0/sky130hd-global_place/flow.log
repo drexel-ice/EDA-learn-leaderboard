@@ -1,0 +1,54 @@
+Flow run: 2026-10-16T07:11:10.280260 UTC
+Finished: 2026-10-16T07:30:53.120982 UTC
+Status: success
+Total runtime: 1182.8s
+
+Configuration:
+  project: interconnect_length_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp_subset2/sky130hd-global_place
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/sky130hd
+  initial_stage: global_place
+  config_yaml: projects/interconnect_length_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  parameter_config_ids: 14,23,100,105,61,48,37,81
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp_subset2/sky130hd-global_place
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp/sky130hd-global_place
+
+Step timings:
+  train ac97_ctrl: 744.1s
+  train aes_core: 732.5s
+  train des3_area: 732.7s
+  train i2c: 741.7s
+  train mem_ctrl: 741.8s
+  train pci: 722.3s
+  train sasc: 705.4s
+  train simple_spi: 728.1s
+  train spi: 740.4s
+  train ss_pcm: 702.4s
+  train systemcaes: 732.4s
+  train systemcdes: 730.2s
+  train tv80: 696.1s
+  train usb_funct: 746.0s
+  train usb_phy: 732.2s
+  train wb_dma: 740.2s
+  train ethernet: 711.5s
+  train jpeg: 723.5s
+  evaluate: 436.7s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 13103.5s
+  max train time: 746.0s
+  train wall time (parallel): 746.0s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp_subset2/sky130hd-global_place/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/interconnect_length_prediction/fixed_mlp_subset2/sky130hd-global_place/eval.yaml

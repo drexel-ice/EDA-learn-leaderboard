@@ -1,0 +1,48 @@
+Baseline-only evaluation
+Source evaluation: total_negative_slack_prediction/fixed_mlp-standard-v1.0.0/ihp-sg13g2-global_place/eval.yaml
+Metric values retain their original units and scale.
+
+Per-circuit results:
+
+ac97_ctrl:
+    - Baseline MAE=0.0020, MPE=0.2113, MNE=0.0000
+aes_core:
+    - Baseline MAE=0.0210, MPE=0.0000, MNE=0.2830
+des3_area:
+    - Baseline MAE=0.0000, MPE=0.0000, MNE=nan
+i2c:
+    - Baseline MAE=2.4896, MPE=nan, MNE=2.4896
+mem_ctrl:
+    - Baseline MAE=0.2511, MPE=nan, MNE=0.2511
+pci:
+    - Baseline MAE=0.5876, MPE=0.0000, MNE=3.9294
+sasc:
+    - Baseline MAE=1.1118, MPE=3.4307, MNE=0.0000
+simple_spi:
+    - Baseline MAE=5.1350, MPE=0.0000, MNE=15.8451
+spi:
+    - Baseline MAE=0.0000, MPE=nan, MNE=0.0000
+ss_pcm:
+    - Baseline MAE=0.4507, MPE=1.2042, MNE=0.0075
+systemcaes:
+    - Baseline MAE=0.0230, MPE=nan, MNE=0.0230
+systemcdes:
+    - Baseline MAE=0.0104, MPE=nan, MNE=0.0104
+tv80:
+    - Baseline MAE=0.0000, MPE=nan, MNE=0.0000
+usb_funct:
+    - Baseline MAE=0.0000, MPE=nan, MNE=0.0000
+usb_phy:
+    - Baseline MAE=0.2220, MPE=0.2507, MNE=0.2158
+wb_dma:
+    - Baseline MAE=0.0000, MPE=nan, MNE=0.0000
+ethernet:
+    - Baseline MAE=0.0000, MPE=0.0000, MNE=nan
+jpeg:
+    - Baseline MAE=0.0000, MPE=0.0000, MNE=nan
+
+Overall results:
+Sample-averaged
+    - Baseline MAE=0.5723, MPE=0.2544, MNE=0.7445
+Fold-averaged
+    - Baseline MAE=0.5724, MPE=nan, MNE=nan

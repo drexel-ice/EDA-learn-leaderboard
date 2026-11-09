@@ -1,0 +1,54 @@
+Flow run: 2026-10-23T18:04:42.540910 UTC
+Finished: 2026-10-23T18:12:14.595807 UTC
+Status: success
+Total runtime: 452.1s
+
+Configuration:
+  project: timing_path_arrival_time_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset2/sky130hd-detailed_place
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/sky130hd
+  initial_stage: detailed_place
+  config_yaml: projects/timing_path_arrival_time_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  parameter_config_ids: 23,14,100,105,61,48,37,81
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset2/sky130hd-detailed_place
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp/sky130hd-detailed_place
+
+Step timings:
+  train ac97_ctrl: 399.7s
+  train aes_core: 381.3s
+  train des3_area: 378.8s
+  train i2c: 379.1s
+  train mem_ctrl: 411.1s
+  train pci: 391.8s
+  train sasc: 385.0s
+  train simple_spi: 380.6s
+  train spi: 374.7s
+  train ss_pcm: 382.5s
+  train systemcaes: 395.8s
+  train systemcdes: 377.8s
+  train tv80: 390.3s
+  train usb_funct: 377.2s
+  train usb_phy: 382.6s
+  train wb_dma: 385.0s
+  train ethernet: 396.4s
+  train jpeg: 392.3s
+  evaluate: 40.9s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 6962.0s
+  max train time: 411.1s
+  train wall time (parallel): 411.1s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset2/sky130hd-detailed_place/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset2/sky130hd-detailed_place/eval.yaml

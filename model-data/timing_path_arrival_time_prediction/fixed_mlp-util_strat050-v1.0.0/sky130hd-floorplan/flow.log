@@ -1,0 +1,54 @@
+Flow run: 2026-10-14T04:20:56.780115 UTC
+Finished: 2026-10-14T05:42:17.026550 UTC
+Status: success
+Total runtime: 4880.2s
+
+Configuration:
+  project: timing_path_arrival_time_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/sky130hd-floorplan-sample50
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/sky130hd
+  initial_stage: floorplan
+  config_yaml: projects/timing_path_arrival_time_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 0.5
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/sky130hd-floorplan-sample50
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/sky130hd-floorplan-sample50
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp/sky130hd-floorplan
+
+Step timings:
+  create_cache: 4300.3s (cache_dir=/data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/sky130hd-floorplan-sample50)
+  train ac97_ctrl: 501.9s
+  train aes_core: 505.5s
+  train des3_area: 512.4s
+  train i2c: 509.3s
+  train mem_ctrl: 518.3s
+  train pci: 510.6s
+  train sasc: 506.1s
+  train simple_spi: 519.4s
+  train spi: 523.1s
+  train ss_pcm: 515.5s
+  train systemcaes: 512.0s
+  train systemcdes: 512.5s
+  train tv80: 515.9s
+  train usb_funct: 519.2s
+  train usb_phy: 511.5s
+  train wb_dma: 513.7s
+  train ethernet: 522.2s
+  train jpeg: 516.2s
+  evaluate: 56.8s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 9245.1s
+  max train time: 523.1s
+  train wall time (parallel): 523.1s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/sky130hd-floorplan-sample50/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/sky130hd-floorplan-sample50/eval.yaml

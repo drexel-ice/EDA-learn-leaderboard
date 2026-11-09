@@ -1,0 +1,54 @@
+Flow run: 2026-10-23T19:19:24.308372 UTC
+Finished: 2026-10-23T19:51:16.745896 UTC
+Status: success
+Total runtime: 1912.4s
+
+Configuration:
+  project: timing_path_slack_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp_subset3/ihp-sg13g2-global_place
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/ihp-sg13g2
+  initial_stage: global_place
+  config_yaml: projects/timing_path_slack_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  parameter_config_ids: 23,14,100,105,61,48,37,81,65,30,31,35,107,36,19,92,94,59,60,99,82,47,49,86,53,54,3,75,41,7,79,9
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp_subset3/ihp-sg13g2-global_place
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/ihp-sg13g2-global_place
+
+Step timings:
+  train ac97_ctrl: 1759.3s
+  train aes_core: 1766.9s
+  train des3_area: 1732.0s
+  train i2c: 1715.0s
+  train mem_ctrl: 1791.9s
+  train pci: 1771.0s
+  train sasc: 1760.0s
+  train simple_spi: 1720.0s
+  train spi: 1717.0s
+  train ss_pcm: 1777.8s
+  train systemcaes: 1724.8s
+  train systemcdes: 1723.4s
+  train tv80: 1735.1s
+  train usb_funct: 1755.6s
+  train usb_phy: 1707.8s
+  train wb_dma: 1767.1s
+  train ethernet: 1751.6s
+  train jpeg: 1747.1s
+  evaluate: 120.5s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 31423.4s
+  max train time: 1791.9s
+  train wall time (parallel): 1791.9s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp_subset3/ihp-sg13g2-global_place/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp_subset3/ihp-sg13g2-global_place/eval.yaml

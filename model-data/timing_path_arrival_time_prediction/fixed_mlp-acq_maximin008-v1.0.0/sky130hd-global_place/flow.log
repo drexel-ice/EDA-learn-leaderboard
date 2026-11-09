@@ -1,0 +1,54 @@
+Flow run: 2026-10-23T17:55:57.268502 UTC
+Finished: 2026-10-23T18:04:21.207424 UTC
+Status: success
+Total runtime: 503.9s
+
+Configuration:
+  project: timing_path_arrival_time_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset2/sky130hd-global_place
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/sky130hd
+  initial_stage: global_place
+  config_yaml: projects/timing_path_arrival_time_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  parameter_config_ids: 23,14,100,105,61,48,37,81
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset2/sky130hd-global_place
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp/sky130hd-global_place
+
+Step timings:
+  train ac97_ctrl: 382.2s
+  train aes_core: 386.1s
+  train des3_area: 403.4s
+  train i2c: 406.9s
+  train mem_ctrl: 388.7s
+  train pci: 397.4s
+  train sasc: 415.4s
+  train simple_spi: 431.3s
+  train spi: 387.6s
+  train ss_pcm: 409.4s
+  train systemcaes: 396.5s
+  train systemcdes: 389.5s
+  train tv80: 385.5s
+  train usb_funct: 414.4s
+  train usb_phy: 394.6s
+  train wb_dma: 394.6s
+  train ethernet: 393.9s
+  train jpeg: 378.9s
+  evaluate: 72.5s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 7156.2s
+  max train time: 431.3s
+  train wall time (parallel): 431.3s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset2/sky130hd-global_place/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset2/sky130hd-global_place/eval.yaml

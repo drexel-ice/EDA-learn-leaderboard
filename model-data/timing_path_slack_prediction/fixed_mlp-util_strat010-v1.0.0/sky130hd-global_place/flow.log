@@ -1,0 +1,54 @@
+Flow run: 2026-10-21T18:06:13.017356 UTC
+Finished: 2026-10-21T19:34:57.756081 UTC
+Status: success
+Total runtime: 5324.7s
+
+Configuration:
+  project: timing_path_slack_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/sky130hd-global_place-sample10
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/sky130hd
+  initial_stage: global_place
+  config_yaml: projects/timing_path_slack_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 0.1
+  parameter_config_ids: default
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/sky130hd-global_place-sample10
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/sky130hd-global_place
+
+Step timings:
+  train ac97_ctrl: 5237.2s
+  train aes_core: 5077.3s
+  train des3_area: 5106.8s
+  train i2c: 5179.8s
+  train mem_ctrl: 5204.1s
+  train pci: 5210.2s
+  train sasc: 5190.3s
+  train simple_spi: 5183.3s
+  train spi: 5194.7s
+  train ss_pcm: 5229.4s
+  train systemcaes: 5179.0s
+  train systemcdes: 5168.7s
+  train tv80: 5058.6s
+  train usb_funct: 5205.4s
+  train usb_phy: 5190.7s
+  train wb_dma: 5220.0s
+  train ethernet: 5219.9s
+  train jpeg: 5190.4s
+  evaluate: 87.4s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 93245.9s
+  max train time: 5237.2s
+  train wall time (parallel): 5237.2s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/sky130hd-global_place-sample10/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/sky130hd-global_place-sample10/eval.yaml

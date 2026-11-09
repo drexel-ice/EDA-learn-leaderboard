@@ -1,0 +1,54 @@
+Flow run: 2026-10-13T18:47:49.201664 UTC
+Finished: 2026-10-13T20:06:45.100467 UTC
+Status: success
+Total runtime: 4735.9s
+
+Configuration:
+  project: timing_path_slack_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/nangate45-cts
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/nangate45
+  initial_stage: cts
+  config_yaml: projects/timing_path_slack_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/nangate45-cts
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/nangate45-cts
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/nangate45-cts
+
+Step timings:
+  create_cache: 3534.2s (cache_dir=/data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/nangate45-cts)
+  train ac97_ctrl: 1111.7s
+  train aes_core: 1133.5s
+  train des3_area: 1108.5s
+  train i2c: 1123.4s
+  train mem_ctrl: 1112.1s
+  train pci: 1099.7s
+  train sasc: 1117.3s
+  train simple_spi: 1116.2s
+  train spi: 1104.0s
+  train ss_pcm: 1124.2s
+  train systemcaes: 1099.2s
+  train systemcdes: 1114.0s
+  train tv80: 1107.4s
+  train usb_funct: 1118.9s
+  train usb_phy: 1126.5s
+  train wb_dma: 1142.8s
+  train ethernet: 1131.4s
+  train jpeg: 1120.0s
+  evaluate: 58.8s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 20110.7s
+  max train time: 1142.8s
+  train wall time (parallel): 1142.8s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/nangate45-cts/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/nangate45-cts/eval.yaml

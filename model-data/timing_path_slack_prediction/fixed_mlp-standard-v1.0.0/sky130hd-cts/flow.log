@@ -1,0 +1,54 @@
+Flow run: 2026-10-13T20:36:20.821032 UTC
+Finished: 2026-10-13T22:30:47.006210 UTC
+Status: success
+Total runtime: 6866.2s
+
+Configuration:
+  project: timing_path_slack_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/sky130hd-cts
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/sky130hd
+  initial_stage: cts
+  config_yaml: projects/timing_path_slack_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/sky130hd-cts
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/sky130hd-cts
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/sky130hd-cts
+
+Step timings:
+  create_cache: 4859.2s (cache_dir=/data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/sky130hd-cts)
+  train ac97_ctrl: 1853.6s
+  train aes_core: 1857.8s
+  train des3_area: 1839.6s
+  train i2c: 1866.9s
+  train mem_ctrl: 1869.2s
+  train pci: 1876.7s
+  train sasc: 1868.1s
+  train simple_spi: 1861.3s
+  train spi: 1867.1s
+  train ss_pcm: 1871.1s
+  train systemcaes: 1852.1s
+  train systemcdes: 1854.5s
+  train tv80: 1842.0s
+  train usb_funct: 1861.4s
+  train usb_phy: 1869.4s
+  train wb_dma: 1855.1s
+  train ethernet: 1915.6s
+  train jpeg: 1860.3s
+  evaluate: 91.2s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 33541.6s
+  max train time: 1915.6s
+  train wall time (parallel): 1915.6s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/sky130hd-cts/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/sky130hd-cts/eval.yaml

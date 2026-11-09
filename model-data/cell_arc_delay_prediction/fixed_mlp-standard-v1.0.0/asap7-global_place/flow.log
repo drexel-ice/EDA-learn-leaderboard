@@ -1,0 +1,54 @@
+Flow run: 2026-10-14T16:01:07.088860 UTC
+Finished: 2026-10-14T20:34:37.740831 UTC
+Status: success
+Total runtime: 16410.7s
+
+Configuration:
+  project: cell_arc_delay_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/cell_arc_delay_prediction/fixed_mlp/asap7-global_place
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/asap7
+  initial_stage: global_place
+  config_yaml: projects/cell_arc_delay_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/cell_arc_delay_prediction/fixed_mlp/asap7-global_place
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/cell_arc_delay_prediction/fixed_mlp/asap7-global_place
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/cell_arc_delay_prediction/fixed_mlp/asap7-global_place
+
+Step timings:
+  create_cache: 4700.4s (cache_dir=/data/eda-automl/eda-automl-models/cell_arc_delay_prediction/fixed_mlp/asap7-global_place)
+  train ac97_ctrl: 11074.2s
+  train aes_core: 10918.0s
+  train des3_area: 11056.1s
+  train i2c: 10987.7s
+  train mem_ctrl: 10952.8s
+  train pci: 11069.0s
+  train sasc: 10912.8s
+  train simple_spi: 10968.4s
+  train spi: 10786.9s
+  train ss_pcm: 10804.3s
+  train systemcaes: 11006.4s
+  train systemcdes: 11127.1s
+  train tv80: 11015.0s
+  train usb_funct: 11000.7s
+  train usb_phy: 10834.6s
+  train wb_dma: 11029.2s
+  train ethernet: 10995.5s
+  train jpeg: 10968.7s
+  evaluate: 583.0s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 197507.6s
+  max train time: 11127.1s
+  train wall time (parallel): 11127.1s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/cell_arc_delay_prediction/fixed_mlp/asap7-global_place/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/cell_arc_delay_prediction/fixed_mlp/asap7-global_place/eval.yaml

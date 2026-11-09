@@ -1,0 +1,54 @@
+Flow run: 2026-10-14T17:20:17.585754 UTC
+Finished: 2026-10-14T18:51:00.753499 UTC
+Status: success
+Total runtime: 5443.2s
+
+Configuration:
+  project: timing_path_arrival_time_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-cts-sample20
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/ihp-sg13g2
+  initial_stage: cts
+  config_yaml: projects/timing_path_arrival_time_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 0.2
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-cts-sample20
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-cts-sample20
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp/ihp-sg13g2-cts
+
+Step timings:
+  create_cache: 4446.6s (cache_dir=/data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-cts-sample20)
+  train ac97_ctrl: 804.2s
+  train aes_core: 791.9s
+  train des3_area: 735.2s
+  train i2c: 743.6s
+  train mem_ctrl: 744.8s
+  train pci: 798.5s
+  train sasc: 789.8s
+  train simple_spi: 791.2s
+  train spi: 785.6s
+  train ss_pcm: 782.3s
+  train systemcaes: 740.2s
+  train systemcdes: 801.1s
+  train tv80: 778.0s
+  train usb_funct: 789.6s
+  train usb_phy: 783.3s
+  train wb_dma: 792.6s
+  train ethernet: 769.6s
+  train jpeg: 813.1s
+  evaluate: 183.4s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 14034.6s
+  max train time: 813.1s
+  train wall time (parallel): 813.1s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-cts-sample20/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/ihp-sg13g2-cts-sample20/eval.yaml

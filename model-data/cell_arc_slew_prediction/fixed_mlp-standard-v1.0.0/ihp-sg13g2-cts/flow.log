@@ -1,0 +1,55 @@
+Flow run: 2026-10-29T23:05:55.984535 UTC
+Finished: 2026-10-30T19:10:44.829254 UTC
+Status: success
+Total runtime: 72288.8s
+
+Configuration:
+  project: cell_arc_slew_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/cell_arc_slew_prediction/fixed_mlp/ihp-sg13g2-cts
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/ihp-sg13g2
+  initial_stage: cts
+  config_yaml: projects/cell_arc_slew_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  parameter_config_ids: default
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/cell_arc_slew_prediction/fixed_mlp/ihp-sg13g2-cts
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/cell_arc_slew_prediction/fixed_mlp/ihp-sg13g2-cts
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/cell_arc_slew_prediction/fixed_mlp/ihp-sg13g2-cts
+
+Step timings:
+  create_cache: 3326.4s (cache_dir=/data/eda-automl/eda-automl-models/cell_arc_slew_prediction/fixed_mlp/ihp-sg13g2-cts)
+  train ac97_ctrl: 65613.8s
+  train aes_core: 64469.8s
+  train des3_area: 65228.6s
+  train i2c: 65227.5s
+  train mem_ctrl: 65599.2s
+  train pci: 65462.5s
+  train sasc: 65606.6s
+  train simple_spi: 64905.1s
+  train spi: 65262.3s
+  train ss_pcm: 65479.8s
+  train systemcaes: 65114.4s
+  train systemcdes: 65189.0s
+  train tv80: 64817.3s
+  train usb_funct: 64789.0s
+  train usb_phy: 65380.3s
+  train wb_dma: 64835.6s
+  train ethernet: 64614.4s
+  train jpeg: 64200.9s
+  evaluate: 3348.6s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 1171796.1s
+  max train time: 65613.8s
+  train wall time (parallel): 65613.8s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/cell_arc_slew_prediction/fixed_mlp/ihp-sg13g2-cts/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/cell_arc_slew_prediction/fixed_mlp/ihp-sg13g2-cts/eval.yaml

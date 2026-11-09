@@ -1,0 +1,54 @@
+Flow run: 2026-10-14T19:09:48.920930 UTC
+Finished: 2026-10-14T20:29:19.421686 UTC
+Status: success
+Total runtime: 4770.5s
+
+Configuration:
+  project: timing_path_arrival_time_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/asap7-cts-sample5
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/asap7
+  initial_stage: cts
+  config_yaml: projects/timing_path_arrival_time_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 0.05
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: True
+  create_cache_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/asap7-cts-sample5
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/asap7-cts-sample5
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp/asap7-cts
+
+Step timings:
+  create_cache: 4584.1s (cache_dir=/data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/asap7-cts-sample5)
+  train ac97_ctrl: 102.8s
+  train aes_core: 104.0s
+  train des3_area: 94.6s
+  train i2c: 101.7s
+  train mem_ctrl: 101.1s
+  train pci: 105.3s
+  train sasc: 103.0s
+  train simple_spi: 103.0s
+  train spi: 95.0s
+  train ss_pcm: 104.1s
+  train systemcaes: 96.1s
+  train systemcdes: 105.2s
+  train tv80: 101.6s
+  train usb_funct: 98.0s
+  train usb_phy: 97.4s
+  train wb_dma: 102.8s
+  train ethernet: 105.4s
+  train jpeg: 99.2s
+  evaluate: 80.9s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 1820.2s
+  max train time: 105.4s
+  train wall time (parallel): 105.4s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/asap7-cts-sample5/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp-statified_sampled/asap7-cts-sample5/eval.yaml

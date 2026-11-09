@@ -1,0 +1,83 @@
+source_eval: worst_arrival_time_prediction/fixed_mlp-standard-v1.0.0/asap7-cts/eval.yaml
+per_circuit:
+- circuit: ac97_ctrl
+  baseline:
+    mae: 0.04923703736222908
+    mape: 0.1514578771876501
+- circuit: aes_core
+  baseline:
+    mae: 0.008287962871862007
+    mape: 0.010908822336632148
+- circuit: des3_area
+  baseline:
+    mae: 0.0057962962305185325
+    mape: 0.006569332731123694
+- circuit: i2c
+  baseline:
+    mae: 0.0025527778292466475
+    mape: 0.006220283830123349
+- circuit: mem_ctrl
+  baseline:
+    mae: 0.009376852180777377
+    mape: 0.010359211618833172
+- circuit: pci
+  baseline:
+    mae: 0.027849074445950087
+    mape: 0.04755608394060364
+- circuit: sasc
+  baseline:
+    mae: 0.0005759260809679749
+    mape: 0.0020643332917221666
+- circuit: simple_spi
+  baseline:
+    mae: 0.003814814820527555
+    mape: 0.010427036172143099
+- circuit: spi
+  baseline:
+    mae: 0.0104333333699097
+    mape: 0.01343935504321464
+- circuit: ss_pcm
+  baseline:
+    mae: 0.009017592769554257
+    mape: 0.04342340356276263
+- circuit: systemcaes
+  baseline:
+    mae: 0.007093518575033806
+    mape: 0.008302392703604382
+- circuit: systemcdes
+  baseline:
+    mae: 0.00830740759020309
+    mape: 0.010963725641736225
+- circuit: tv80
+  baseline:
+    mae: 0.010740740708491922
+    mape: 0.008970259198331776
+- circuit: usb_funct
+  baseline:
+    mae: 0.009612962978969386
+    mape: 0.03282722055775108
+- circuit: usb_phy
+  baseline:
+    mae: 0.001512037068303329
+    mape: 0.004416322234116886
+- circuit: wb_dma
+  baseline:
+    mae: 0.0025527778041886636
+    mape: 0.005081411969726497
+- circuit: ethernet
+  baseline:
+    mae: 0.007032075459398136
+    mape: 0.00811661626373722
+- circuit: jpeg
+  baseline:
+    mae: 0.004677777818499878
+    mape: 0.004245292170939808
+overall:
+  sample_averaged:
+    baseline:
+      mae: 0.009918022746272605
+      mape: 0.02142196532264974
+  fold_averaged:
+    baseline:
+      mae: 0.009915053664701747
+      mape: 0.021408276691930697

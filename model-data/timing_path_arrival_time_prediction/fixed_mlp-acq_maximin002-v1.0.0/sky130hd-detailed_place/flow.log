@@ -1,0 +1,54 @@
+Flow run: 2026-10-23T17:08:32.208422 UTC
+Finished: 2026-10-23T17:11:04.371526 UTC
+Status: success
+Total runtime: 152.2s
+
+Configuration:
+  project: timing_path_arrival_time_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset1/sky130hd-detailed_place
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/sky130hd
+  initial_stage: detailed_place
+  config_yaml: projects/timing_path_arrival_time_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 1.0
+  parameter_config_ids: 23,14
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset1/sky130hd-detailed_place
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp/sky130hd-detailed_place
+
+Step timings:
+  train ac97_ctrl: 102.4s
+  train aes_core: 106.3s
+  train des3_area: 105.0s
+  train i2c: 102.4s
+  train mem_ctrl: 110.8s
+  train pci: 103.8s
+  train sasc: 107.1s
+  train simple_spi: 105.0s
+  train spi: 105.9s
+  train ss_pcm: 103.2s
+  train systemcaes: 106.4s
+  train systemcdes: 109.6s
+  train tv80: 108.2s
+  train usb_funct: 107.7s
+  train usb_phy: 111.2s
+  train wb_dma: 97.4s
+  train ethernet: 109.9s
+  train jpeg: 107.8s
+  evaluate: 40.9s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 1910.3s
+  max train time: 111.2s
+  train wall time (parallel): 111.2s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset1/sky130hd-detailed_place/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_arrival_time_prediction/fixed_mlp_subset1/sky130hd-detailed_place/eval.yaml

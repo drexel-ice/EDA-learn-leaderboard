@@ -1,0 +1,48 @@
+Baseline-only evaluation
+Source evaluation: worst_arrival_time_prediction/fixed_mlp-standard-v1.0.0/sky130hd-detailed_place/eval.yaml
+Metric values retain their original units and scale.
+
+Per-circuit results:
+
+ac97_ctrl:
+    - Baseline MAE=1.2423, MAPE=0.6630
+aes_core:
+    - Baseline MAE=1.5127, MAPE=0.3085
+des3_area:
+    - Baseline MAE=2.5342, MAPE=0.4127
+i2c:
+    - Baseline MAE=0.1391, MAPE=0.0457
+mem_ctrl:
+    - Baseline MAE=1.8655, MAPE=0.2824
+pci:
+    - Baseline MAE=1.0370, MAPE=0.2541
+sasc:
+    - Baseline MAE=0.3475, MAPE=0.2034
+simple_spi:
+    - Baseline MAE=0.1046, MAPE=0.0443
+spi:
+    - Baseline MAE=0.5289, MAPE=0.1084
+ss_pcm:
+    - Baseline MAE=1.0261, MAPE=0.8622
+systemcaes:
+    - Baseline MAE=2.3227, MAPE=0.3781
+systemcdes:
+    - Baseline MAE=1.5083, MAPE=0.2961
+tv80:
+    - Baseline MAE=1.8557, MAPE=0.2186
+usb_funct:
+    - Baseline MAE=2.5403, MAPE=1.1960
+usb_phy:
+    - Baseline MAE=0.3231, MAPE=0.1739
+wb_dma:
+    - Baseline MAE=0.5971, MAPE=0.1851
+ethernet:
+    - Baseline MAE=1.3490, MAPE=0.2120
+jpeg:
+    - Baseline MAE=1.0493, MAPE=0.1441
+
+Overall results:
+Sample-averaged
+    - Baseline MAE=1.2078, MAPE=0.3330
+Fold-averaged
+    - Baseline MAE=1.2157, MAPE=0.3327

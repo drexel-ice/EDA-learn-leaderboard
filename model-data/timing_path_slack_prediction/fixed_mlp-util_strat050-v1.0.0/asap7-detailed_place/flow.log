@@ -1,0 +1,54 @@
+Flow run: 2026-10-22T03:34:40.460248 UTC
+Finished: 2026-10-22T04:54:23.561835 UTC
+Status: success
+Total runtime: 4783.1s
+
+Configuration:
+  project: timing_path_slack_prediction
+  mode: parallel
+  log_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/asap7-detailed_place-sample50
+  dataset_dir: /data/eda-automl/eda-schema-V2-dataset/asap7
+  initial_stage: detailed_place
+  config_yaml: projects/timing_path_slack_prediction/experiments/fixed_mlp.yaml
+  sampling_frac: 0.5
+  parameter_config_ids: default
+  circuits (18): ac97_ctrl, aes_core, des3_area, i2c, mem_ctrl, pci, sasc, simple_spi, spi, ss_pcm, systemcaes, systemcdes, tv80, usb_funct, usb_phy, wb_dma, ethernet, jpeg
+
+Cache:
+  create_cache_first: False
+  create_cache_dir: n/a
+  train_cache_data: True
+  train_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/asap7-detailed_place-sample50
+  eval_cache_data: True
+  eval_cache_data_dir: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp/asap7-detailed_place
+
+Step timings:
+  train ac97_ctrl: 4625.2s
+  train aes_core: 4672.2s
+  train des3_area: 4536.4s
+  train i2c: 4618.8s
+  train mem_ctrl: 4672.5s
+  train pci: 4551.0s
+  train sasc: 4526.7s
+  train simple_spi: 4533.1s
+  train spi: 4597.0s
+  train ss_pcm: 4533.7s
+  train systemcaes: 4620.1s
+  train systemcdes: 4544.7s
+  train tv80: 4574.9s
+  train usb_funct: 4628.5s
+  train usb_phy: 4526.4s
+  train wb_dma: 4608.1s
+  train ethernet: 4717.4s
+  train jpeg: 4615.3s
+  evaluate: 65.7s
+
+Training summary:
+  circuits trained: 18
+  total train time (sum): 82702.0s
+  max train time: 4717.4s
+  train wall time (parallel): 4717.4s
+
+Outputs:
+  eval.log: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/asap7-detailed_place-sample50/eval.log
+  eval.yaml: /data/eda-automl/eda-automl-models/timing_path_slack_prediction/fixed_mlp-statified_sampled/asap7-detailed_place-sample50/eval.yaml
