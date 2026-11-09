@@ -73,7 +73,7 @@
   function href(task, pdk, stage, metric) {
     const extra = {};
     if (S.agg !== "fold") extra.agg = S.agg;
-    return "#";   // ranking page not built yet
+    return LB.rankingHref(D, task, pdk, stage, metric, extra);
   }
 
   function chipRow(key, items, selected) {

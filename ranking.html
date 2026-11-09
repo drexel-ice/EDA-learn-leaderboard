@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Ranking of every released EDA-OpenML model for one prediction condition, against the OpenROAD baseline. Drexel ICE Lab.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%2307294D'/><text x='16' y='23' font-family='Georgia,serif' font-size='18' fill='%23FFC600' text-anchor='middle'>E</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<link rel="stylesheet" href="assets/css/theme.css">
+<link rel="stylesheet" href="assets/css/leaderboard.css">
+<script src="assets/js/core/theme.js"></script>
+<title>EDA-OpenML Ranking | Drexel ICE Lab</title>
+</head>
+<body>
+
+<header class="icelab-navbar">
+  <div class="navbar-inner">
+    <div class="navbar-brand"><img class="icelab-logo-img" src="assets/img/icelab_logo.png" alt="Drexel ICE Lab"><span class="brand-title">EDA-Learn Leaderboard</span></div>
+    <nav>
+      <a href="index.html">leaderboard</a>
+      <a href="ranking.html" aria-current="page">ranking</a>
+      <a href="https://github.com/drexel-ice/EDA-ML" target="_blank" rel="noopener noreferrer">code</a>
+      <button class="themebtn" id="themebtn" title="Change theme" aria-label="Change theme"><svg class="i-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.4M12 19.6V22M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2 12h2.4M19.6 12H22M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg><svg class="i-dark" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 13.3A9 9 0 1 1 10.7 3a7.2 7.2 0 0 0 10.3 10.3z"/></svg></button>
+    </nav>
+  </div>
+</header>
+
+<main class="container container--wide" id="app">
+  <a class="r-back" id="back" href="index.html">← leaderboard</a>
+
+  <div class="r-head">
+    <div>
+      <h1 class="r-title" id="r-title">Ranking</h1>
+      <div class="r-sub" id="r-sub"></div>
+    </div>
+    <div class="pick" aria-label="Condition">
+      <label><span class="ctl-l">Task</span><select id="c-task" class="sel"></select></label>
+      <label><span class="ctl-l">PDK</span><select id="c-pdk" class="sel"></select></label>
+      <label><span class="ctl-l">Source stage</span><select id="c-stage" class="sel"></select></label>
+    </div>
+  </div>
+
+  <section class="filters" aria-label="View options">
+    <div class="frow">
+      <span class="flabel">Averaging</span>
+      <div class="fchips" role="group" aria-label="Averaging">
+        <button class="chip" data-seg="agg" data-val="fold" title="Mean of the 18 per-circuit scores (primary metric in the paper)">fold</button>
+        <button class="chip" data-seg="agg" data-val="sample" title="Pooled over all out-of-fold predictions">sample</button>
+      </div>
+    </div>
+    <div class="frow">
+      <span class="flabel">Show</span>
+      <div class="fchips" role="group" aria-label="Values">
+        <button class="chip" data-seg="view" data-val="raw" title="Metric values">raw</button>
+        <button class="chip" data-seg="view" data-val="delta" title="Improvement over each run's OpenROAD estimate: relative % for error metrics, difference for R², TPR, TNR">vs baseline</button>
+      </div>
+    </div>
+  </section>
+
+  <p class="r-count" id="r-count" aria-live="polite"></p>
+  <div id="ranking"></div>
+
+</main>
+
+<footer class="footer">Drexel Integrated Circuits and Electronics (ICE) Lab</footer>
+
+<!-- Plain scripts, not modules: the page also works when opened straight from disk. -->
+<script src="data/leaderboard.js"></script>
+<script src="assets/js/core/metrics.js"></script>
+<script src="assets/js/core/data.js"></script>
+<script src="assets/js/core/url.js"></script>
+<script src="assets/js/components/ranking-table.js"></script>
+<script src="assets/js/views/ranking.js"></script>
+</body>
+</html>
