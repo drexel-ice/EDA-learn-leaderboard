@@ -1,0 +1,24 @@
+/* Hover help (assets/js/core/help.js), shared by all pages.
+   A label with help gets a faint dotted underline and a help cursor. */
+.hl { cursor: help; text-decoration: underline dotted; text-decoration-color: var(--global-divider-strong);
+  text-underline-offset: 3px; text-decoration-thickness: 1px; }
+.hl:hover, .hl.hl-on { text-decoration-color: var(--global-link-color); }
+.hl:focus-visible { outline: 2px solid var(--global-accent-color); outline-offset: 2px; border-radius: 2px; }
+/* whole-line help (summary lines): no underline, just the cursor */
+p.hl { text-decoration: none; }
+
+#helppop {
+  position: fixed; z-index: 400; pointer-events: auto; width: min(27rem, calc(100vw - 16px)); max-height: 70vh; overflow-y: auto; padding: .7rem .85rem;
+  background: var(--global-bg-color); color: var(--global-text-color);
+  border: 1px solid var(--global-divider-strong); border-radius: var(--global-radius);
+  box-shadow: 0 8px 24px rgba(7, 41, 77, .18);
+  font-family: var(--global-font-sans); font-size: .8rem; font-weight: 300; line-height: 1.5;
+  text-transform: none; letter-spacing: 0;
+}
+#helppop[hidden] { display: none; }
+#helppop .help-t { margin: 0 0 .3rem; font-weight: 500; font-size: .82rem; color: var(--md-heading-color); }
+#helppop b { font-weight: 500; }
+html[data-theme="dark"] #helppop { box-shadow: 0 8px 24px rgba(0, 0, 0, .45); }
+#helppop .help-f { display: inline-block; font-family: var(--global-font-mono); font-size: .76rem; font-weight: 400;
+  padding: .05rem .35rem; border-radius: var(--r-xs); background: var(--global-code-bg-color); color: var(--global-text-color); }
+#helppop .help-b > .help-f:first-child { margin-bottom: .1rem; }

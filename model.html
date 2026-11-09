@@ -11,7 +11,9 @@
 <link rel="stylesheet" href="assets/css/theme.css">
 <link rel="stylesheet" href="assets/css/explorer.css">
 <link rel="stylesheet" href="assets/css/model.css">
+<link rel="stylesheet" href="assets/css/help.css">
 <script src="assets/js/core/theme.js"></script>
+<script src="assets/js/core/help.js"></script>
 <title>EDA-OpenML Model | Drexel ICE Lab</title>
 </head>
 <body>
@@ -35,7 +37,7 @@
 
   <!-- info_card -->
   <div class="k s12" style="--i:0" data-card="info_card">
-    <span class="knum">info_card</span>
+    <span class="knum"><span class="hl" data-help="results" tabindex="0">info_card</span></span>
     <div class="idcard">
       <div class="idcopy">
         <h1 class="idname mono" id="m-title">model</h1>
@@ -49,7 +51,7 @@
   <div class="netpair s12" id="netpair">
     <div class="specstack">
       <div class="k" style="--i:1" id="k-feat">
-        <span class="knum">features</span>
+        <span class="knum"><span class="hl" data-help="features" tabindex="0">features</span></span>
         <div class="featbody" id="featbody"></div>
       </div>
       <div class="k" style="--i:1" id="k-hp">
@@ -61,7 +63,7 @@
     </div>
 
     <div class="k net-mode-graph" style="--i:1" id="k-net" data-card="network_architecture">
-      <span class="knum">network_architecture</span>
+      <span class="knum"><span class="hl" data-help="network" tabindex="0">network_architecture</span></span>
       <div class="nethead">
         <div>
           <h2 class="idname">neural net</h2>
@@ -81,7 +83,7 @@
 
   <!-- generalization -->
   <div class="k s12" style="--i:2" id="k-gen" data-card="generalization">
-    <span class="knum">generalization</span>
+    <span class="knum"><span class="hl" data-help="generalization" tabindex="0">generalization</span></span>
     <div class="curvehead">
       <div>
         <h2 class="idname">circuit-disjoint generalization</h2>

@@ -56,10 +56,10 @@ function drawGenSummary() {
     const meta = LBD.metrics[k];
     const ds = Object.values(pc).map((r) => genDelta(meta, r.model && r.model[k], r.baseline && r.baseline[k])).filter((v) => v != null);
     const st = genStats(ds);
-    if (!st) return `<tr class="gen-row-na"><th scope="row">${LB.esc(meta.label)}</th><td colspan="7" class="gen-na">undefined for every circuit</td></tr>`;
+    if (!st) return `<tr class="gen-row-na"><th scope="row">${HELP.metric(LB.esc(meta.label), k)}</th><td colspan="7" class="gen-na">undefined for every circuit</td></tr>`;
     const tone = (v) => (v > 0 ? "gen-pos" : v < 0 ? "gen-neg" : "");
     return `<tr class="gen-row${k === GEN.metric ? " is-sel" : ""}" data-k="${k}" tabindex="0" aria-selected="${k === GEN.metric}" title="Show ${LB.esc(meta.label)} per circuit">` +
-      `<th scope="row">${LB.esc(meta.label)}</th>` +
+      `<th scope="row">${HELP.metric(LB.esc(meta.label), k)}</th>` +
       `<td class="${tone(st.mean)}">${fmtDelta(meta, st.mean, true)}</td>` +
       `<td>${fmtSpread(meta, st.sd)}</td>` +
       `<td class="${tone(st.median)}"><b>${fmtDelta(meta, st.median, true)}</b></td>` +
@@ -76,7 +76,7 @@ function drawGenTable() {
   const pc = RUN.per_circuit || {};
   const ks = genMetrics();
   const unit = (k) => (LBD.metrics[k].unit && LBD.taskById[CUR.task].unit ? ` (${LBD.taskById[CUR.task].unit})` : "");
-  const head1 = ks.map((k) => `<th colspan="3" class="gen-grp">${LB.esc(LBD.metrics[k].label)}${unit(k)}</th>`).join("");
+  const head1 = ks.map((k) => `<th colspan="3" class="gen-grp">${HELP.metric(LB.esc(LBD.metrics[k].label), k)}${unit(k)}</th>`).join("");
   const head2 = ks.map(() => `<th class="gen-grp-first">OpenROAD</th><th>model</th><th>&Delta;</th>`).join("");
   const rows = RUN.circuits.filter((c) => pc[c]).map((c) => {
     const r = pc[c];
@@ -117,7 +117,7 @@ function drawGenChart() {
   });
   const ok = rows.filter((r) => r.d != null).sort((x, y) => y.d - x.d);
   const na = rows.filter((r) => r.d == null);
-  $("gen-pc-title").innerHTML = `per held-out circuit · ${LB.esc(meta.label)} improvement over OpenROAD`;
+  $("gen-pc-title").innerHTML = `per held-out circuit · ${HELP.metric(LB.esc(meta.label), k)} improvement over OpenROAD`;
   if (!ok.length) { $("gen-chart").innerHTML = `<p class="hint">${LB.esc(meta.label)} is undefined for every circuit.</p>`; return; }
 
   const clip = (v) => (rel ? Math.max(v, -GEN_CLIP_REL) : v);

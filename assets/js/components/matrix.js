@@ -111,7 +111,7 @@
           if (cl.kind !== "na") tips.push(tipHTML(d, S, t, p, s, cl));
           return html;
         }).join("")).join("");
-        return `<tr class="${alt.trim()}"><th class="mx-metric" scope="row">${esc(d.metrics[metric].label)}</th>${cells}</tr>`;
+        return `<tr class="${alt.trim()}"><th class="mx-metric" scope="row">${HELP.metric(esc(d.metrics[metric].label), metric)}</th>${cells}</tr>`;
       }).join("");
       return group + rows;
     }).join("");

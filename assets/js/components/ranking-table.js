@@ -75,7 +75,7 @@
           const m = d.metrics[k], on = k === C.metric;
           return `<th class="rk-m${on ? " is-sort" : ""}" scope="col" aria-sort="${on ? (m.better === "higher" ? "descending" : "ascending") : "none"}">` +
             `<button class="rk-sort" data-metric="${k}" title="${esc(m.label)}: ${m.better} is better. Click to rank by it.">` +
-            `${esc(m.label)}${unit(k)} <span class="rk-dir" aria-hidden="true">${on ? "▾" : m.better === "higher" ? "↑" : "↓"}</span></button></th>`;
+            `${HELP.metric(esc(m.label), k, false)}${unit(k)} <span class="rk-dir" aria-hidden="true">${on ? "▾" : m.better === "higher" ? "↑" : "↓"}</span></button></th>`;
         }).join("")}
       </tr>`;
 

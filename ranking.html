@@ -10,7 +10,9 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
 <link rel="stylesheet" href="assets/css/theme.css">
 <link rel="stylesheet" href="assets/css/leaderboard.css">
+<link rel="stylesheet" href="assets/css/help.css">
 <script src="assets/js/core/theme.js"></script>
+<script src="assets/js/core/help.js"></script>
 <title>EDA-OpenML Ranking | Drexel ICE Lab</title>
 </head>
 <body>
@@ -45,14 +47,14 @@
 
   <section class="filters" aria-label="View options">
     <div class="frow">
-      <span class="flabel">Averaging</span>
+      <span class="flabel"><span class="hl" data-help="averaging" tabindex="0">Averaging</span></span>
       <div class="fchips" role="group" aria-label="Averaging">
         <button class="chip" data-seg="agg" data-val="fold" title="Mean of the 18 per-circuit scores (primary metric in the paper)">fold</button>
         <button class="chip" data-seg="agg" data-val="sample" title="Pooled over all out-of-fold predictions">sample</button>
       </div>
     </div>
     <div class="frow">
-      <span class="flabel">Show</span>
+      <span class="flabel"><span class="hl" data-help="view" tabindex="0">Show</span></span>
       <div class="fchips" role="group" aria-label="Values">
         <button class="chip" data-seg="view" data-val="raw" title="Metric values">raw</button>
         <button class="chip" data-seg="view" data-val="delta" title="Improvement over each run's OpenROAD estimate: relative % for error metrics, difference for R², TPR, TNR">vs baseline</button>
@@ -60,7 +62,7 @@
     </div>
   </section>
 
-  <p class="r-count" id="r-count" aria-live="polite"></p>
+  <p class="r-count hl" id="r-count" data-help="ranks" tabindex="0" aria-live="polite"></p>
   <div id="ranking"></div>
 
 </main>

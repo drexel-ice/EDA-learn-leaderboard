@@ -79,7 +79,7 @@ function drawEval() {
     `<th scope="row">OpenROAD</th>${cols.map((k) => cell(k, get(k, bf), get(k, bf), false)).join("")}</tr>` +
     `<tr class="evaltable-model"><th scope="row">model</th>${cols.map((k) => cell(k, get(k, mf), get(k, bf), true)).join("")}</tr>`;
   host.innerHTML = `<table class="evaltable">
-    <thead><tr><th></th><th></th>${cols.map((k) => `<th>${LB.esc(meta(k).label)}</th>`).join("")}</tr></thead>
+    <thead><tr><th></th><th></th>${cols.map((k) => `<th>${HELP.metric(LB.esc(meta(k).label), k)}</th>`).join("")}</tr></thead>
     <tbody>${block("fold-averaged", "fold", "fold_base")}${block("sample-averaged", "samp", "samp_base")}</tbody></table>`;
 }
 
