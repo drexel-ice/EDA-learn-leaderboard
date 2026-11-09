@@ -44,6 +44,9 @@ const taskLabel = (t) => (LBD && LBD.taskById[t] ? LBD.taskById[t].label : Strin
 /* ---------- header: identity + evaluation ---------- */
 function drawHeader() {
   $("m-title").textContent = CUR.exp;
+  const desc = (LBD.expById[CUR.exp] || {}).description;
+  $("m-desc").textContent = desc || "";
+  $("m-desc").hidden = !desc;
   const t = LBD.taskById[CUR.task], st = LBD.stageById[CUR.stage], p = LBD.pdkById[CUR.pdk];
   const fields = [
     ["problem", CUR.task],

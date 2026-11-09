@@ -79,3 +79,7 @@ html[data-theme="dark"] #gentip { background: var(--md-primary-50); color: var(-
 /* align with the header and the other pages (content 1800px, 2rem sides) */
 .wrap { max-width: 1800px; padding-left: 2rem; padding-right: 2rem; }
 @media (max-width: 720px) { .wrap { padding-left: 16px; padding-right: 16px; } }
+
+/* one-line experiment description under the model name (from the release registry) */
+.iddesc { margin: -.15rem 0 .9rem; max-width: 46rem; font-size: .92rem; line-height: 1.5;
+  color: var(--global-text-color-light); }
