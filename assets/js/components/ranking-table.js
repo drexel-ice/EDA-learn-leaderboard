@@ -119,7 +119,7 @@
       return `<tr class="rk-row${r === 1 && beatsSort ? " rk-first" : ""}">
           <td class="rk-rank">${r && r <= 3 ? `<span class="rk-medal" title="rank ${r}">${MEDAL[r - 1]}</span>` : r || "–"}</td>
           <th class="rk-model" scope="row">
-            <span class="rk-link mono">${esc(x.id)}</span>${e.in_paper ? "" : `<span class="rk-np" title="Released in model-data but not reported in the paper">not in paper</span>`}
+            <a class="rk-link mono" href="${esc(modelHref(d, C, x.id))}" title="open model page">${esc(x.id)}</a>${e.in_paper ? "" : `<span class="rk-np" title="Released in model-data but not reported in the paper">not in paper</span>`}
           </th>
           ${cells}
         </tr>`;
@@ -140,5 +140,10 @@
     el.querySelectorAll(".rk-sort").forEach((b) => b.addEventListener("click", () => handlers.onSort(b.dataset.metric)));
     return { shown: ok.length, total: cond ? cond.entries.length : 0 };
   };
+
+  function modelHref(d, C, exp) {
+    const p = new URLSearchParams({ task: C.task, exp, pdk: LB.pdkSlug(d, C.pdk), stage: C.stage });
+    return `model.html?${p.toString()}`;
+  }
 
 })();

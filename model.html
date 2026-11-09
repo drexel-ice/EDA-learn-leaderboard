@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="One released EDA-OpenML model: problem, features, hyperparameters, network, per-circuit weights and training curves. Drexel ICE Lab.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%2307294D'/><text x='16' y='23' font-family='Georgia,serif' font-size='18' fill='%23FFC600' text-anchor='middle'>E</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<link rel="stylesheet" href="assets/css/theme.css">
+<link rel="stylesheet" href="assets/css/explorer.css">
+<link rel="stylesheet" href="assets/css/model.css">
+<script src="assets/js/core/theme.js"></script>
+<title>EDA-OpenML Model | Drexel ICE Lab</title>
+</head>
+<body>
+
+<header class="icelab-navbar">
+  <div class="navbar-inner">
+    <div class="navbar-brand"><img class="icelab-logo-img" src="assets/img/icelab_logo.png" alt="Drexel ICE Lab"><span class="brand-title">EDA-Learn Leaderboard</span></div>
+    <nav>
+      <a href="index.html">leaderboard</a>
+      <a href="ranking.html">ranking</a>
+      <a href="model.html" aria-current="page">model</a>
+      <a href="https://github.com/drexel-ice/EDA-ML" target="_blank" rel="noopener noreferrer">code</a>
+      <button class="themebtn" id="themebtn" title="Change theme" aria-label="Change theme"><svg class="i-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.4M12 19.6V22M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2 12h2.4M19.6 12H22M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg><svg class="i-dark" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 13.3A9 9 0 1 1 10.7 3a7.2 7.2 0 0 0 10.3 10.3z"/></svg></button>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+<p class="crumb" id="crumb"></p>
+<div class="bento" id="app">
+
+  <!-- info_card -->
+  <div class="k s12" style="--i:0" data-card="info_card">
+    <span class="knum">info_card</span>
+    <div class="idcard">
+      <div class="idcopy">
+        <h1 class="idname mono" id="m-title">model</h1>
+        <div class="pffields" id="m-fields"></div>
+      </div>
+      <div id="evalhost"></div>
+    </div>
+  </div>
+
+  <!-- features | hyperparameters | neural net -->
+  <div class="netpair s12" id="netpair">
+    <div class="specstack">
+      <div class="k" style="--i:1" id="k-feat">
+        <span class="knum">features</span>
+        <div class="featbody" id="featbody"></div>
+      </div>
+      <div class="k" style="--i:1" id="k-hp">
+        <details open>
+          <summary class="knum">hyperparameters</summary>
+          <div class="hpbody" id="hpbody"></div>
+        </details>
+      </div>
+    </div>
+
+    <div class="k net-mode-graph" style="--i:1" id="k-net" data-card="network_architecture">
+      <span class="knum">network_architecture</span>
+      <div class="nethead">
+        <div>
+          <h2 class="idname">neural net</h2>
+        </div>
+      </div>
+
+      <div class="netshell" id="netshell">
+        <div class="netview">
+          <div id="wrapgr">
+            <div class="graphbox"><svg id="graph"></svg></div>
+            <p class="cap" id="graphcap"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- generalization -->
+  <div class="k s12" style="--i:2" id="k-gen" data-card="generalization">
+    <span class="knum">generalization</span>
+    <div class="curvehead">
+      <div>
+        <h2 class="idname">circuit-disjoint generalization</h2>
+      </div>
+    </div>
+    <h3 class="gen-h">summary across held-out circuits</h3>
+    <div class="gen-scroll" id="gen-summary"></div>
+    <div class="gen-pchead">
+      <h3 class="gen-h" id="gen-pc-title">per held-out circuit</h3>
+      <div class="viewtog" role="group" aria-label="Per-circuit view">
+        <button data-genview="chart" aria-pressed="true">chart</button>
+        <button data-genview="table" aria-pressed="false">table</button>
+      </div>
+    </div>
+    <div id="gen-chart"></div>
+    <div class="gen-scroll" id="gen-table" hidden></div>
+  </div>
+
+</div>
+</div>
+
+<footer class="footer">Drexel Integrated Circuits and Electronics (ICE) Lab</footer>
+
+<!-- Plain scripts, not modules: the page also works when opened straight from disk. -->
+<script src="data/leaderboard.js"></script>
+<script src="data/model-details.js"></script>
+<script src="assets/js/core/metrics.js"></script>
+<script src="assets/js/core/data.js"></script>
+<script src="assets/js/core/url.js"></script>
+<script src="assets/js/explorer/access.js"></script>
+<script src="assets/js/explorer/registry.js"></script>
+<script src="assets/js/explorer/model.js"></script>
+<script src="assets/js/explorer/view-graph.js"></script>
+<script src="assets/js/explorer/network.js"></script>
+<script src="assets/js/explorer/generalization.js"></script>
+<script src="assets/js/explorer/boot.js"></script>
+</body>
+</html>
